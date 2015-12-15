@@ -1,10 +1,12 @@
 package com.eatery.engine.system;
 
-import java.io.*;
 import com.eatery.engine.opennlp.OpennlpTagger;
+import com.eatery.engine.preprocessing.LanguageDetect;
 import com.eatery.engine.preprocessing.SpellCorrector;
-import com.sun.xml.internal.bind.v2.TODO;
-import opennlp.tools.tokenize.DictionaryDetokenizer;
+import com.eatery.engine.utils.JsonData;
+import org.json.simple.JSONObject;
+
+import java.io.*;
 
 /**
  * Created by nazick on 11/29/15.
@@ -13,34 +15,51 @@ public class EateryMain {
 
     public static String TEMPFILEPATH = "src/main/resources/tempFile.txt";
 
+    final static String filePathRead = "src/main/resources/" +
+            "review_100_A.json";
+
     public static void main(String[] args){
         EateryMain eateryMain = new EateryMain();
-        SpellCorrector spellCorrector = new SpellCorrector();
-
-        BufferedReader bufferedReader = eateryMain.readFile("src/main/resources/TestReviews.txt");
+        JsonData jsonData;
+        LanguageDetect languageDetect = new LanguageDetect();
 
         try {
-            String strLine = null;
+            File file = new File(filePathRead);
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+            int count = 0;
+            long startTime = System.currentTimeMillis();
+            while ((line = br.readLine()) != null) {
+                count++;
+                String restaurentId;
+                String review;
+                jsonData = eateryMain.splitJson(line);
 
-            //todo : need to change once other components integrated
-            Writer output = null;
-            File file = new File(TEMPFILEPATH);
-            output = new BufferedWriter(new FileWriter(file,false));
+                if(!jsonData.equals(null)){
+                    review = jsonData.getReview();
+                    restaurentId = jsonData.getRestaurentId();
+                   // System.out.println("Restaurent ID : " + restaurentId);
+                    System.out.println(count);
+                    if(languageDetect.isReviewInEnglish(review)){
+                        String[] sentences = OpennlpTagger.detectSentence(review);
 
-            while ((strLine = bufferedReader.readLine()) != null) {
+                        for(String sentence: sentences){
+                            sentence = eateryMain.removeSymbols(sentence);
+                            sentence = eateryMain.spellCorrect(sentence);
+                            //System.out.println(sentence);
 
-                String[] tokens = OpennlpTagger.tokenizeSentence(strLine);
-                String[] newTokens = new String[tokens.length];
-                for(int i = 0; i<tokens.length;i++){
-                    tokens[i] = tokens[i].replaceAll("[-+^:,\"*#!?()]","");
-                    newTokens[i] = spellCorrector.correct(tokens[i]);
-                    System.out.println("..");
+                            //OpennlpTagger.tag(sentence);
+                        }
+                    }else{
+                        System.out.println("Review not in English");
+                    }
                 }
-                strLine = eateryMain.detokenize(newTokens);
-                output.write(strLine);
             }
-            output.close();
-            System.out.println("File written");
+            System.out.println(System.currentTimeMillis() - startTime);
+            br.close();
+            fr.close();
+            System.out.println("Done...");
 
         }catch(Exception e){
             e.getStackTrace();
@@ -76,6 +95,64 @@ public class EateryMain {
             }
         }
         return line;
+    }
+
+    private String removeSymbols(String review){
+        String[] tokens = OpennlpTagger.tokenizeSentence(review);
+
+        for(int i = 0; i<tokens.length;i++){
+            tokens[i] = tokens[i].replaceAll("[-+^:.\"*#!?()]","");
+        }
+        return this.detokenize(tokens);
+    }
+
+    private String spellCorrect(String review){
+        SpellCorrector spellCorrector = new SpellCorrector();
+
+        String[] tokens = OpennlpTagger.tokenizeSentence(review);
+        String[] newTokens = new String[tokens.length];
+        int count = 0;
+        for(int i = 0; i<tokens.length;i++){
+            tokens[i] = tokens[i].replaceAll("[-+^:,\"*#!?()]","");
+        }
+        for(int i = 0; i<tokens.length;i++){
+            if(tokens[i].length() == 1){
+                newTokens[i] = tokens[i];
+            }else if(!tokens[i].isEmpty()) {
+                newTokens[i] = spellCorrector.correct(tokens[i]);
+            }else{
+                newTokens[i] = tokens[i];
+            }
+            if(!tokens[i].equals(newTokens[i])){
+                count++;
+            }
+        }
+        //System.out.print(count + "   ");
+        review = this.detokenize(newTokens);
+
+        return review;
+    }
+
+    private JsonData splitJson(String json) {
+        org.json.simple.parser.JSONParser parser = new org.json.simple.parser.JSONParser();
+        JsonData jsonData = new JsonData();
+        try {
+            Object obj = parser.parse(json);
+            JSONObject jsonObject = (JSONObject) obj;
+
+            jsonData.setRestaurentId((String) jsonObject.get("business_id"));
+
+            String review = (String) jsonObject.get("text");
+            String formattedReview=review.replace("\n", "").replace("\r", "");
+            jsonData.setReview(formattedReview);                // get review text from json
+
+            jsonData.setReviewId((String) jsonObject.get("review_id"));
+
+        } catch (org.json.simple.parser.ParseException e) {
+            e.printStackTrace();
+        }finally {
+            return jsonData;
+        }
     }
 
 }

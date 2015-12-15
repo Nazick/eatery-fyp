@@ -20,7 +20,7 @@ public class SpellCorrector {
 
         ToySpellingCorrector sc = new ToySpellingCorrector();
         sc.trainFile("src/main/resources/preprocessing/newDictWords.txt");
-        System.out.println(sc.correct("bartender"));
+        System.out.println(sc.correct("overdone"));
 
     }
 }

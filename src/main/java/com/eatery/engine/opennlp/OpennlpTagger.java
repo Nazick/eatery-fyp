@@ -47,7 +47,7 @@ public class OpennlpTagger {
     }
 
     //@params review String
-    public Span[] tag(String review){
+    public static Span[] tag(String review){
 
         Span[] taggedTokens = null;
         OpennlpTagger opennlpTagger = new OpennlpTagger();
@@ -89,7 +89,7 @@ public class OpennlpTagger {
         return taggedTokens;
     }
 
-    public String[] detectSentence(String text) {
+    public static String[] detectSentence(String text) {
         InputStream sentenceModel = null;
         String[] sentences = null;
         try {
