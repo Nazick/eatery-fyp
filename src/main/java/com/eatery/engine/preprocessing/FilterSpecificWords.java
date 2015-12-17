@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import com.eatery.engine.opennlp.OpennlpTagger;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Created by nazick on 11/28/15.
@@ -13,7 +14,7 @@ public class FilterSpecificWords {
     public static void main(String args[]) {
         try {
             ArrayList storeWordList = new ArrayList();
-            FileInputStream fstream = new FileInputStream("src/main/resources/preprocessing/dictWords.txt");
+            FileInputStream fstream = new FileInputStream("src/main/resources/preprocessing/newDictWords.txt");
             // Get the object of DataInputStream
             DataInputStream in = new DataInputStream(fstream);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
@@ -30,15 +31,15 @@ public class FilterSpecificWords {
                 String temp = ((String) iter.next()).toLowerCase();
                 String[] uni = OpennlpTagger.tokenizeSentence(temp);
                 for(String word:uni) {
-                    word = word.replaceAll("[-+.^:,\"*#!?]","");
-                    if (!uniqueWords.contains(word)) {
+                    //word = word.replaceAll("[-+.^:,\"*#!?]","");
+                    if (!uniqueWords.contains(word) && !StringUtils.isNumeric(word)) {
                         uniqueWords.add(word);
                         System.out.println(word);
                     }
                 }
             }
             Writer output = null;
-            File file = new File("src/main/resources/preprocessing/newDictWords.txt");
+            File file = new File("src/main/resources/preprocessing/newWordlist.txt");
             output = new BufferedWriter(new FileWriter(file));
 
             for (String word: uniqueWords) {

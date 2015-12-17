@@ -13,18 +13,23 @@ import java.io.*;
  */
 public class EateryMain {
 
-    public static String TEMPFILEPATH = "src/main/resources/tempFile.txt";
+    final static String processedFilePath = "src/main/resources/" +
+            "processedFile.txt";
 
     final static String filePathRead = "src/main/resources/" +
-            "review_100_A.json";
+            "top2000Business.json";
 
     public static void main(String[] args){
         EateryMain eateryMain = new EateryMain();
+        eateryMain.process();
+    }
+
+    public void process(){
         JsonData jsonData;
         LanguageDetect languageDetect = new LanguageDetect();
 
         try {
-            File file = new File(filePathRead);
+            File file = new File(processedFilePath);
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String line;
@@ -34,22 +39,22 @@ public class EateryMain {
                 count++;
                 String restaurentId;
                 String review;
-                jsonData = eateryMain.splitJson(line);
+                jsonData = this.splitJson(line);
 
                 if(!jsonData.equals(null)){
                     review = jsonData.getReview();
                     restaurentId = jsonData.getRestaurentId();
-                   // System.out.println("Restaurent ID : " + restaurentId);
+                    // System.out.println("Restaurent ID : " + restaurentId);
                     System.out.println(count);
                     if(languageDetect.isReviewInEnglish(review)){
                         String[] sentences = OpennlpTagger.detectSentence(review);
 
                         for(String sentence: sentences){
-                            sentence = eateryMain.removeSymbols(sentence);
-                            sentence = eateryMain.spellCorrect(sentence);
+                            //sentence = this.removeSymbols(sentence);
+                            //sentence = this.spellCorrect(sentence);
                             //System.out.println(sentence);
 
-                            //OpennlpTagger.tag(sentence);
+                            OpennlpTagger.tag(sentence);
                         }
                     }else{
                         System.out.println("Review not in English");
@@ -59,6 +64,59 @@ public class EateryMain {
             System.out.println(System.currentTimeMillis() - startTime);
             br.close();
             fr.close();
+            System.out.println("Done...");
+
+        }catch(Exception e){
+            e.getStackTrace();
+            //System.out.println(e.toString());
+        }
+    }
+
+    public void preProcessData(){
+        EateryMain eateryMain = new EateryMain();
+        JsonData jsonData;
+        LanguageDetect languageDetect = new LanguageDetect();
+
+        try {
+            File inputFile = new File(filePathRead);
+            File processedFile = new File(processedFilePath);
+
+            FileReader fr = new FileReader(inputFile);
+            BufferedReader br = new BufferedReader(fr);
+
+            Writer output = new BufferedWriter(new FileWriter(processedFile,false));
+
+            String line;
+            int count = 0;
+            long startTime = System.currentTimeMillis();
+            while ((line = br.readLine()) != null) {
+                count++;
+                String review;
+                jsonData = eateryMain.splitJson(line);
+
+
+                if(!jsonData.equals(null)){
+                    review = jsonData.getReview();
+                    //System.out.println(count);
+                    if(languageDetect.isReviewInEnglish(review)){
+                        String[] sentences = OpennlpTagger.detectSentence(review);
+
+                        for(String sentence: sentences){
+                            //sentence = eateryMain.removeSymbols(sentence);
+                            sentence = eateryMain.spellCorrect(sentence);
+                            output.write(sentence);
+                        }
+                    }else{
+                        System.out.println("Review not in English");
+                    }
+                }
+            }
+
+            br.close();
+            fr.close();
+            output.close();
+
+            System.out.println(System.currentTimeMillis() - startTime);
             System.out.println("Done...");
 
         }catch(Exception e){

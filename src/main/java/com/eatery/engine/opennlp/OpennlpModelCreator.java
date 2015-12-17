@@ -7,7 +7,7 @@ import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
 import opennlp.tools.util.TrainingParameters;
-import opennlp.tools.util.featuregen.AdaptiveFeatureGenerator;
+import opennlp.tools.util.featuregen.*;
 
 import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
@@ -30,7 +30,15 @@ public class OpennlpModelCreator {
         }catch(Exception ex){}
 
         TokenNameFinderModel model = null;
-        AdaptiveFeatureGenerator adaptiveFeatureGenerator = null;
+        AdaptiveFeatureGenerator adaptiveFeatureGenerator = new CachedFeatureGenerator(
+                new AdaptiveFeatureGenerator[]{
+                        new WindowFeatureGenerator(new TokenFeatureGenerator(), 2, 2),
+                        new WindowFeatureGenerator(new TokenClassFeatureGenerator(true), 2, 2),
+                        new OutcomePriorFeatureGenerator(),
+                        new PreviousMapFeatureGenerator(),
+                        new BigramNameFeatureGenerator(),
+                        new SentenceFeatureGenerator(true, false)
+                });
 
         try {
             model = NameFinderME.train("en", "Restaurant", sampleStream, TrainingParameters.defaultParams(),
