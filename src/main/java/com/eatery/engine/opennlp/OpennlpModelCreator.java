@@ -19,13 +19,22 @@ import java.util.Collections;
  * Created by nazick on 7/23/15.
  */
 public class OpennlpModelCreator {
+
     public static void main(String[] args) {
+        OpennlpModelCreator opennlpModelCreator = new OpennlpModelCreator();
+        String fileName = "TestSet";
+        int numberOfFiles = 1;
+        //opennlpModelCreator.createModel();
+        //for(int i = 1 ;i<)
+    }
+
+    public void createModel(String fileName){
         Charset charset = Charset.forName("UTF-8");
 
         ObjectStream<NameSample> sampleStream = null;
         try {
             ObjectStream<String> lineStream =
-                    new PlainTextByLineStream(new FileInputStream("src/main/resources/opennlp/eval/Test4.train"), charset);
+                    new PlainTextByLineStream(new FileInputStream("src/main/resources/opennlp/evaluation/"+fileName+".train"), charset);
             sampleStream = new NameSampleDataStream(lineStream);
         }catch(Exception ex){}
 
@@ -53,7 +62,7 @@ public class OpennlpModelCreator {
 
         BufferedOutputStream modelOut = null;
         try {
-            String modelFile = "src/main/resources/opennlp/eval/Test4.bin";
+            String modelFile = "src/main/resources/opennlp/evaluation/"+fileName+".bin";
             try {
                 modelOut = new BufferedOutputStream(new FileOutputStream(modelFile));
                 model.serialize(modelOut);
@@ -66,3 +75,4 @@ public class OpennlpModelCreator {
         }
     }
 }
+
