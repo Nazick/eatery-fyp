@@ -14,14 +14,14 @@ import java.io.*;
 public class EateryMain {
 
     final static String processedFilePath = "src/main/resources/" +
-            "processedFile.txt";
+            "processedFile.json";
 
     final static String filePathRead = "src/main/resources/" +
-            "top2000Business.json";
+            "review_100_A.json";
 
     public static void main(String[] args){
         EateryMain eateryMain = new EateryMain();
-        eateryMain.process();
+        eateryMain.preProcessData();
     }
 
     public void process(){
@@ -44,16 +44,13 @@ public class EateryMain {
                 if(!jsonData.equals(null)){
                     review = jsonData.getReview();
                     restaurentId = jsonData.getRestaurentId();
-                    // System.out.println("Restaurent ID : " + restaurentId);
-                    System.out.println(count);
+
+                    System.out.println("Restaurent ID : " + restaurentId);
+                    //System.out.println(count);
                     if(languageDetect.isReviewInEnglish(review)){
                         String[] sentences = OpennlpTagger.detectSentence(review);
 
                         for(String sentence: sentences){
-                            //sentence = this.removeSymbols(sentence);
-                            //sentence = this.spellCorrect(sentence);
-                            //System.out.println(sentence);
-
                             OpennlpTagger.tag(sentence);
                         }
                     }else{
@@ -74,7 +71,8 @@ public class EateryMain {
 
     public void preProcessData(){
         EateryMain eateryMain = new EateryMain();
-        JsonData jsonData;
+        org.json.simple.JSONObject jsonObject;
+        org.json.simple.parser.JSONParser parser = new org.json.simple.parser.JSONParser();
         LanguageDetect languageDetect = new LanguageDetect();
 
         try {
@@ -87,25 +85,28 @@ public class EateryMain {
             Writer output = new BufferedWriter(new FileWriter(processedFile,false));
 
             String line;
-            int count = 0;
+
             long startTime = System.currentTimeMillis();
+
             while ((line = br.readLine()) != null) {
-                count++;
                 String review;
-                jsonData = eateryMain.splitJson(line);
+                String tempReview = "";
+
+                Object obj = parser.parse(line);
+                jsonObject = (JSONObject) obj;
 
 
-                if(!jsonData.equals(null)){
-                    review = jsonData.getReview();
-                    //System.out.println(count);
+                if(!jsonObject.equals(null)){
+                    review = (String) jsonObject.get("text");
                     if(languageDetect.isReviewInEnglish(review)){
                         String[] sentences = OpennlpTagger.detectSentence(review);
 
                         for(String sentence: sentences){
-                            //sentence = eateryMain.removeSymbols(sentence);
-                            sentence = eateryMain.spellCorrect(sentence);
-                            output.write(sentence);
+                            tempReview += eateryMain.spellCorrect(sentence);
                         }
+                        jsonObject.put("text",tempReview);
+                        output.write(jsonObject.toJSONString());
+                        output.write("\n");
                     }else{
                         System.out.println("Review not in English");
                     }
