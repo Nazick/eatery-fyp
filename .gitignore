@@ -2,3 +2,6 @@
 .idea/
 *.iml
 *.iws
+/src/main/java/com/eatery/engine/ImplicitAspects/build/
+/src/main/java/com/eatery/engine/ImplicitAspects/dist/
+/src/main/java/com/eatery/engine/ImplicitAspects/nbproject/private/
