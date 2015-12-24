@@ -1,59 +1,53 @@
 ############ Evaluation for 100 reviews #############
 
-Precision: 0.5867507886435331
-Recall: 0.38589211618257263
-F-Measure: 0.46558197747183977
+Precision: 0.7098813460416261
+Recall: 0.34522064040107836
+F-Measure: 0.4645346062052506
 
 ############ Evaluation for 200 reviews #############
 
-Precision: 0.6619519094766619
-Recall: 0.4854771784232365
-F-Measure: 0.5601436265709155
+Precision: 0.7706553911205074
+Recall: 0.4310173579908244
+F-Measure: 0.5528391167192429
 
 ############ Evaluation for 300 reviews #############
 
-Precision: 0.6988110964332893
-Recall: 0.5487551867219918
-F-Measure: 0.6147588611272518
+Precision: 0.807261078483716
+Recall: 0.500591212221539
+F-Measure: 0.6179716237519706
 
 ############ Evaluation for 400 reviews #############
 
-Precision: 0.6909765142150803
-Recall: 0.5798755186721992
-F-Measure: 0.6305696559503665
+Precision: 0.8357324301439458
+Recall: 0.5601854041526746
+F-Measure: 0.6707631318136769
 
 ############ Evaluation for 500 reviews #############
 
-Precision: 0.6714456391875747
-Recall: 0.58298755186722
-F-Measure: 0.6240977234869517
+Precision: 0.8658099592240207
+Recall: 0.6628198458118526
+F-Measure: 0.750837150740711
 
 ############ Evaluation for 600 reviews #############
 
-Precision: 0.6628041714947857
-Recall: 0.5933609958506224
-F-Measure: 0.6261631089217297
+Precision: 0.890776140027637
+Recall: 0.7317315423544436
+F-Measure: 0.8034587520448703
 
 ############ Evaluation for 700 reviews #############
 
-Precision: 0.6636155606407322
-Recall: 0.6016597510373444
-F-Measure: 0.6311207834602829
+Precision: 0.9193717856550351
+Recall: 0.7863122546469281
+F-Measure: 0.8476520675062458
 
 ############ Evaluation for 800 reviews #############
 
-Precision: 0.6602052451539339
-Recall: 0.6006224066390041
-F-Measure: 0.6290059750135796
+Precision: 0.9288829787234043
+Recall: 0.8259471219789055
+F-Measure: 0.8743960143204066
 
 ############ Evaluation for 900 reviews #############
 
-Precision: 0.6418918918918919
-Recall: 0.5912863070539419
-F-Measure: 0.6155507559395249
-
-############ Evaluation for 1000 reviews #############
-
-Precision: 0.6384976525821596
-Recall: 0.5643153526970954
-F-Measure: 0.5991189427312775
+Precision: 0.9478009199441831
+Recall: 0.8673792744643617
+F-Measure: 0.9058085547762521

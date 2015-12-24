@@ -79,9 +79,9 @@ public class OpenNLPModelAnalyzer {
         OpenNLPModelAnalyzer openNLPModelAnalyzer = new OpenNLPModelAnalyzer();
         //openNLPModelAnalyzer.evaluate();
         String modelFilePath;
-        String testFilePath = "src/main/resources/opennlp/evaluation/Test.test";
+        String testFilePath = "src/main/resources/opennlp/evaluation/Test1.test";
 
-        for(int i = 1 ;i<=10;i++){
+        for(int i = 1 ;i<10;i++){
 
             modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_"+i+"00.bin";
 
