@@ -1,0 +1,53 @@
+############ Evaluation for 100 reviews #############
+
+Precision: 0.7098813460416261
+Recall: 0.34522064040107836
+F-Measure: 0.4645346062052506
+
+############ Evaluation for 200 reviews #############
+
+Precision: 0.7706553911205074
+Recall: 0.4310173579908244
+F-Measure: 0.5528391167192429
+
+############ Evaluation for 300 reviews #############
+
+Precision: 0.807261078483716
+Recall: 0.500591212221539
+F-Measure: 0.6179716237519706
+
+############ Evaluation for 400 reviews #############
+
+Precision: 0.8357324301439458
+Recall: 0.5601854041526746
+F-Measure: 0.6707631318136769
+
+############ Evaluation for 500 reviews #############
+
+Precision: 0.8658099592240207
+Recall: 0.6628198458118526
+F-Measure: 0.750837150740711
+
+############ Evaluation for 600 reviews #############
+
+Precision: 0.890776140027637
+Recall: 0.7317315423544436
+F-Measure: 0.8034587520448703
+
+############ Evaluation for 700 reviews #############
+
+Precision: 0.9193717856550351
+Recall: 0.7863122546469281
+F-Measure: 0.8476520675062458
+
+############ Evaluation for 800 reviews #############
+
+Precision: 0.9288829787234043
+Recall: 0.8259471219789055
+F-Measure: 0.8743960143204066
+
+############ Evaluation for 900 reviews #############
+
+Precision: 0.9478009199441831
+Recall: 0.8673792744643617
+F-Measure: 0.9058085547762521

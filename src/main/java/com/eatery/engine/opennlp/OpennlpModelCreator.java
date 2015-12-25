@@ -19,13 +19,34 @@ import java.util.Collections;
  * Created by nazick on 7/23/15.
  */
 public class OpennlpModelCreator {
+
     public static void main(String[] args) {
+        OpennlpModelCreator opennlpModelCreator = new OpennlpModelCreator();
+        String trainFilePath, modelFilePath;
+
+//        for(int i = 1 ;i<10;i++){
+//            trainFilePath = "src/main/resources/opennlp/evaluation/reviews_"+i+"00.train";
+//            modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_"+i+"00.bin";
+//
+//            System.out.println("Creating model for" + trainFilePath);
+//            opennlpModelCreator.createModel(trainFilePath,modelFilePath);
+//        }
+
+        trainFilePath = "src/main/resources/opennlp/evaluation/reviews_1000.train";
+        modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_1000.bin";
+
+        System.out.println("Creating model for" + trainFilePath);
+        opennlpModelCreator.createModel(trainFilePath,modelFilePath);
+
+    }
+
+    public void createModel(String trainFilePath, String modelFilePath){
         Charset charset = Charset.forName("UTF-8");
 
         ObjectStream<NameSample> sampleStream = null;
         try {
             ObjectStream<String> lineStream =
-                    new PlainTextByLineStream(new FileInputStream("src/main/resources/opennlp/eval/Test4.train"), charset);
+                    new PlainTextByLineStream(new FileInputStream(trainFilePath), charset);
             sampleStream = new NameSampleDataStream(lineStream);
         }catch(Exception ex){}
 
@@ -53,9 +74,8 @@ public class OpennlpModelCreator {
 
         BufferedOutputStream modelOut = null;
         try {
-            String modelFile = "src/main/resources/opennlp/eval/Test4.bin";
             try {
-                modelOut = new BufferedOutputStream(new FileOutputStream(modelFile));
+                modelOut = new BufferedOutputStream(new FileOutputStream(modelFilePath));
                 model.serialize(modelOut);
             }catch (Exception ex){}
         } finally {
@@ -66,3 +86,4 @@ public class OpennlpModelCreator {
         }
     }
 }
+
