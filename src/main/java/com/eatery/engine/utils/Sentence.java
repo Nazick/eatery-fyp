@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by nazick on 11/29/15.
@@ -15,7 +16,9 @@ import java.util.ArrayList;
 public class Sentence {
     private String line;
     private String[] tokens;
-    private ArrayList<WordTag> tags;
+    private List<WordTag> tags;
+    private List<WordTag> implicitTags;
+    private String formattedText;
 
     public Sentence(String line) {
         this.line = line;
@@ -64,15 +67,35 @@ public class Sentence {
         this.tokens = tokens;
     }
 
-    public ArrayList<WordTag> getTags() {
+    public void setTags(ArrayList<WordTag> tags) {
+        this.tags = tags;
+    }
 
-        if(this.tags.equals(null)){
+    public List<WordTag> getTags() {
+
+        if(this.tags == null){
             this.tags = new ArrayList<>();
         }
         return tags;
     }
 
-    public void setTags(ArrayList<WordTag> tags) {
-        this.tags = tags;
+    public String getFormattedText() {
+        return formattedText;
     }
+
+    public void setFormattedText(String formattedText) {
+        this.formattedText = formattedText;
+    }
+
+    public List<WordTag> getImplicitTags() {
+        if(this.implicitTags == null){
+            this.implicitTags = new ArrayList<>();
+        }
+        return implicitTags;
+    }
+
+    public void setImplicitTags(List<WordTag> implicitTags) {
+        this.implicitTags = implicitTags;
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.eatery.engine.system;
 
+import com.eatery.engine.implicit.ImplicitAspects;
 import com.eatery.engine.opennlp.OpennlpTagger;
 import com.eatery.engine.preprocessing.LanguageDetect;
 import com.eatery.engine.preprocessing.SpellCorrector;
@@ -11,6 +12,7 @@ import org.json.simple.JSONObject;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by nazick on 11/29/15.
@@ -32,6 +34,7 @@ public class EateryMain {
 
     public void process(){
         LanguageDetect languageDetect = new LanguageDetect();
+        ImplicitAspects implicitAspects = new ImplicitAspects();
 
         try {
             File file = new File(processedFilePath);
@@ -49,7 +52,7 @@ public class EateryMain {
                 if(!jsonData.equals(null)){
                     review = jsonData.getReview();
                     restaurentId = jsonData.getRestaurentId();
-                    ArrayList<Sentence> sentencesInReview = new ArrayList<>();
+                    List<Sentence> sentencesInReview = new ArrayList<>();
 
                     System.out.println("Restaurent ID : " + restaurentId);
 
@@ -61,6 +64,7 @@ public class EateryMain {
                             sentencesInReview.add(savedSentence);
                         }
 
+                        sentencesInReview = implicitAspects.find(sentencesInReview);
                         System.out.println();
                     }else{
                         System.out.println("Review not in English");

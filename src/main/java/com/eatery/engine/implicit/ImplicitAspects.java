@@ -1,32 +1,27 @@
 package com.eatery.engine.implicit;
 
+import com.eatery.engine.opennlp.OpennlpTagger;
+import com.eatery.engine.utils.Sentence;
+import com.eatery.engine.utils.WordTag;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.trees.GrammaticalStructure;
-import edu.stanford.nlp.trees.GrammaticalStructureFactory;
-import edu.stanford.nlp.trees.PennTreebankLanguagePack;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.TreeCoreAnnotations;
-import edu.stanford.nlp.trees.TreebankLanguagePack;
-import edu.stanford.nlp.trees.TypedDependency;
-import edu.stanford.nlp.trees.tregex.ParseException;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
+import edu.stanford.nlp.trees.*;
 import edu.stanford.nlp.trees.tregex.TregexPattern;
 import edu.stanford.nlp.util.CoreMap;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author Ruba
  */
-public class FindImplicitAspects {
+public class ImplicitAspects {
     static String review, reviewFile,annFile;
     static List<String> formattedSentences = new ArrayList<>();
+    static List<Sentence> sentenceObjects;
     static List<String> stopWords = new ArrayList<>(Arrays.asList("a", "about", "above", "above", "across", "after", "afterwards", "again", "against", "all", "almost", "alone", "along", "already", "also","although","always","am","among", "amongst", "amoungst", "amount",  "an", "and", "another", "any","anyhow","anyone","anything","anyway", "anywhere", "are", "around", "as",  "at", "back","be","became", "because","become","becomes", "becoming", "been", "before", "beforehand", "behind", "being", "below", "beside", "besides", "between", "beyond", "bill", "both", "bottom","but", "by", "call", "can", "cannot", "cant", "co", "con", "could", "couldnt", "cry", "de", "describe", "detail", "do", "done", "down", "due", "during", "each", "eg", "eight", "either", "eleven","else", "elsewhere", "empty", "enough", "etc", "even", "ever", "every", "everyone", "everything", "everywhere", "except", "few", "fifteen", "fify", "fill", "find", "fire", "first", "five", "for", "former", "formerly", "forty", "found", "four", "from", "front", "full", "further", "get", "give", "go", "had", "has", "hasnt", "have", "he", "hence", "her", "here", "hereafter", "hereby", "herein", "hereupon", "hers", "herself", "him", "himself", "his", "how", "however", "hundred", "ie", "if", "in", "inc", "indeed", "interest", "into", "is", "it", "its", "itself", "keep", "last", "latter", "latterly", "least", "less", "ltd", "made", "many", "may", "me", "meanwhile", "might", "mill", "mine", "more", "moreover", "most", "mostly", "move", "much", "must", "my", "myself", "name", "namely", "neither", "never", "nevertheless", "next", "nine", "no", "nobody", "none", "noone", "nor", "not", "nothing", "now", "nowhere", "of", "off", "often", "on", "once", "one", "only", "onto", "or", "other", "others", "otherwise", "our", "ours", "ourselves", "out", "over", "own","part", "per", "perhaps", "please", "put", "rather", "re", "same", "see", "seem", "seemed", "seeming", "seems", "serious", "several", "she", "should", "show", "side", "since", "sincere", "six", "sixty", "so", "some", "somehow", "someone", "something", "sometime", "sometimes", "somewhere", "still", "such", "system", "take", "ten", "than", "that", "the", "their", "them", "themselves", "then", "thence", "there", "thereafter", "thereby", "therefore", "therein", "thereupon", "these", "they", "thickv", "thin", "third", "this", "those", "though", "three", "through", "throughout", "thru", "thus", "to", "together", "too", "top", "toward", "towards", "twelve", "twenty", "two", "un", "under", "until", "up", "upon", "us", "very", "via", "was", "we", "well", "were", "what", "whatever", "when", "whence", "whenever", "where", "whereafter", "whereas", "whereby", "wherein", "whereupon", "wherever", "whether", "which", "while", "whither", "who", "whoever", "whole", "whom", "whose", "why", "will", "with", "within", "without", "would", "yet", "you", "your", "yours", "yourself", "yourselves", "the"));
     static List<String> entities = new ArrayList<>(Arrays.asList("Food","F_Appetizer","F_Dessert","F_Drinks","F_FoodItem","F_FI_Taste","F_FI_Price","F_FI_Quality","F_FI_Healthy","F_FI_CookingLevel","F_FI_Size","F_FI_Religious","F_Ingredients","Service","S_Menu","S_OpenHours","S_Parking","S_Staff","S_Stf_Behavior","S_Stf_Experience","S_Stf_Availability","S_Stf_Appearance","S_Gift","S_PetsAllowed","S_Accessibility","S_Wifi","S_Delivery","S_Del_Time","S_Del_OrderingMethod","S_Cutlery","S_Seating","Ambience","A_Decor","A_Furniture","A_Fur_Table","A_Fur_Door","A_Entertainment","A_Ent_Music","A_Ent_LiveShow","A_Ent_Tv","A_Environment","A_Env_Size","A_Env_Type","A_Env_AC","A_Places","A_Plc_Bathroom","A_Plc_SmokingArea","A_Plc_Buffet","A_Plc_Bar","A_Plc_Patio","A_Plc_DiningRoom","A_Plc_RestRoom","A_Plc_Kitchen","A_OutsideView","A_LocatedArea","Offers","Worthiness","W_Price","W_Waiting","Others","O_Reservation","O_Payment","O_Pay_Method","O_Pay_Price","O_Experience","O_Exp_StarsByCus","Restaurant"));
     static Map <String,String> parent = new HashMap <String,String>() {{
@@ -51,8 +46,40 @@ public class FindImplicitAspects {
     static TreebankLanguagePack tlp;
     static GrammaticalStructureFactory gsf;
     static Map<String, String> results = new HashMap<String,String>();
+    ArrayList<String> features,model ;
+    static final String modelPath = "src/main/resources/implicit/model.txt";
+    static final String implicitFeaturesFilePath = "src/main/resources/implicit/implicitFeatures.txt";
 
-    static void processReviews() throws FileNotFoundException{
+    public ImplicitAspects() {
+        Properties props = new Properties();
+        props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+        pipeline = new StanfordCoreNLP(props);
+        npPattern = null;
+        npPattern = TregexPattern.compile("@NP");
+        tlp = new PennTreebankLanguagePack();
+        gsf = tlp.grammaticalStructureFactory();
+
+        this.initiateModel();
+    }
+
+    private void initiateModel() {
+
+        this.features = new ArrayList<String>();
+        try {
+            Scanner in1 = new Scanner(new File(implicitFeaturesFilePath));
+
+            String m = new Scanner(new File(modelPath)).useDelimiter("\\Z").next();
+            String m1[] = m.split("\\*\\*\\*");
+            this.model = new ArrayList<>(Arrays.asList(m1));
+            while (in1.hasNext()) {
+                this.features.add(in1.nextLine());
+            }
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    static void find() throws FileNotFoundException{
 
         //CHANGE: remove entire while loop and change the code such that it eplace words with tags
         review = new Scanner(new File(reviewFile)).useDelimiter("\\Z").next();
@@ -84,27 +111,33 @@ public class FindImplicitAspects {
         //System.out.println("No of lines : "+formattedSentences.size());
     }
 
-    public static Map<String, String> findImplicitAspets() throws FileNotFoundException{
+    public List<Sentence> find(List<Sentence> sentences){
+        String[] tokens;
+        sentenceObjects = sentences;
+        for (Sentence sentence : sentenceObjects){
+            tokens = sentence.getTokens();
 
-        String winningAspect = null;
-        ArrayList<String> features = new ArrayList<String>();
+            for(WordTag wordTag: sentence.getTags()){
+                tokens[wordTag.getWordIndex()] = wordTag.getTag();
+            }
 
-        //CHANGE: read this list of implicit features & model ealier in the project. Do not read again & again
-        Scanner in1 = new Scanner(new File("src/Model/implicitFeatures.txt"));
-
-        String m = new Scanner(new File("src/Model/model.txt")).useDelimiter("\\Z").next();
-        String m1[] = m.split("\\*\\*\\*");
-        ArrayList<String> model = new ArrayList<>(Arrays.asList(m1));
-        while (in1.hasNext()) {
-            features.add(in1.nextLine());
+            formattedSentences.add(OpennlpTagger.detokenizeTokens(tokens));
         }
 
+        this.findImplicitAspects();
+        return sentenceObjects;
+    }
+
+    public void findImplicitAspects(){
+
+        String winningAspect = null;
 
         for(String sentence : formattedSentences) {
             boolean correct = true;//checkSentence(sentence);
             String sentenceN = null;
             int additionalLength = 0;
             int pos = formattedSentences.indexOf(sentence);
+            int actualPos = pos;
             while(!correct && pos >=1){
 
                 if(sentenceN == null){
@@ -117,14 +150,14 @@ public class FindImplicitAspects {
                 correct = checkSentence(formattedSentences.get(pos));
             }
 
-            String wordsActual[] = sentence.split(" ");
+            String wordsActual[] = OpennlpTagger.tokenizeSentence(sentence);
 
             if(sentenceN != null){
                 sentence = sentenceN+" "+sentence;
-                additionalLength = sentenceN.split(" ").length;
+                additionalLength = OpennlpTagger.tokenizeSentence(sentenceN).length;
             }
 
-            String words[] = sentence.split(" ");
+            String words[] = OpennlpTagger.tokenizeSentence(sentence);
 
             for (int n=0; n< wordsActual.length; n++) {
                 winningAspect = null;
@@ -229,11 +262,13 @@ public class FindImplicitAspects {
                                 continue;
                             }
 
+                            WordTag wordTag = new WordTag();
 
-                            //CHANGE: here is the output
-                            results.put(word,winningAspect);
-                            System.out.println(word +" "+winningAspect);
+                            wordTag.setWord(word);
+                            wordTag.setTag(winningAspect.substring (2,winningAspect.length()));
+                            wordTag.setWordIndex(n);
 
+                            sentenceObjects.get(actualPos).getImplicitTags().add(wordTag);
                         }
                     }
 
@@ -241,12 +276,10 @@ public class FindImplicitAspects {
             }
 
         }
-
-        return results;
     }
 
 
-    public static boolean checkParent(String[] words,int n,String winningAspect){
+    public boolean checkParent(String[] words,int n,String winningAspect){
         String childTag = winningAspect.substring(2,winningAspect.length());
         if(!parent.containsKey(childTag))
             return true;
@@ -279,7 +312,7 @@ public class FindImplicitAspects {
         return false;
     }
 
-    public static boolean checkRule(Collection<TypedDependency> tdl,String[] words,int n,String childTag){
+    public boolean checkRule(Collection<TypedDependency> tdl,String[] words,int n,String childTag){
         String parentTag = parent.get(childTag);
         String grandParent = null;
         String grandGrandParent = null;
@@ -381,27 +414,6 @@ public class FindImplicitAspects {
         return false;
     }
 
-
-    public static void main(String args[]) throws FileNotFoundException{
-
-        //CHANGE: should be loaded initially
-        Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-        pipeline = new StanfordCoreNLP(props);
-        npPattern = null;
-        npPattern = TregexPattern.compile("@NP");
-        tlp = new PennTreebankLanguagePack();
-        gsf = tlp.grammaticalStructureFactory();
-
-        //CHANGE: this is the input. You can remove this and update in the place where it reads the file
-        reviewFile = "src/reviews/u_14.txt";
-        annFile = "src/reviews/u_14 Ann_Sorted.txt";
-
-        //CHANGE: call these two methods
-        processReviews();
-        Map results = findImplicitAspets();//change the results format if you want
-    }
-
     public static boolean checkSentence(String sentence) {
 
         String words[] = sentence.split(" ");
@@ -412,5 +424,19 @@ public class FindImplicitAspects {
         }
 
         return false;
+    }
+
+
+    public static void main(String args[]) throws FileNotFoundException{
+
+        ImplicitAspects findImplicitAspects = new ImplicitAspects();
+
+        //CHANGE: this is the input. You can remove this and update in the place where it reads the file
+        reviewFile = "src/reviews/u_14.txt";
+        annFile = "src/reviews/u_14 Ann_Sorted.txt";
+
+        //CHANGE: call these two methods
+        find();
+        findImplicitAspects.findImplicitAspects();//change the results format if you want
     }
 }
