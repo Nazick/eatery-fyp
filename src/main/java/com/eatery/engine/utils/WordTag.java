@@ -3,7 +3,7 @@ package com.eatery.engine.utils;
 /**
  * Created by nazick on 12/25/15.
  */
-public class Tag {
+public class WordTag {
 
     private String word;
     private String tag;

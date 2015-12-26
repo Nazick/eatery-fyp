@@ -5,7 +5,7 @@ import com.eatery.engine.preprocessing.LanguageDetect;
 import com.eatery.engine.preprocessing.SpellCorrector;
 import com.eatery.engine.utils.JsonData;
 import com.eatery.engine.utils.Sentence;
-import com.eatery.engine.utils.Tag;
+import com.eatery.engine.utils.WordTag;
 import opennlp.tools.util.Span;
 import org.json.simple.JSONObject;
 
@@ -225,10 +225,10 @@ public class EateryMain {
 
     private Sentence saveSentenceTags(Span[] tags, String line){
         Sentence sentence = new Sentence(line);
-        ArrayList<Tag> tagsList = new ArrayList<>();
+        ArrayList<WordTag> tagsList = new ArrayList<>();
 
         for(Span tagSpan: tags){
-            Tag tag = new Tag();
+            WordTag tag = new WordTag();
 
             tag.setTag(tagSpan.getType());
             tag.setWord(sentence.getTokens()[tagSpan.getStart()]);

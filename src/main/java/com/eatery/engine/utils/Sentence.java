@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Sentence {
     private String line;
     private String[] tokens;
-    private ArrayList<Tag> tags;
+    private ArrayList<WordTag> tags;
 
     public Sentence(String line) {
         this.line = line;
@@ -64,7 +64,7 @@ public class Sentence {
         this.tokens = tokens;
     }
 
-    public ArrayList<Tag> getTags() {
+    public ArrayList<WordTag> getTags() {
 
         if(this.tags.equals(null)){
             this.tags = new ArrayList<>();
@@ -72,7 +72,7 @@ public class Sentence {
         return tags;
     }
 
-    public void setTags(ArrayList<Tag> tags) {
+    public void setTags(ArrayList<WordTag> tags) {
         this.tags = tags;
     }
 }
