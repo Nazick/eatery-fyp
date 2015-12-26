@@ -70,7 +70,7 @@ public class OpennlpTagger {
         InputStream eateryModel = null;
         Span[] taggedTokens = null;
         try {
-            eateryModel = new FileInputStream("src/main/resources/opennlp/eval/Test4.bin");
+            eateryModel = new FileInputStream("src/main/resources/opennlp/evaluation/models/reviews_1000.bin");
             TokenNameFinderModel model = new TokenNameFinderModel(eateryModel);
 
             NameFinderME nameFinder = new NameFinderME(model);
@@ -140,7 +140,7 @@ public class OpennlpTagger {
         System.out.println(sentence);
         int i =0;
         for (Span tag : tags) {
-            System.out.print(tag.toString() +" - "+tokens[tags[i].getStart()]);
+            System.out.print(tag.getStart() +" - "+tokens[tag.getStart()]);
             System.out.println();
             i ++;
         }

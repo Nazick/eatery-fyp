@@ -7,6 +7,7 @@ import opennlp.tools.tokenize.TokenizerModel;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 /**
  * Created by nazick on 11/29/15.
@@ -14,10 +15,16 @@ import java.io.InputStream;
 public class Sentence {
     private String line;
     private String[] tokens;
+    private ArrayList<Tag> tags;
 
     public Sentence(String line) {
         this.line = line;
         this.tokenizeSentence();
+    }
+
+    public static void main(String[] args){
+        Sentence sentence = new Sentence("Overall, the food is tasty enough- it wasn't great, but it wasn't bad.");
+        sentence.getTokens();
     }
 
     public void tokenizeSentence(){
@@ -55,5 +62,17 @@ public class Sentence {
 
     public void setTokens(String[] tokens) {
         this.tokens = tokens;
+    }
+
+    public ArrayList<Tag> getTags() {
+
+        if(this.tags.equals(null)){
+            this.tags = new ArrayList<>();
+        }
+        return tags;
+    }
+
+    public void setTags(ArrayList<Tag> tags) {
+        this.tags = tags;
     }
 }

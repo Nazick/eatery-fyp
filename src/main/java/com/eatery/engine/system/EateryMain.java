@@ -4,9 +4,13 @@ import com.eatery.engine.opennlp.OpennlpTagger;
 import com.eatery.engine.preprocessing.LanguageDetect;
 import com.eatery.engine.preprocessing.SpellCorrector;
 import com.eatery.engine.utils.JsonData;
+import com.eatery.engine.utils.Sentence;
+import com.eatery.engine.utils.Tag;
+import opennlp.tools.util.Span;
 import org.json.simple.JSONObject;
 
 import java.io.*;
+import java.util.ArrayList;
 
 /**
  * Created by nazick on 11/29/15.
@@ -14,18 +18,19 @@ import java.io.*;
 public class EateryMain {
 
     final static String processedFilePath = "src/main/resources/" +
-            "processedFile.json";
+   //         "processedFile.json";
+            "review_100_A.json";
 
     final static String filePathRead = "src/main/resources/" +
             "review_100_A.json";
 
     public static void main(String[] args){
         EateryMain eateryMain = new EateryMain();
-        eateryMain.preProcessData();
+        //eateryMain.preProcessData();
+        eateryMain.process();
     }
 
     public void process(){
-        JsonData jsonData;
         LanguageDetect languageDetect = new LanguageDetect();
 
         try {
@@ -39,20 +44,24 @@ public class EateryMain {
                 count++;
                 String restaurentId;
                 String review;
-                jsonData = this.splitJson(line);
+                JsonData jsonData = this.splitJson(line);
 
                 if(!jsonData.equals(null)){
                     review = jsonData.getReview();
                     restaurentId = jsonData.getRestaurentId();
+                    ArrayList<Sentence> sentencesInReview = new ArrayList<>();
 
                     System.out.println("Restaurent ID : " + restaurentId);
-                    //System.out.println(count);
+
                     if(languageDetect.isReviewInEnglish(review)){
                         String[] sentences = OpennlpTagger.detectSentence(review);
 
                         for(String sentence: sentences){
-                            OpennlpTagger.tag(sentence);
+                            Sentence savedSentence = this.saveSentenceTags(OpennlpTagger.tag(sentence), sentence);
+                            sentencesInReview.add(savedSentence);
                         }
+
+                        System.out.println();
                     }else{
                         System.out.println("Review not in English");
                     }
@@ -212,6 +221,25 @@ public class EateryMain {
         }finally {
             return jsonData;
         }
+    }
+
+    private Sentence saveSentenceTags(Span[] tags, String line){
+        Sentence sentence = new Sentence(line);
+        ArrayList<Tag> tagsList = new ArrayList<>();
+
+        for(Span tagSpan: tags){
+            Tag tag = new Tag();
+
+            tag.setTag(tagSpan.getType());
+            tag.setWord(sentence.getTokens()[tagSpan.getStart()]);
+            tag.setWordIndex(tagSpan.getStart());
+
+            tagsList.add(tag);
+        }
+
+        sentence.setTags(tagsList);
+
+        return sentence;
     }
 
 }
