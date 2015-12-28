@@ -5,9 +5,11 @@ import edu.stanford.nlp.ling.BasicDocument;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
+import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TypedDependency;
 import edu.stanford.nlp.util.CoreMap;
 
@@ -25,18 +27,26 @@ public class TypedDependencyEngine {
     // to
     // opinion
     private static StanfordCoreNLP pipeline;
+    private static StanfordCoreNLP sentimentPipeline;
     private static StanfordCoreNLP tokenizer;
 
     public TypedDependencyEngine() {
         // initialization
         Properties pipelineProps = new Properties();
         Properties tokenizerProps = new Properties();
+        Properties props = new Properties();
+
+        props.setProperty("annotators", "tokenize, ssplit, parse, sentiment");
+        sentimentPipeline = new StanfordCoreNLP(props);
+
         pipelineProps.setProperty("sentiment.model", "model.ser.gz");
         pipelineProps.setProperty("annotators", "parse, sentiment");
         pipelineProps.setProperty("enforceRequirements", "false");
-        tokenizerProps.setProperty("annotators", "tokenize, ssplit");
         pipeline = new StanfordCoreNLP(pipelineProps);
+
+        tokenizerProps.setProperty("annotators", "tokenize, ssplit");
         tokenizer = new StanfordCoreNLP(tokenizerProps);
+
         Parser.init();
         Analyzer.init();
         // relationship related to opinion
@@ -48,16 +58,38 @@ public class TypedDependencyEngine {
     // main method
     public static void main(String args[]) throws Exception {
         new TypedDependencyEngine();
-        String sentence = "The food was excellent, the service was excellent, and the drinks were flowing";
+        String sentence = "John, who was the CEO of a company, played golf.";
         List<List<MyWord>> sentences = sentiTyped(sentence);
         //System.out.println(sentence);
-        SentimentAnalyzer eaterySentimentAnalyzer = new SentimentAnalyzer();
-        for (List<MyWord> list : sentences) {
-            String temp = generateSentence(list);
-            System.out.println(temp + " - " + eaterySentimentAnalyzer.findSentimentScore(temp) + " (" + eaterySentimentAnalyzer.findSentimentState(temp) + ")");
+//        SentimentAnalyzer eaterySentimentAnalyzer = new SentimentAnalyzer();
+//        for (List<MyWord> list : sentences) {
+//            String temp = generateSentence(list);
+//            System.out.println(temp + " - " + eaterySentimentAnalyzer.findSentimentScore(temp) + " (" + eaterySentimentAnalyzer.findSentimentState(temp) + ")");
+//        }
+
+        findSentimentScore("in the top five of");
+    }
+
+    public static Integer findSentimentScore(String line) {
+
+        int mainSentiment = 0;
+        if (line != null && line.length() > 0) {
+            int longest = 0;
+            Annotation annotation = sentimentPipeline.process(line);
+            for (CoreMap sentence : annotation
+                    .get(CoreAnnotations.SentencesAnnotation.class)) {
+                Tree tree = sentence
+                        .get(SentimentCoreAnnotations.AnnotatedTree.class);
+                int sentiment = RNNCoreAnnotations.getPredictedClass(tree);
+                String partText = sentence.toString();
+                if (partText.length() > longest) {
+                    mainSentiment = sentiment;
+                    longest = partText.length();
+                }
+            }
         }
-
-
+        //    System.out.println(mainSentiment + " - " + line);
+        return mainSentiment;
     }
 
     /**

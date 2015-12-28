@@ -24,7 +24,7 @@ import java.util.List;
 public class OpennlpTagger {
 
     public static void main(String args[]) {
-        String review = " pizza was awesome and I always look for new places. Although I prefer the more formal restaurants, some of the faster-service places are pretty good.  Someone recommended Fausto's to me so I gave it a try.  Let me tell you, you get a lot of food for your money!  There's enough for two people in those entrees. And there are many entrees to choose from.  Service can be a tad slow, and the place was hot inside the day I was there.  \\n\\nThe restaurant is kind of small but it's big enough for a large group to get together when several tables are pulled together (as was happening the day I was there). There's not a lot of room by the counter to wait for your order if you are doing takeout, though. Overall, the food is tasty enough- it wasn't great, but it wasn't bad.";
+        String review = " The chips and salsa rock my world! The entree's are delicious! The staff is friendly and efficient";
         Span[] taggedTokens = null;
         OpennlpTagger opennlpTagger = new OpennlpTagger();
         String[] sentences = opennlpTagger.detectSentence(review);

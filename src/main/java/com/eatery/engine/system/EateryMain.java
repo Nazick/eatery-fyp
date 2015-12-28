@@ -4,6 +4,9 @@ import com.eatery.engine.implicit.ImplicitAspects;
 import com.eatery.engine.opennlp.OpennlpTagger;
 import com.eatery.engine.preprocessing.LanguageDetect;
 import com.eatery.engine.preprocessing.SpellCorrector;
+import com.eatery.engine.sentimentAnalysis.MyWord;
+import com.eatery.engine.sentimentAnalysis.SentimentAnalyzer;
+import com.eatery.engine.sentimentAnalysis.TypedDependencyEngine;
 import com.eatery.engine.utils.JsonData;
 import com.eatery.engine.utils.Sentence;
 import com.eatery.engine.utils.WordTag;
@@ -12,7 +15,9 @@ import org.json.simple.JSONObject;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by nazick on 11/29/15.
@@ -25,6 +30,7 @@ public class EateryMain {
 
     final static String filePathRead = "src/main/resources/" +
             "review_100_A.json";
+
 
     public static void main(String[] args){
         EateryMain eateryMain = new EateryMain();
@@ -53,18 +59,29 @@ public class EateryMain {
                     review = jsonData.getReview();
                     restaurentId = jsonData.getRestaurentId();
                     List<Sentence> sentencesInReview = new ArrayList<>();
+                    List<Sentence> scoredSentences = new ArrayList<>();
 
                     System.out.println("Restaurent ID : " + restaurentId);
 
                     if(languageDetect.isReviewInEnglish(review)){
+
+                        TypedDependencyEngine typedDependencyEngine = new TypedDependencyEngine();
                         String[] sentences = OpennlpTagger.detectSentence(review);
 
+                        //Tagging explicit aspects using OpenNLP
                         for(String sentence: sentences){
                             Sentence savedSentence = this.saveSentenceTags(OpennlpTagger.tag(sentence), sentence);
                             sentencesInReview.add(savedSentence);
                         }
 
-                        sentencesInReview = implicitAspects.find(sentencesInReview);
+                        //Tagging implicit Aspects
+                       // sentencesInReview = implicitAspects.find(sentencesInReview);
+
+                        //Sentiment analysis per sentence
+                        for(Sentence sentence : sentencesInReview){
+                            scoredSentences.add(this.getSentimentScore(sentence, typedDependencyEngine));
+                        }
+
                         System.out.println();
                     }else{
                         System.out.println("Review not in English");
@@ -77,7 +94,7 @@ public class EateryMain {
             System.out.println("Done...");
 
         }catch(Exception e){
-            e.getStackTrace();
+            e.printStackTrace();
             //System.out.println(e.toString());
         }
     }
@@ -137,6 +154,37 @@ public class EateryMain {
             e.getStackTrace();
             //System.out.println(e.toString());
         }
+    }
+
+    public Sentence getSentimentScore(Sentence sentence, TypedDependencyEngine typedDependencyEngine){
+        List<List<MyWord>> sentences = typedDependencyEngine.sentiTyped(sentence.getLine());
+
+        for(List<MyWord> words: sentences){
+            String temp = typedDependencyEngine.generateSentence(words);
+            Integer score = typedDependencyEngine.findSentimentScore(temp);
+
+            for(MyWord myWord:words){
+                if(sentence.getTags().containsKey(myWord.getIndex())){
+                    sentence.getTags().get(myWord.getIndex()).setScore(score);
+                }else if(sentence.getImplicitTags().containsKey(myWord.getIndex())){
+                    sentence.getImplicitTags().get(myWord.getIndex()).setScore(score);
+                }
+            }
+        }
+
+        if(sentences.size() == 0){
+            Integer score = typedDependencyEngine.findSentimentScore(sentence.getLine());
+
+            for(WordTag wordTag: sentence.getTags().values()){
+                wordTag.setScore(score);
+            }
+
+            for(WordTag wordTag: sentence.getImplicitTags().values()){
+                wordTag.setScore(score);
+            }
+        }
+
+        return sentence;
     }
 
     public BufferedReader readFile(String filePath){
@@ -229,7 +277,7 @@ public class EateryMain {
 
     private Sentence saveSentenceTags(Span[] tags, String line){
         Sentence sentence = new Sentence(line);
-        ArrayList<WordTag> tagsList = new ArrayList<>();
+        Map<Integer, WordTag> tagsMap = new HashMap<>();
 
         for(Span tagSpan: tags){
             WordTag tag = new WordTag();
@@ -238,10 +286,10 @@ public class EateryMain {
             tag.setWord(sentence.getTokens()[tagSpan.getStart()]);
             tag.setWordIndex(tagSpan.getStart());
 
-            tagsList.add(tag);
+            tagsMap.put(tagSpan.getStart(), tag);
         }
 
-        sentence.setTags(tagsList);
+        sentence.setTags(tagsMap);
 
         return sentence;
     }

@@ -8,6 +8,7 @@ public class WordTag {
     private String word;
     private String tag;
     private Integer wordIndex;
+    private Integer score;
 
     public String getWord() {
         return word;
@@ -31,5 +32,13 @@ public class WordTag {
 
     public void setWordIndex(Integer wordIndex) {
         this.wordIndex = wordIndex;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
     }
 }

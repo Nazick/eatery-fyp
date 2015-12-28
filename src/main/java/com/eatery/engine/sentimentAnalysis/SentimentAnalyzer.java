@@ -75,13 +75,17 @@ public class SentimentAnalyzer {
                 }
             }
         }
-    //    System.out.println(mainSentiment + " - " + line);
+        System.out.println(mainSentiment + " - " + line);
         return mainSentiment;
     }
 
     public static void main(String[] args) {
         SentimentAnalyzer esa = new SentimentAnalyzer();
-        esa.findSentimentState("This restaurant is good");
+        try {
+            esa.findSentimentScore("in the top five of");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         //esa.tdl();
        // esa.findSentimentState("think the decor was great and");
 

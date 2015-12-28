@@ -8,7 +8,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by nazick on 11/29/15.
@@ -16,8 +18,8 @@ import java.util.List;
 public class Sentence {
     private String line;
     private String[] tokens;
-    private List<WordTag> tags;
-    private List<WordTag> implicitTags;
+    private Map<Integer, WordTag> tags;
+    private Map<Integer, WordTag> implicitTags;
     private String formattedText;
 
     public Sentence(String line) {
@@ -67,14 +69,14 @@ public class Sentence {
         this.tokens = tokens;
     }
 
-    public void setTags(ArrayList<WordTag> tags) {
+    public void setTags(Map<Integer, WordTag> tags) {
         this.tags = tags;
     }
 
-    public List<WordTag> getTags() {
+    public Map<Integer, WordTag> getTags() {
 
         if(this.tags == null){
-            this.tags = new ArrayList<>();
+            this.tags = new HashMap<>();
         }
         return tags;
     }
@@ -87,14 +89,14 @@ public class Sentence {
         this.formattedText = formattedText;
     }
 
-    public List<WordTag> getImplicitTags() {
+    public Map<Integer, WordTag> getImplicitTags() {
         if(this.implicitTags == null){
-            this.implicitTags = new ArrayList<>();
+            this.implicitTags = new HashMap<>();
         }
         return implicitTags;
     }
 
-    public void setImplicitTags(List<WordTag> implicitTags) {
+    public void setImplicitTags(Map<Integer, WordTag> implicitTags) {
         this.implicitTags = implicitTags;
     }
 
