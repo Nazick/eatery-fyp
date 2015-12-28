@@ -117,7 +117,7 @@ public class ImplicitAspects {
         for (Sentence sentence : sentenceObjects){
             tokens = sentence.getTokens();
 
-            for(WordTag wordTag: sentence.getTags()){
+            for(WordTag wordTag: sentence.getTags().values()){
                 tokens[wordTag.getWordIndex()] = wordTag.getTag();
             }
 
@@ -268,7 +268,7 @@ public class ImplicitAspects {
                             wordTag.setTag(winningAspect.substring (2,winningAspect.length()));
                             wordTag.setWordIndex(n);
 
-                            sentenceObjects.get(actualPos).getImplicitTags().add(wordTag);
+                            sentenceObjects.get(actualPos).getImplicitTags().put(n,wordTag);
                         }
                     }
 
