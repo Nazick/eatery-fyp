@@ -12,6 +12,10 @@ import opennlp.tools.util.Span;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 
 /**
@@ -20,21 +24,23 @@ import java.io.InputStream;
 public class OpennlpTagger {
 
     public static void main(String args[]) {
-        String review = " pizza was awesome and I always look for new places. Although I prefer the more formal restaurants, some of the faster-service places are pretty good.  Someone recommended Fausto's to me so I gave it a try.  Let me tell you, you get a lot of food for your money!  There's enough for two people in those entrees. And there are many entrees to choose from.  Service can be a tad slow, and the place was hot inside the day I was there.  \\n\\nThe restaurant is kind of small but it's big enough for a large group to get together when several tables are pulled together (as was happening the day I was there). There's not a lot of room by the counter to wait for your order if you are doing takeout, though. Overall, the food is tasty enough- it wasn't great, but it wasn't bad.";
+        String review = " The chips and salsa rock my world! The entree's are delicious! The staff is friendly and efficient";
         Span[] taggedTokens = null;
         OpennlpTagger opennlpTagger = new OpennlpTagger();
         String[] sentences = opennlpTagger.detectSentence(review);
         if (sentences != null) {
             for (String sentence : sentences) {
                 String[] tokens = opennlpTagger.tokenizeSentence(sentence);
-                if (tokens != null) {
-                    taggedTokens = opennlpTagger.tagger(tokens);
-                    if (taggedTokens != null) {
-                        opennlpTagger.printTags(sentence, taggedTokens, tokens);
-                    }
-                }
+//                if (tokens != null) {
+//                    taggedTokens = opennlpTagger.tagger(tokens);
+//                    if (taggedTokens != null) {
+//                        opennlpTagger.printTags(sentence, taggedTokens, tokens);
+//                    }
+//                }
+                tokens = opennlpTagger.tokenizeSentence(opennlpTagger.detokenizeTokens(tokens));
             }
         }
+
     }
 
     //@params tokens String array
@@ -70,7 +76,7 @@ public class OpennlpTagger {
         InputStream eateryModel = null;
         Span[] taggedTokens = null;
         try {
-            eateryModel = new FileInputStream("src/main/resources/opennlp/eval/Test4.bin");
+            eateryModel = new FileInputStream("src/main/resources/opennlp/evaluation/models/reviews_1000.bin");
             TokenNameFinderModel model = new TokenNameFinderModel(eateryModel);
 
             NameFinderME nameFinder = new NameFinderME(model);
@@ -134,6 +140,39 @@ public class OpennlpTagger {
         }
 
         return tokens;
+    }
+
+    public static String detokenizeTokens(String[] tokensArray) {
+        //Define list of punctuation characters that should NOT have spaces before or after
+        List<String> noSpaceBefore = new LinkedList<String>(Arrays.asList(",", ".", ";", ":", ")", "}", "]","'"));
+        List<String> noSpaceAfter = new LinkedList<String>(Arrays.asList("(", "[","{", "\"","","'"));
+
+        StringBuilder sentence = new StringBuilder();
+        List<String> tokens = new ArrayList<>(Arrays.asList(tokensArray));
+
+        tokens.add(0, "");  //Add an empty token at the beginning because loop checks as position-1 and "" is in noSpaceAfter
+        for (int i = 1; i < tokens.size(); i++) {
+            if (noSpaceBefore.contains(tokens.get(i))
+                    || noSpaceAfter.contains(tokens.get(i - 1))) {
+                sentence.append(tokens.get(i));
+            } else {
+                sentence.append(" " + tokens.get(i));
+            }
+
+            // Assumption that opening double quotes are always followed by matching closing double quotes
+            // This block switches the " to the other set after each occurrence
+            // ie The first double quotes should have no space after, then the 2nd double quotes should have no space before
+            if ("\"".equals(tokens.get(i - 1))) {
+                if (noSpaceAfter.contains("\"")) {
+                    noSpaceAfter.remove("\"");
+                    noSpaceBefore.add("\"");
+                } else {
+                    noSpaceAfter.add("\"");
+                    noSpaceBefore.remove("\"");
+                }
+            }
+        }
+        return sentence.toString();
     }
 
     public void printTags(String sentence, Span[] tags, String[] tokens) {
