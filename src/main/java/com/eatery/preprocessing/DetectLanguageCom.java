@@ -1,4 +1,4 @@
-package com.eatery.engine.preprocessing;
+package com.eatery.preprocessing;
 
 import apiClient.JSONParser;
 import apiClient.ServiceHandler;

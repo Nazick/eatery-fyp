@@ -1,4 +1,4 @@
-package com.eatery.engine.opennlp;
+package com.eatery.opennlp;
 
 import opennlp.model.TrainUtil;
 import opennlp.tools.namefind.*;

@@ -1,4 +1,4 @@
-package com.eatery.engine.opennlp;
+package com.eatery.opennlp;
 
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.NameSample;

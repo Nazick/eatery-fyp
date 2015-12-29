@@ -1,6 +1,5 @@
-package com.eatery.engine.sentimentAnalysis;
+package com.eatery.sentimentAnalysis;
 
-import com.eatery.engine.sentimentAnalysis.Parser.Parse;
 import edu.stanford.nlp.ling.BasicDocument;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.IndexedWord;
@@ -260,7 +259,7 @@ public class TypedDependencyEngine {
             List<List<Word>> theseSentences) {
         List<ArrayList<TypedDependency>> tdLists = new ArrayList<ArrayList<TypedDependency>>();
         for (List<Word> sentence : theseSentences) {
-            Parse parse = Parser.parse(sentence);
+            Parser.Parse parse = Parser.parse(sentence);
             ArrayList<TypedDependency> tdList = (ArrayList<TypedDependency>) parse.second;
             tdLists.add(tdList);
         }

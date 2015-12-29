@@ -1,6 +1,6 @@
-package com.eatery.engine.sentimentAnalysis;
+package com.eatery.sentimentAnalysis;
 
-import com.eatery.engine.opennlp.OpennlpTagger;
+import com.eatery.opennlp.OpennlpTagger;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.Sentence;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;

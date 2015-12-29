@@ -1,8 +1,8 @@
-package com.eatery.engine.implicit;
+package com.eatery.implicit;
 
-import com.eatery.engine.opennlp.OpennlpTagger;
-import com.eatery.engine.utils.Sentence;
-import com.eatery.engine.utils.WordTag;
+import com.eatery.opennlp.OpennlpTagger;
+import com.eatery.utils.Sentence;
+import com.eatery.utils.WordTag;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;

@@ -1,4 +1,4 @@
-package com.eatery.engine.preprocessing;
+package com.eatery.preprocessing;
 
 import com.optimaize.langdetect.LanguageDetector;
 import com.optimaize.langdetect.LanguageDetectorBuilder;

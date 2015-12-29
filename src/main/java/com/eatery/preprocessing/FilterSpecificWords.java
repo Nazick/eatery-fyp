@@ -1,10 +1,10 @@
-package com.eatery.engine.preprocessing;
+package com.eatery.preprocessing;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
-import com.eatery.engine.opennlp.OpennlpTagger;
+import com.eatery.opennlp.OpennlpTagger;
 import org.apache.commons.lang3.StringUtils;
 
 /**

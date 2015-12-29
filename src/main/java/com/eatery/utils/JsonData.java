@@ -1,4 +1,4 @@
-package com.eatery.engine.utils;
+package com.eatery.utils;
 
 /**
  * Created by nazick on 12/10/15.

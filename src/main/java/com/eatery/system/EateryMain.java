@@ -1,15 +1,14 @@
-package com.eatery.engine.system;
+package com.eatery.system;
 
-import com.eatery.engine.implicit.ImplicitAspects;
-import com.eatery.engine.opennlp.OpennlpTagger;
-import com.eatery.engine.preprocessing.LanguageDetect;
-import com.eatery.engine.preprocessing.SpellCorrector;
-import com.eatery.engine.sentimentAnalysis.MyWord;
-import com.eatery.engine.sentimentAnalysis.SentimentAnalyzer;
-import com.eatery.engine.sentimentAnalysis.TypedDependencyEngine;
-import com.eatery.engine.utils.JsonData;
-import com.eatery.engine.utils.Sentence;
-import com.eatery.engine.utils.WordTag;
+import com.eatery.implicit.ImplicitAspects;
+import com.eatery.opennlp.OpennlpTagger;
+import com.eatery.preprocessing.LanguageDetect;
+import com.eatery.preprocessing.SpellCorrector;
+import com.eatery.sentimentAnalysis.MyWord;
+import com.eatery.sentimentAnalysis.TypedDependencyEngine;
+import com.eatery.utils.JsonData;
+import com.eatery.utils.Sentence;
+import com.eatery.utils.WordTag;
 import opennlp.tools.util.Span;
 import org.json.simple.JSONObject;
 
@@ -164,10 +163,10 @@ public class EateryMain {
             Integer score = typedDependencyEngine.findSentimentScore(temp);
 
             for(MyWord myWord:words){
-                if(sentence.getTags().containsKey(myWord.getIndex())){
-                    sentence.getTags().get(myWord.getIndex()).setScore(score);
-                }else if(sentence.getImplicitTags().containsKey(myWord.getIndex())){
-                    sentence.getImplicitTags().get(myWord.getIndex()).setScore(score);
+                if(sentence.getTags().containsKey(myWord.getIndex() -1)){
+                    sentence.getTags().get(myWord.getIndex() -1).setScore(score);
+                }else if(sentence.getImplicitTags().containsKey(myWord.getIndex()-1)){
+                    sentence.getImplicitTags().get(myWord.getIndex()-1).setScore(score);
                 }
             }
         }

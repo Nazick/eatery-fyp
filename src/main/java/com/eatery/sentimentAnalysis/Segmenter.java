@@ -1,4 +1,4 @@
-package com.eatery.engine.sentimentAnalysis;
+package com.eatery.sentimentAnalysis;
 
 import edu.stanford.nlp.ling.BasicDocument;
 import edu.stanford.nlp.ling.Word;

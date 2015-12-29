@@ -1,4 +1,4 @@
-package com.eatery.engine.sentimentAnalysis;
+package com.eatery.sentimentAnalysis;
 
 public class Pair<T1, T2>
 {

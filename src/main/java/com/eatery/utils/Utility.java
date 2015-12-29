@@ -1,4 +1,4 @@
-package com.eatery.engine.utils;
+package com.eatery.utils;
 
 import domain.Pair;
 

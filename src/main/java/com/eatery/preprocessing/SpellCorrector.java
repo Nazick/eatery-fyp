@@ -1,4 +1,4 @@
-package com.eatery.engine.preprocessing;
+package com.eatery.preprocessing;
 
 import org.gauner.jSpellCorrect.ToySpellingCorrector;
 
