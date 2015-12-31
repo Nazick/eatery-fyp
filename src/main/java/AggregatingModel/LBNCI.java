@@ -19,6 +19,14 @@ public class LBNCI {
         return score;
     }
 
+    public double calculateLBNCI(double ratingsOld,int noOfOldRatings,double ratingNew) {
+        double average=(ratingsOld*noOfOldRatings+ratingNew)/(noOfOldRatings+1);
+
+        double score=average-zValue*variation/Math.sqrt(noOfOldRatings+1);
+
+        return score;
+    }
+
     public double calculateAvgRating(double[] ratings) {
         double average;
         double total=0;
@@ -33,6 +41,9 @@ public class LBNCI {
     public static void main(String[] args) {
         LBNCI lbnci=new LBNCI();
         double[] ratings={5.0,4.0,5.0};
+        double[] ratings4={5.0,4.0,5.0,2.0};
         System.out.println(lbnci.calculateLBNCI(ratings));
+        System.out.println(lbnci.calculateLBNCI(ratings4));
+        System.out.println(lbnci.calculateLBNCI(14/3.0,3,2.0));
     }
 }
