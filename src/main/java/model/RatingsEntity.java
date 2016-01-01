@@ -1,7 +1,8 @@
 package model;
 
+import AggregatingModel.LBNCI;
+
 import javax.persistence.*;
-import java.util.DoubleSummaryStatistics;
 
 /**
  * Created by bruntha on 12/24/15.
@@ -16,10 +17,10 @@ public class RatingsEntity {
 
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "restaurant_id",referencedColumnName = "business_id")
-    private BusinessEntity restaurantId;
+    private BusinessEntity restaurant;
 
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "aspect_id", referencedColumnName = "aspect_id")
+    @JoinColumn(name = "aspect_tag", referencedColumnName = "aspect_tag")
     private AspectEntity aspect;
 
     @Column(name = "score")
@@ -36,12 +37,12 @@ public class RatingsEntity {
         this.ratingId = ratingId;
     }
 
-    public BusinessEntity getRestaurantId() {
-        return restaurantId;
+    public BusinessEntity getRestaurant() {
+        return restaurant;
     }
 
-    public void setRestaurantId(BusinessEntity restaurantId) {
-        this.restaurantId = restaurantId;
+    public void setRestaurant(BusinessEntity restaurant) {
+        this.restaurant = restaurant;
     }
 
     public AspectEntity getAspect() {
@@ -66,5 +67,21 @@ public class RatingsEntity {
 
     public void setNoOfoccurance(Integer noOfoccurance) {
         this.noOfoccurance = noOfoccurance;
+    }
+
+    public void increaseNoOfOccurance(){
+        if(this.noOfoccurance == null){
+            this.noOfoccurance = 0;
+        }
+        this.noOfoccurance +=1;
+    }
+
+    public void addScore(Integer score){
+        LBNCI lbnci = new LBNCI();
+        if(this.score == null){
+            this.score = 0.0;
+            this.noOfoccurance = 0;
+        }
+        this.score = lbnci.calculateLBNCI(this.score,noOfoccurance,score.doubleValue());
     }
 }

@@ -10,13 +10,13 @@ import javax.persistence.*;
 @Table(name = "aspect", schema = "", catalog = "eatery")
 public class AspectEntity {
 
-    @Id @GeneratedValue
     @Column(name = "aspect_id")
     private Integer aspectId;
 
     @Column(name = "aspect_name")
     private String aspectName;
 
+    @Id
     @Column(name = "aspect_tag")
     private String aspectTag;
 

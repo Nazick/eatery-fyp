@@ -8,11 +8,29 @@ import javax.persistence.*;
 @Entity
 @Table(name = "business", schema = "", catalog = "eatery")
 public class BusinessEntity {
+
+    @Id
+    @Column(name = "business_id")
     private String businessId;
+
+    @Basic
+    @Column(name = "name")
     private String name;
+
+    @Basic
+    @Column(name = "type")
     private String type;
+
+    @Basic
+    @Column(name = "city")
     private String city;
+
+    @Basic
+    @Column(name = "state")
     private String state;
+
+    @Basic
+    @Column(name = "stars")
     private Float stars;
 
     public BusinessEntity() {
@@ -27,8 +45,10 @@ public class BusinessEntity {
         this.stars = stars;
     }
 
-    @Id
-    @Column(name = "business_id")
+    public BusinessEntity(String businessId) {
+        this.businessId = businessId;
+    }
+
     public String getBusinessId() {
         return businessId;
     }
@@ -37,8 +57,6 @@ public class BusinessEntity {
         this.businessId = businessId;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -47,8 +65,6 @@ public class BusinessEntity {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "type")
     public String getType() {
         return type;
     }
@@ -57,8 +73,6 @@ public class BusinessEntity {
         this.type = type;
     }
 
-    @Basic
-    @Column(name = "city")
     public String getCity() {
         return city;
     }
@@ -67,8 +81,6 @@ public class BusinessEntity {
         this.city = city;
     }
 
-    @Basic
-    @Column(name = "state")
     public String getState() {
         return state;
     }
@@ -77,8 +89,6 @@ public class BusinessEntity {
         this.state = state;
     }
 
-    @Basic
-    @Column(name = "stars")
     public Float getStars() {
         return stars;
     }

@@ -5,6 +5,7 @@ import model.AspectEntity;
 import model.BusinessEntity;
 import model.RatingsEntity;
 import org.hibernate.NonUniqueObjectException;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import util.HibernateUtil;
 
@@ -41,14 +42,14 @@ public class HibernateMain {
         session.beginTransaction();
         //Save the Model object
         //session.save(businessEntity);
-        AspectEntity aspectEntity = (AspectEntity)session.get(AspectEntity.class, new Integer(1));
+        AspectEntity aspectEntity = (AspectEntity)session.get(AspectEntity.class, "Food");
 
         BusinessEntity businessEntity = (BusinessEntity)session.get(BusinessEntity.class,"2e2e7WgqU1BnpxmQL5jbfw");
 
         RatingsEntity ratingsEntity = new RatingsEntity();
 
         ratingsEntity.setAspect(aspectEntity);
-        ratingsEntity.setRestaurantId(businessEntity);
+        ratingsEntity.setRestaurant(businessEntity);
         ratingsEntity.setNoOfoccurance(1);
         ratingsEntity.setScore(4.0);
 
@@ -60,6 +61,21 @@ public class HibernateMain {
         HibernateUtil.getSessionFactory().close();
 
     }
+
+    public void testRating(){
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        //start transaction
+        session.beginTransaction();
+
+        String hql = "FROM RatingsEntity R WHERE R.restaurant.businessId = :restaurantId AND R.aspect.aspectName = :aspectName";
+        Query query = session.createQuery(hql);
+        query.setParameter("restaurantId", "2e2e7WgqU1BnpxmQL5jbfw");
+        query.setParameter("aspectName", "Food");
+        List results = query.list();
+
+        RatingsEntity ratingsEntity;
+    }
+
     public void updateWeightsTable() {
         AHPM ahpm = new AHPM();
         List list = ahpm.getWeights();

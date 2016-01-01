@@ -1,5 +1,6 @@
 package com.eatery.system;
 
+import AggregatingModel.LBNCI;
 import com.eatery.implicit.ImplicitAspects;
 import com.eatery.opennlp.OpennlpTagger;
 import com.eatery.preprocessing.LanguageDetect;
@@ -9,8 +10,14 @@ import com.eatery.sentimentAnalysis.TypedDependencyEngine;
 import com.eatery.utils.JsonData;
 import com.eatery.utils.Sentence;
 import com.eatery.utils.WordTag;
+import model.AspectEntity;
+import model.BusinessEntity;
+import model.RatingsEntity;
 import opennlp.tools.util.Span;
+import org.hibernate.Query;
+import org.hibernate.Session;
 import org.json.simple.JSONObject;
+import util.HibernateUtil;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -74,7 +81,7 @@ public class EateryMain {
                         }
 
                         //Tagging implicit Aspects
-                        sentencesInReview = implicitAspects.find(sentencesInReview);
+                        //sentencesInReview = implicitAspects.find(sentencesInReview);
 
                         //Sentiment analysis per sentence
                         for(Sentence sentence : sentencesInReview){
@@ -150,19 +157,52 @@ public class EateryMain {
 
         }catch(Exception e){
             e.getStackTrace();
-            //System.out.println(e.toString());
         }
     }
 
-    //todo persist the rating details
     public void persistRatings(Sentence sentence, String restaurantId){
         /*
         Iterate tags and implicit tags in the Sentence Object and update/create Ratings table tuples at each iteration
         * rating_id - auto increment
-        * restaurent - retrieve business object using restaurant id
+        * restaurant - retrieve business object using restaurant id
         * aspect_id - retrieve aspect object using Tag in WordTag objecct
         * score - update if the rating object already available else create new object and initiate score
         * noofoccurance - same as score*/
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        BusinessEntity restaurant = (BusinessEntity)session.get(BusinessEntity.class, restaurantId);
+        if(restaurant == null){
+            restaurant = new BusinessEntity(restaurantId);
+        }
+
+        for(WordTag tag: sentence.getTags().values()){
+            if(!tag.getTag().equals("F_FoodItem") || tag.getScore() != null) {
+                String hql = "FROM RatingsEntity R WHERE R.restaurant.businessId = :restaurantId AND R.aspect.aspectName = :aspectName";
+                Query query = session.createQuery(hql);
+                query.setParameter("restaurantId", restaurantId);
+                query.setParameter("aspectName", tag.getTag());
+                List results = query.list();
+
+                RatingsEntity ratingsEntity;
+                if (results.size() != 0) {
+                    ratingsEntity = (RatingsEntity) results.get(0);
+                    ratingsEntity.increaseNoOfOccurance();
+                    ratingsEntity.addScore(tag.getScore());
+                    session.update(ratingsEntity);
+                } else {
+                    ratingsEntity = new RatingsEntity();
+                    ratingsEntity.increaseNoOfOccurance();
+                    ratingsEntity.addScore(tag.getScore());
+                    ratingsEntity.setAspect((AspectEntity)session.get(AspectEntity.class,tag.getTag()));
+                    ratingsEntity.setRestaurant(restaurant);
+                    session.save(ratingsEntity);
+                }
+                session.getTransaction().commit();
+            }
+        }
+
+        HibernateUtil.getSessionFactory().close();
     }
 
     public Sentence getSentimentScore(Sentence sentence, TypedDependencyEngine typedDependencyEngine){
