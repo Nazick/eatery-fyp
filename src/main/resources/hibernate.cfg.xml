@@ -27,6 +27,7 @@
 		<!-- mapping file, we can use Bean annotations too --> 
 		<mapping class="model.BusinessEntity"/>
 		<mapping class="model.RatingsEntity"/>
+		<mapping class="model.AspectEntity"/>
 		<mapping class="model.WeightsEntity"/>
 	</session-factory>
 </hibernate-configuration>

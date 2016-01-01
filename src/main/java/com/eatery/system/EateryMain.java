@@ -78,7 +78,8 @@ public class EateryMain {
 
                         //Sentiment analysis per sentence
                         for(Sentence sentence : sentencesInReview){
-                            scoredSentences.add(this.getSentimentScore(sentence, typedDependencyEngine));
+                            sentence = this.getSentimentScore(sentence, typedDependencyEngine);
+                            this.persistRatings(sentence, restaurentId);
                         }
 
                     }else{
@@ -93,7 +94,6 @@ public class EateryMain {
 
         }catch(Exception e){
             e.printStackTrace();
-            //System.out.println(e.toString());
         }
     }
 
@@ -152,6 +152,17 @@ public class EateryMain {
             e.getStackTrace();
             //System.out.println(e.toString());
         }
+    }
+
+    //todo persist the rating details
+    public void persistRatings(Sentence sentence, String restaurantId){
+        /*
+        Iterate tags and implicit tags in the Sentence Object and update/create Ratings table tuples at each iteration
+        * rating_id - auto increment
+        * restaurent - retrieve business object using restaurant id
+        * aspect_id - retrieve aspect object using Tag in WordTag objecct
+        * score - update if the rating object already available else create new object and initiate score
+        * noofoccurance - same as score*/
     }
 
     public Sentence getSentimentScore(Sentence sentence, TypedDependencyEngine typedDependencyEngine){
