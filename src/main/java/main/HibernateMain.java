@@ -13,6 +13,14 @@ import java.util.List;
 
 public class HibernateMain {
 
+    public void insert(RatingsEntity ratingsEntity) {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        session.save(ratingsEntity);
+        session.getTransaction().commit();
+        HibernateUtil.getSessionFactory().close();
+    }
+    
     public static void main(String[] args) {
         HibernateMain hibernateMain = new HibernateMain();
         //hibernateMain.updateWeightsTable();
