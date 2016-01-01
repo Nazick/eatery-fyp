@@ -74,14 +74,13 @@ public class EateryMain {
                         }
 
                         //Tagging implicit Aspects
-                       // sentencesInReview = implicitAspects.find(sentencesInReview);
+                        sentencesInReview = implicitAspects.find(sentencesInReview);
 
                         //Sentiment analysis per sentence
                         for(Sentence sentence : sentencesInReview){
                             scoredSentences.add(this.getSentimentScore(sentence, typedDependencyEngine));
                         }
 
-                        System.out.println();
                     }else{
                         System.out.println("Review not in English");
                     }

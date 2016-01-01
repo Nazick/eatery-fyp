@@ -12,11 +12,12 @@ public class HibernateMain {
 
     public static void main(String[] args) {
         HibernateMain hibernateMain = new HibernateMain();
-        hibernateMain.updateWeightsTable();
+        //hibernateMain.updateWeightsTable();
+        hibernateMain.test();
     }
 
     public void test() {
-        BusinessEntity businessEntity = new BusinessEntity("sdg", "dd", "dd", "ddd", "erf", 1.02f);
+        BusinessEntity businessEntity = new BusinessEntity("nazick", "dd", "dd", "ddd", "erf", 1.02f);
 
         //Get Session
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();

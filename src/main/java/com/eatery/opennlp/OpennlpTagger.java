@@ -76,7 +76,7 @@ public class OpennlpTagger {
         InputStream eateryModel = null;
         Span[] taggedTokens = null;
         try {
-            eateryModel = new FileInputStream("src/main/resources/opennlp/evaluation/models/reviews_1000.bin");
+            eateryModel = new FileInputStream("src/main/resources/opennlp/evaluation/models/reviews_1500.bin");
             TokenNameFinderModel model = new TokenNameFinderModel(eateryModel);
 
             NameFinderME nameFinder = new NameFinderME(model);

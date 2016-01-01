@@ -7,15 +7,14 @@ import opennlp.tools.util.PlainTextByLineStream;
 import opennlp.tools.util.TrainingParameters;
 import opennlp.tools.util.eval.FMeasure;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.nio.charset.Charset;
 
 /**
  * Created by nazick on 11/15/15.
  */
 public class OpenNLPModelAnalyzer {
+
 
     public FMeasure evaluate(String modelFilePath, String testFilePath){
         Charset charset = Charset.forName("UTF-8");
@@ -78,17 +77,35 @@ public class OpenNLPModelAnalyzer {
     public static void main(String args[]){
         OpenNLPModelAnalyzer openNLPModelAnalyzer = new OpenNLPModelAnalyzer();
         //openNLPModelAnalyzer.evaluate();
-        String modelFilePath;
+        String modelFilePath, fMeasure;
+        String outputString = "";
         String testFilePath = "src/main/resources/opennlp/evaluation/Test1.test";
 
-        for(int i = 1 ;i<10;i++){
+        int number = 15;
 
-            modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_"+i+"00.bin";
+        try{
+            Writer output = new BufferedWriter(new FileWriter("src/main/resources/opennlp/evaluation/results/Results_with_"+number+"00_reviews.txt",false));
 
-            System.out.println("############ Evaluation for "+i+"00 reviews #############");
-            System.out.println();
-            openNLPModelAnalyzer.evaluate(modelFilePath,testFilePath);
-            System.out.println();
+            for(int i = 1 ;i<=number;i++){
+
+                modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_"+i+"00.bin";
+
+                System.out.println("############ Evaluation for " + i + "00 reviews #############");
+                System.out.println();
+                fMeasure = openNLPModelAnalyzer.evaluate(modelFilePath,testFilePath).toString();
+                System.out.println();
+
+                outputString += "############ Evaluation for "+i+"00 reviews #############";
+                outputString += "\n\n";
+                outputString += fMeasure;
+                outputString += "\n\n";
+            }
+
+            output.write(outputString);
+            output.close();
+
+        }catch (Exception e){
+            e.printStackTrace();
         }
 
 //        modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_1000.bin";
