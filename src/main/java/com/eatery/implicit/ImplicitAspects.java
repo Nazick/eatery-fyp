@@ -47,8 +47,8 @@ public class ImplicitAspects {
     static GrammaticalStructureFactory gsf;
     static Map<String, String> results = new HashMap<String,String>();
     ArrayList<String> features,model ;
-    static final String modelPath = "src/main/resources/implicit/model.txt";
-    static final String implicitFeaturesFilePath = "src/main/resources/implicit/implicitFeatures.txt";
+    static final String modelPath = "src/hibernate/resources/implicit/model.txt";
+    static final String implicitFeaturesFilePath = "src/hibernate/resources/implicit/implicitFeatures.txt";
 
     public ImplicitAspects() {
         Properties props = new Properties();

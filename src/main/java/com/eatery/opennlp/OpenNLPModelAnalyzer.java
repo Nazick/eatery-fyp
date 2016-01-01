@@ -79,16 +79,16 @@ public class OpenNLPModelAnalyzer {
         //openNLPModelAnalyzer.evaluate();
         String modelFilePath, fMeasure;
         String outputString = "";
-        String testFilePath = "src/main/resources/opennlp/evaluation/Test1.test";
+        String testFilePath = "src/hibernate/resources/opennlp/evaluation/Test1.test";
 
         int number = 15;
 
         try{
-            Writer output = new BufferedWriter(new FileWriter("src/main/resources/opennlp/evaluation/results/Results_with_"+number+"00_reviews.txt",false));
+            Writer output = new BufferedWriter(new FileWriter("src/hibernate/resources/opennlp/evaluation/results/Results_with_"+number+"00_reviews.txt",false));
 
             for(int i = 1 ;i<=number;i++){
 
-                modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_"+i+"00.bin";
+                modelFilePath = "src/hibernate/resources/opennlp/evaluation/models/reviews_"+i+"00.bin";
 
                 System.out.println("############ Evaluation for " + i + "00 reviews #############");
                 System.out.println();
@@ -108,7 +108,7 @@ public class OpenNLPModelAnalyzer {
             e.printStackTrace();
         }
 
-//        modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_1000.bin";
+//        modelFilePath = "src/hibernate/resources/opennlp/evaluation/models/reviews_1000.bin";
 //        openNLPModelAnalyzer.evaluate(modelFilePath,testFilePath);
 
     }

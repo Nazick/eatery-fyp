@@ -54,7 +54,7 @@ public class TypedDependencyEngine {
         relationList.add("advmod");
     }
 
-    // main method
+    // hibernate method
     public static void main(String args[]) throws Exception {
         new TypedDependencyEngine();
         String sentence = "John, who was the CEO of a company, played golf.";

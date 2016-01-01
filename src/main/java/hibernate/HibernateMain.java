@@ -1,4 +1,4 @@
-package main;
+package hibernate;
 
 import WeightingModel.AHPM;
 import model.AspectEntity;
@@ -20,7 +20,7 @@ public class HibernateMain {
         session.getTransaction().commit();
         HibernateUtil.getSessionFactory().close();
     }
-    
+
     public static void main(String[] args) {
         HibernateMain hibernateMain = new HibernateMain();
         //hibernateMain.updateWeightsTable();

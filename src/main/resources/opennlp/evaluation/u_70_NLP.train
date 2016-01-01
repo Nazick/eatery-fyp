@@ -135,7 +135,7 @@
 
 "My Gf and I decided to stop in before celebrating st party's at the  <START:A_Plc_Bar> bar <END>  next door. The  <START:Food> food <END>  was very good (I had the Philly  <START:F_FoodItem> burger <END>  and the girl had the ambrosia  <START:F_FoodItem> gyro <END> ).  I can' <START:S_Staff> t <END>  believe nobody else is here at this time. The  <START:Food> food <END>  was well worth the  <START:W_Price> price <END>  (at first I thought it seemed high for a cafe).  Had this saved on my comp since i wrote it from my phone, and have eaten there twice more.  Each time it has been very empty inside, but they were busy with to-go and deliveries. Each time has been  <START:O_Experience> very satisfying <END> ."
 
-"I coukd have easily overlooked this being in a little strip center with a gas station but saw the yelp reviews.  It is very  <START:F_FI_Size> small <END>  but  <START:A_Env_Type> charming <END> . I had the  <START:F_FoodItem> eggs <END>  benedict and  <START:F_FoodItem> lox <END> - very  <START:F_FI_Taste> tasty <END> !  I was wondering how they could stay in business in that  <START:A_LocatedArea> location <END>  but it seems like their main business is catering, so makes sense."
+"I coukd have easily overlooked this being in a little strip center with a gas station but saw the yelp reviews.  It is very  <START:F_FI_Size> small <END>  but  <START:A_Env_Type> charming <END> . I had the  <START:F_FoodItem> eggs <END>  benedict and  <START:F_FoodItem> lox <END> - very  <START:F_FI_Taste> tasty <END> !  I was wondering how they could stay in business in that  <START:A_LocatedArea> location <END>  but it seems like their hibernate business is catering, so makes sense."
 
 "The  <START:A_Plc_Patio> patio <END>  here is great. As is the  <START:Service> service <END> .Weve enjoyed everything weve tried here. My personal fave is the animal  <START:F_Appetizer> fries <END> .The margaritas are lethal, but  <START:F_FI_Taste> delicious <END> . The  <START:F_FoodItem> chambord maragarita <END>  is THE BEST. So  <START:F_FI_Taste> delicious <END> ."
 
@@ -157,7 +157,7 @@
 
 "I have eaten here over 10x. I used to go a lot on my  <START:F_FoodItem> lunch <END>  break, but I have stopped. They had really good  <START:F_FoodItem> burgers <END> . The environment is nice, but the last 2x I went they messed up my order and I believe they made a mistake and put sugar on my french  <START:F_Appetizer> fries <END> ."
 
-"This  <START:Ambience> place <END>  is very good!Started off with the calamari in umido! Well done. 2nd was the zuppa di cozze & vongole also very good. For the main coarse  Pollo scarpariello is excellent! Next my mother had the penne alla vodca also very good! So all in all a very nice dining  <START:S_Stf_Experience> experience <END> ! Cant wait to try the  <START:F_FoodItem> pork <END>  chop next time!",
+"This  <START:Ambience> place <END>  is very good!Started off with the calamari in umido! Well done. 2nd was the zuppa di cozze & vongole also very good. For the hibernate coarse  Pollo scarpariello is excellent! Next my mother had the penne alla vodca also very good! So all in all a very nice dining  <START:S_Stf_Experience> experience <END> ! Cant wait to try the  <START:F_FoodItem> pork <END>  chop next time!",
 
 " <START:F_FoodItem> bagels <END>  here are step up from Panera, Brueggers, einsteins, etc.  Try to get mail coupons from here.The inside is very cramped, hot, and  <START:S_Staff> staff <END>  could be friendlier."
 

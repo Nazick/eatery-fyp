@@ -1106,7 +1106,7 @@ P_O_Experience ::: what a beautiful Restaurant!! luv the A_Decor & the A_Decor!!
 it's me and my bestfriends birthday! we wanna do a girls comp dinner somewhere
 P_O_Experience ::: we P_O_Experience/enjoyed the F_FoodItem and atmosphere at this Restaurant
 P_O_Experience ::: the girls said their F_FoodItem fingers and mac and F_FoodItem was good and i really P_O_Experience/enjoyed the ty cobb F_FoodItem
-P_O_Experience ::: we P_O_Experience/enjoyed F_FoodItem, dinner F_FoodItem, and conversation before our main F_FoodItem arrived
+P_O_Experience ::: we P_O_Experience/enjoyed F_FoodItem, dinner F_FoodItem, and conversation before our hibernate F_FoodItem arrived
 P_O_Experience ::: nice Food good Food and Service they even have a little Food Food i also like Food Restaurant too all around a good place to eat!
 always P_F_FI_Taste/delicious Restaurant and great S_Staff! we P_O_Experience/enjoyed another wonderful dinner Restaurant just last night
 P_O_Experience ::: there was a large variety and i tried out a few different Food that i P_O_Experience/enjoyed
@@ -1743,7 +1743,7 @@ Food was mediocre at best, and P_F_FI_Price/overpriced
 P_F_FI_Price ::: the Food was decent, but maybe a bit P_F_FI_Price/overpriced, mostly likely due to it's A_LocatedArea in the cosmo
 P_F_FI_Price ::: the Food is way P_F_FI_Price/overpriced and the F_FI_Quality is marginal
 P_F_FI_Price ::: F_FoodItem S_Cutlery was average and the F_FoodItem were good, just way P_F_FI_Price/overpriced for a walk up joint
-P_F_FI_Price ::: it is the main reason i will never put my foot in cafepino again, apart from the fact that Food is P_F_FI_Price/overpriced
+P_F_FI_Price ::: it is the hibernate reason i will never put my foot in cafepino again, apart from the fact that Food is P_F_FI_Price/overpriced
 P_F_FI_Price ::: i didn't feel like F_FoodItem was P_F_FI_Price/overpriced, i thought the F_FI_Price were about right in my opinion
 P_F_FI_Price ::: for a fast Food place, Food is very P_F_FI_Price/overpriced
 P_F_FI_Price ::: a bit P_F_FI_Price/overpriced, but for being part of the new downtown summerlin, i can see how they want to cater for a certain crowd

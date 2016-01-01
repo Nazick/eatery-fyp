@@ -650,7 +650,7 @@ it is very authentic texas hole-in-the-A_Decor F_FoodItem and it does that well 
 i usually don't take the time to write reviews, so you can bet that this Restaurant is special
 definitely got a local Food vibe when we arrived, but the S_Staff were great
 everything is made fresh to S_Delivery right in front of you
-they have 3 main F_FoodItem stations for each type of F_FoodItem on the S_Menu
+they have 3 hibernate F_FoodItem stations for each type of F_FoodItem on the S_Menu
 i P_O_Experience/recommend the adobado and asada F_FoodItem
 if want a P_F_FI_Taste/delicious alternative to F_FoodItem, try the adobado fries
 F_FoodItem are piled high in a P_F_FI_Size/large to go box with P_F_FI_Taste/spicy F_FoodItem, F_FoodItem, cream F_FoodItem and F_FoodItem F_Ingredients
@@ -850,7 +850,7 @@ we came to this family-owned italian Restaurant to celebrate our friends' engage
 they are regulars and said we'd love the Food; they were right
 we were greeted warmly and informed that the Food would take a bit S_Del_Time due to a large catering S_Delivery that the A_Plc_Kitchen was also cooking
 no matter since it didn't seem like much of a delay at all
-we P_O_Experience/enjoyed F_FoodItem, dinner F_FoodItem, and conversation before our main F_FoodItem arrived
+we P_O_Experience/enjoyed F_FoodItem, dinner F_FoodItem, and conversation before our hibernate F_FoodItem arrived
 i had the F_FoodItem F_FoodItem and it was a generous helping of three pieces of moist F_FoodItem with a very tasty F_Ingredients and lots of F_FoodItem; i highly P_O_Experience/recommend this Food!  believe it or not, i didn't have any F_FoodItem, but my friend's F_FoodItem and F_FoodItem looked F_FI_Taste
 i love little hole-in-the-A_Decor places like Restaurant over a chain Restaurant any day
 the Service is friendly and the Food is good
@@ -1052,7 +1052,7 @@ you could not even F_FI_Taste any F_FoodItem (and they may have used imitation F
 what can i say about the "war wonton F_Appetizer"? the proper name for this F_Appetizer is "wor wonton F_Appetizer", but what we had was "slime F_Appetizer"
 the wontons had been so over F_FI_CookingLevel that F_FoodItem P_F_FI_CookingLevel/melted off the filling, producing an off-putting P_F_FI_Size/slimy Food
 however, the F_FoodItem was okay--a bit on the salty side
-next, the main Food we tried
+next, the hibernate Food we tried
 we S_Delivery "F_FoodItem"
 obviously, they use fettuccini F_FoodItem instead of authentic F_Ingredients F_FoodItem F_FoodItem, this too was on the P_F_FI_Healthy/salty side and the F_FoodItem was over F_FI_CookingLevel--not at all tender
 we also had "F_FoodItem" (F_FoodItem), which were flat and F_FoodItem-like in texture--nothing like F_FoodItem
@@ -1390,7 +1390,7 @@ great for larger groups of people
 a regular stop of mine when traveling through clt
 the Food is regularly of good F_FI_Quality, the takeaway selection is great, the S_Staff are P_S_Stf_Behavior/friendly and my Service is always quick
 my most recent stop in was just last week - picked up a F_FoodItem for takeaway as i only had 30m between connecting flights
-the Restaurant is A_LocatedArea in an open area of the main 'between terminal wings' area so Restaurant isn't an enclosed A_Fur_Table area - the closest you can get to A_OutsideView A_Fur_Table while being inside an airport terminal
+the Restaurant is A_LocatedArea in an open area of the hibernate 'between terminal wings' area so Restaurant isn't an enclosed A_Fur_Table area - the closest you can get to A_OutsideView A_Fur_Table while being inside an airport terminal
 being that the customers are usually on the way to somewhere else, the S_Staff are used to S_Staff at a pace to keep everyone moving it seems
 not in a pushy way to get you out, just swift enough to keep you moving on time to your final destination
 the F_FoodItem won't make you sick and it is a refreshing change from the usual fare of P_F_FI_CookingLevel/deep-fried and greasy Food you get in airport terminals
@@ -2023,7 +2023,7 @@ you should not miss Food saturdays and sundays are awesome you gotta do it for a
 
 F_FI_Quality Service, F_FI_Quality Food, reasonably F_FI_Price, and the back A_Plc_Patio is so much fun for a classy girls night out!  the A_Decor of the house is dark and romantic for date nights
 i always thought this was shwartz's lame brother, but after not wanting to be part of the museum like tourist line, as a local i wanted a good deli style F_FoodItem without the wait
-le main is well known for late night pub grub but having gone Restaurant recently with some out of towners it holds up as a great diner O_Experience
+le hibernate is well known for late night pub grub but having gone Restaurant recently with some out of towners it holds up as a great diner O_Experience
 i S_Delivery the smoke F_FoodItem platter and smoked F_FoodItem poutine with cherry cotts! for about $44 it hit the spot and didn't have to get cattle proded in and out because of too many people
 long story short, if your heart is set on visiting the graceland of smoked F_FoodItem then go and line up at shwartz's if you want to actually eat because your hungry you can cross the street sit down and S_Delivery great F_FoodItem here too
 P_F_FI_Taste/delicious Food, snack and F_Drinks spot in the old port
@@ -2087,7 +2087,7 @@ liquor license
 so i could have a F_Drinks with my fab fish!glad i grabbed the 'go' box because i had serious craving the next day
 it reheated perfectly and i learned that the F_FI_Taste was really the ingredients and not over saturation of grease
 momma loved her gumbo and appreciated that Restaurant were not huge slimy chunks of okra in it
-the main man and i had oysters, F_FoodItem, and F_FoodItem
+the hibernate man and i had oysters, F_FoodItem, and F_FoodItem
 all worthy of S_Delivery again and again and again
 i P_O_Experience/enjoyed the tater salad but we both thought the dirty rice could have used more F_FoodItem in much, much larger pieces
 as it was the F_FoodItem was so minimal and P_F_FI_Size/small it could not be F_FI_Taste even though i could see it
@@ -2309,7 +2309,7 @@ time for another update and it is still holding 4 stars!this will remain one of 
 i will drive over here for my hand made noodles, i guess because i have become spoiled!  the  lan zhou beef noodle soup is my goto F_FI_Taste and this S_Del_Time we splurged on calories and had the spicy wonton F_Appetizer with chili sauce
 oommgg yes a double omg good love this stuff
 would S_Delivery every S_Del_Time but my waist will not allow that
-*grumble* the main S_Staff is back home visiting so the Service is not quite to par but i won't fault them for that because it is temporary Service
+*grumble* the hibernate S_Staff is back home visiting so the Service is not quite to par but i won't fault them for that because it is temporary Service
 food awesome as always and gesh i feel like i am saying good by :( a 30 minute drive will happen here and Restaurant but not as much as i would like
 love the Food and highly P_O_Experience/recommend it
 don't judge a book by its cover, considering this is in papago plaza
@@ -2393,7 +2393,7 @@ i had a bacon-infused cocktail that was shaken with a whole egg
 now, i love inventive cocktails
 i consider myself somewhat of a cocktail connoiseur (hands down best cocktails ever = santaella in puerto rico)
 this eggy, bacon concoction was just weird, though
-on to the main course
+on to the hibernate course
 my husband had the heritage farm F_FoodItem breast & california chorizo sausage
 the F_FoodItem was P_F_FI_Taste/yummy
 but the F_FoodItem was so (so, so!) very dry!! so much so, he requested more sauce to help make it palitable (if Restaurant had been a P_A_Env_Size/larger Restaurant, we'd have sent the dish back
@@ -3837,7 +3837,7 @@ the witchery gets extra points for acknowledging and doing something sweet for m
 this Restaurant seems like a tourist trap that's lazy bc of their legacy
 personally, i felt it was a waste of W_Price
 so i've never had vietnamese pho before (pronounced fu, as in fun, without the n) and i decided to try it with a friend of mine who speaks vietnamese and would be able to tell me what to S_Delivery and what i was eating and also steer me to the best Restaurant in town so i'd have a positive initial pho experience and want to P_O_Experience/go_back again and again
-unphogettable is tucked into an asian cultural center just south of main street on dobson on the west side of the road and is part of the asian grocery story, but has it's own entrance and A_Plc_DiningRoom
+unphogettable is tucked into an asian cultural center just south of hibernate street on dobson on the west side of the road and is part of the asian grocery story, but has it's own entrance and A_Plc_DiningRoom
 it had a pretty nice A_Environment, the S_Staff was very P_S_Stf_Behavior/helpful and even recognized my friend and his wife as we walked in (i figured they either eat there quite a bit, or the S_Staff remembers him because he doesn't likely see very many tall, geeky, white kids who speak vietnamese)
 the S_Menu had a very wide selection and did a decent job of explaining what each of the items are
 the S_Staff offered to go over the S_Menu with us, since it was our first time, but my friend told him that he would handle it
@@ -5080,7 +5080,7 @@ if you want a P_A_Env_Type/quiet A_Environment, you will find it Restaurant
 i found it odd that Restaurant wasn't A_OutsideView A_Ent_Music
 we S_Delivery the F_FoodItem F_FoodItem and a F_FoodItem & baby wild arugula F_FoodItem
 F_FoodItem were P_F_FI_Healthy/fresh and very P_F_FI_Taste/tasty
-we followed with our main courses, cold F_Drinks diver F_FoodItem and wild california F_FoodItem
+we followed with our hibernate courses, cold F_Drinks diver F_FoodItem and wild california F_FoodItem
 our S_Staff attempted to have the S_Staff select a F_Drinks for us but S_Staff was no where to be found
 the maitre d' finally came over to assist
 he made selection that Restaurant didn't have
@@ -6100,7 +6100,7 @@ the first S_Del_Time i S_Delivery a F_FoodItem, i was a bit put off by the thick
 however, the F_FoodItem (foccacia) was actually quite soft and complemented the F_FoodItem (the smokey mountain) quite well
 nonetheless, i would warn that if you really are opposed to eating a relatively F_FI_Size amount of F_FoodItem with your F_FoodItem, you might prefer something else, or perhaps one of the wraps offered here (though i haven't tried any of those yet)
 also, it'd be nice if nutritional information were made available on the website
-one of the main reasons that 80% of my F_FoodItem consumption has been at subway/cosi/potbelly is that i know the F_FI_Healthy content of what i'm eating
+one of the hibernate reasons that 80% of my F_FoodItem consumption has been at subway/cosi/potbelly is that i know the F_FI_Healthy content of what i'm eating
 i hope to come here as many times as possible before the asu onslaught begins in a few weeks
 i hope the lines aren't out the door when classes start
 although i suppose i will just eat Food at 2 if that's the case
@@ -6323,7 +6323,7 @@ it also has P_S_Stf_Behavior/friendly S_Staff and S_Staff
 it's been a while since i lived in phoenix, but whenever i return and come to forefathers, Restaurant are people working here who remember me and O_Experience me back
 if you check out forefathers, i am sure you'll want to P_O_Experience/come_back again
 interesting reading other reviews complaining about the P_S_Stf_Behavior/rude S_Staff too
-it is the main reason i will never put my foot in cafepino again, apart from the fact that Food is P_F_FI_Price/overpriced
+it is the hibernate reason i will never put my foot in cafepino again, apart from the fact that Food is P_F_FI_Price/overpriced
 i much prefer to go to amc F_Dessert ridge and have F_Drinks and F_Appetizer half W_Price during Offers at the yard house, where the S_Staff is O_Experience and cares about his customers
 eight of us went to movies and had Food at cafepino last month
 the Food was okay but i had to cancel F_Dessert because it took so long to arrive and our movie was starting in a few minutes
@@ -6429,12 +6429,12 @@ no complaints from either of us! W_Price are fair
 the S_Staff is P_S_Stf_Appearance/adorable and P_S_Stf_Behavior/friendly! support local, and keep this place alive!!
 
 mmmm i love buffalo F_FI_CookingLevel! if ever i am feeling in a serious need for some F_FoodItem, this is always my first and last port of call as it always does the trick
-situated just around the corner from the main university campus, george square, buffalo grill is a great place for students to go for Food or Food
+situated just around the corner from the hibernate university campus, george square, buffalo grill is a great place for students to go for Food or Food
 i completely and utterly adore buffalo grill's F_FoodItem
 the S_Staff always ask you how well you want your F_FoodItem F_FI_CookingLevel, as it always comes out exactly how you have asked it to be done
 i tend to S_Delivery their diablo F_FoodItem, which comes with sour cream, F_FoodItem and jalapenos F_FoodItem so F_FoodItem is pretty P_F_FI_Taste/spicy but amazing
 the F_FoodItem come in two different sizes, and i always S_Delivery the smaller version as that fills me up and costs about £5 and the bigger size costs about £7
-the F_FoodItem come with fries, F_FoodItem and, my favourite, F_FoodItem! buffalo grill also serves a huge variety of different scottish F_FoodItem which cost no more than £10 - what a bargain! but the buffalo grill is not just a place for F_FoodItem eaters, as they have a main S_Menu which offers a good selection of F_FI_Religious Food too such as F_FoodItem's and F_FoodItem benedict
+the F_FoodItem come with fries, F_FoodItem and, my favourite, F_FoodItem! buffalo grill also serves a huge variety of different scottish F_FoodItem which cost no more than £10 - what a bargain! but the buffalo grill is not just a place for F_FoodItem eaters, as they have a hibernate S_Menu which offers a good selection of F_FI_Religious Food too such as F_FoodItem's and F_FoodItem benedict
 a variety of F_Dessert are also available including F_FoodItem and F_FoodItem pie which is amazing
 buffalo grill also allow you to bring your own booze which is a much F_FI_Price option than buying F_Drinks in a Restaurant
 i completely adore this place and cannot P_O_Experience/recommend it more highly - go!!
@@ -7037,7 +7037,7 @@ with a show we don't want to be late for, that's some crumby management of A_Fur
 for the most part, the Service was top notch and the S_Staff was great
 for dinner we S_Delivery the F_FoodItem the foir gras torchon, an iceberg F_FoodItem, F_FoodItem and F_FoodItem sides, and a great F_Dessert
 the Food was, for the most part, superb
-even the sides were as decadent as the main entrée
+even the sides were as decadent as the hibernate entrée
 i just wish we had had more time
 the F_FoodItem in the chateaubriand was juicy, F_FI_CookingLevel, and everything one could hope for as far as red F_FoodItem goes
 the F_FoodItem was excellent, just a little rich for my palate
@@ -7211,7 +7211,7 @@ it rubs me the wrong way almost every time - and i know i'm not the only one
 so - in the best interest of your getting people to return and recommend your place of business to others?  get with the 21st century and suck it up - debit / credit cards aren't going anywhere
 my parents owned a korean Restaurant so i know good korean Food! i enjoyed their kalbi (F_FoodItem) kalbi tang (short rib soup) bulgogi (F_FI_Size marinated F_FoodItem) F_Appetizer with F_FoodItem and their F_FoodItem
 Restaurant has been times where the side Food weren't as good
-for instance the F_FoodItem kimchi was soggy and F_FoodItem sprouts were bland but the main Food made up for it
+for instance the F_FoodItem kimchi was soggy and F_FoodItem sprouts were bland but the hibernate Food made up for it
 they do get busy so the S_Staff button that's on every A_Fur_Table comes in handy when you need something
 the iceberg F_FoodItem with what was kindly called "F_FoodItem", actually just "buttermilk" i'm pretty sure
 was sub-optimal
@@ -7737,7 +7737,7 @@ working in the capitol area for 15 years, la canasta capitolio is a must
 Restaurant are very few places to eat near the capitol, but la canasta not only provides a place for a F_Appetizer to eat, but some good Food as well
 i don't like F_FoodItem, so i generally stick to the red F_Ingredients F_FoodItem F_FoodItem, which is very good
 F_FI_Price are reasonable, too
-i think their main business comes from the government workers in the A_LocatedArea, and lot's of police and fifi's (firefighters)
+i think their hibernate business comes from the government workers in the A_LocatedArea, and lot's of police and fifi's (firefighters)
 if the pd and fifi's eat Restaurant, it must be good
 free F_FoodItem and F_FoodItem (very good F_FoodItem) is a definite plus! also, i've heard their Food F_FoodItem's are excellent
 i was visiting arizona from new york & came Restaurant to celebrate my dear friends birthday
@@ -8668,7 +8668,7 @@ Restaurant are plenty of things to do Restaurant because the A_LocatedArea is ho
 the assortment of available activities makes the mall a good place to plan an entire day of events
 this is exactly what my girlfriend and i did for our one-year anniversary; we started off the day with a Food at the rainforest café, strolled around the mall for a while, and then saw a movie at the harkins
 all in all, it proved to be an entertaining day, and the highlight of it was our fun-filled visit to the Restaurant
-the setting of the Restaurant is similar to that of an amusement A_Places rather than a regular Restaurant, and is the main reason that people choose to visit Restaurant
+the setting of the Restaurant is similar to that of an amusement A_Places rather than a regular Restaurant, and is the hibernate reason that people choose to visit Restaurant
 the Restaurant was designed to look like a tropical rainforest, and is filled with A_Decor, A_Decor, and P_A_Env_Size/large A_Environment filled with A_Decor
 A_Decor and A_Decor add to the wild vibe, and provide an entertaining A_Environment different from other Restaurant
 because of its similarity to amusement A_Places such as disneyland, the Restaurant is popular among families and teenagers looking to have a good time
@@ -9005,7 +9005,7 @@ dinner the Restaurant is P_A_Env_Size/big and very bold
 lots of A_Decor, accented with A_Decor and A_Decor
 the A_Decor is very busy, but it works
 the A_Plc_Bar area is a nice size with just enough flat panels to satisfy your curiosity on the A_Entertainment, without spoiling the aesthetic of the Restaurant
-A_Fur_Table in the main dining area is varied: A_Fur_Table, long A_Fur_Table bench A_Fur_Table, corner A_Fur_Table, and some smaller A_Fur_Table that mimic eating A_OutsideView (but you're really in the mall)
+A_Fur_Table in the hibernate dining area is varied: A_Fur_Table, long A_Fur_Table bench A_Fur_Table, corner A_Fur_Table, and some smaller A_Fur_Table that mimic eating A_OutsideView (but you're really in the mall)
 personally, i'd take a pass on having people watch me eat as they walk back from donating a kidney in exchange for some new duds at barney's
 the F_Drinks list is fairly small for a Restaurant of this caliber with maybe 30 F_Drinks total, but they are almost all available by the glass
 most of the bottles range from about 2x - 3x retail F_FI_Price

@@ -29,14 +29,14 @@ import java.util.Map;
  */
 public class EateryMain {
 
-    final static String processedFilePath = "src/main/resources/" +
+    final static String processedFilePath = "src/hibernate/resources/" +
             //         "processedFile.json";
             "review_100_A.json";
 
-    final static String filePathRead = "src/main/resources/" +
+    final static String filePathRead = "src/hibernate/resources/" +
             "review_100_A.json";
 
-    final static String implicitTestFile = "src/main/resources/" +
+    final static String implicitTestFile = "src/hibernate/resources/" +
             //         "processedFile.json";
             "review_100_A.json";
 
