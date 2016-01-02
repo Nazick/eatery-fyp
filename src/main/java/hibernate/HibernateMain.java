@@ -12,16 +12,25 @@ import java.util.List;
 
 public class HibernateMain {
 
-    public void insert(RatingsEntity ratingsEntity) {
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+    public void insertRatings(RatingsEntity ratingsEntity) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
-        session.save(ratingsEntity);
+        session.saveOrUpdate(ratingsEntity);
+        session.getTransaction().commit();
+        HibernateUtil.getSessionFactory().close();
+    }
+
+    public void insertRestaurant(BusinessEntity restaurent) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        session.save(restaurent);
         session.getTransaction().commit();
         HibernateUtil.getSessionFactory().close();
     }
 
     public List getRatings(String restaurantID) {
         Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
         Query query = session.createQuery("from RatingsEntity where restaurantId = :id ");
         query.setParameter("id", restaurantID);
         List<?> list = query.list();
@@ -30,10 +39,28 @@ public class HibernateMain {
 
     public List getWeights(String parentAspect) {
         Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
         Query query = session.createQuery("from WeightsEntity where parentAspect = :id ");
         query.setParameter("id", parentAspect);
         List<?> list = query.list();
         return list;
+    }
+
+    public List getRating(String restaurantId, String aspectTag) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        String hql = "FROM RatingsEntity R WHERE R.restaurantId = :restaurantId AND R.aspectTag = :aspectTag";
+        Query query = session.createQuery(hql);
+        query.setParameter("restaurantId", restaurantId);
+        query.setParameter("aspectTag", aspectTag);
+        List list = query.list();
+        return list;
+    }
+
+    public BusinessEntity getRestaurant(String restaurantId){
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        return (BusinessEntity) session.get(BusinessEntity.class, restaurantId);
     }
 
     public List getWeights()

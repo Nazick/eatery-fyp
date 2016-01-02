@@ -14,7 +14,7 @@ public class FilterSpecificWords {
     public static void main(String args[]) {
         try {
             ArrayList storeWordList = new ArrayList();
-            FileInputStream fstream = new FileInputStream("src/hibernate/resources/preprocessing/newDictWords.txt");
+            FileInputStream fstream = new FileInputStream("src/main/resources/preprocessing/newDictWords.txt");
             // Get the object of DataInputStream
             DataInputStream in = new DataInputStream(fstream);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
