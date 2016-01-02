@@ -19,6 +19,14 @@ public class HibernateMain {
         sessionFactory = HibernateUtil.getSessionFactory();
     }
 
+    public static void main(String[] args) {
+        HibernateMain hibernateMain = new HibernateMain();
+        //hibernateMain.updateWeightsTable();
+        List list = hibernateMain.getRatings("DDD");
+        System.out.println(list.size());
+
+    }
+
     public void insertRatings(RatingsEntity ratingsEntity) {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
@@ -66,28 +74,19 @@ public class HibernateMain {
         return list;
     }
 
-    public BusinessEntity getRestaurant(String restaurantId){
+    public BusinessEntity getRestaurant(String restaurantId) {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        BusinessEntity businessEntity =(BusinessEntity) session.get(BusinessEntity.class, restaurantId);
+        BusinessEntity businessEntity = (BusinessEntity) session.get(BusinessEntity.class, restaurantId);
         session.getTransaction().commit();
         return businessEntity;
     }
 
-    public List getWeights()
-    {
+    public List getWeights() {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from WeightsEntity ");
         List<?> list = query.list();
         return list;
-    }
-
-    public static void main(String[] args) {
-        HibernateMain hibernateMain = new HibernateMain();
-        //hibernateMain.updateWeightsTable();
-        List list=hibernateMain.getRatings("DDD");
-        System.out.println(list.size());
-
     }
 
     public void test() {
@@ -133,7 +132,7 @@ public class HibernateMain {
 //
 //    }
 
-    public void testRating(){
+    public void testRating() {
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         //start transaction
         session.beginTransaction();
@@ -160,7 +159,7 @@ public class HibernateMain {
             try {
                 session.saveOrUpdate((list.get(i)));
             } catch (NonUniqueObjectException e) {
-                System.out.println("ERROR "+list.get(i).toString());
+                System.out.println("ERROR " + list.get(i).toString());
             }
 
 
