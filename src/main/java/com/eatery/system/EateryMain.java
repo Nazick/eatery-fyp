@@ -30,7 +30,7 @@ import java.util.Map;
 public class EateryMain {
 
     final static String processedFilePath = "src/main/resources/" +
-            //         "processedFile.json";
+                    // "test.json";
             "review_100_A.json";
 
     final static String filePathRead = "src/main/resources/" +

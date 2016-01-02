@@ -78,7 +78,7 @@ public class RatingsEntity {
 
     public void addScore(Integer score){
         LBNCI lbnci = new LBNCI();
-        this.score = lbnci.calculateLBNCI(this.score,noOfOccurance,score.doubleValue());
+        this.score = lbnci.calculateLBNCI(this.score,noOfOccurance,this.score);
     }
 
     @Override
