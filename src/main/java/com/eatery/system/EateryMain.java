@@ -14,9 +14,7 @@ import model.BusinessEntity;
 import model.RatingsEntity;
 import model.WeightsEntity;
 import opennlp.tools.util.Span;
-import org.hibernate.Session;
 import org.json.simple.JSONObject;
-import util.HibernateUtil;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -30,8 +28,9 @@ import java.util.Map;
 public class EateryMain {
 
     final static String processedFilePath = "src/main/resources/" +
-                    // "test.json";
-            "review_100_A.json";
+            // "test.json"; "review_100_A.json";
+            //"top100Business.json";
+            "100Reviews.json";
 
     final static String filePathRead = "src/main/resources/" +
             "review_100_A.json";
@@ -51,6 +50,7 @@ public class EateryMain {
     public void process() {
         LanguageDetect languageDetect = new LanguageDetect();
         ImplicitAspects implicitAspects = new ImplicitAspects();
+        TypedDependencyEngine typedDependencyEngine = new TypedDependencyEngine();
 
         try {
             File file = new File(processedFilePath);
@@ -70,24 +70,26 @@ public class EateryMain {
                     restaurentId = jsonData.getRestaurentId();
                     List<Sentence> sentencesInReview = new ArrayList<>();
                     List<Sentence> scoredSentences = new ArrayList<>();
-
+                    System.out.println("\n############# "+count+" ##############");
                     System.out.println("Restaurent ID : " + restaurentId);
 
                     if (languageDetect.isReviewInEnglish(review)) {
 
-                        TypedDependencyEngine typedDependencyEngine = new TypedDependencyEngine();
                         String[] sentences = OpennlpTagger.detectSentence(review);
 
                         //Tagging explicit aspects using OpenNLP
+                        System.out.println("Tagging explicit aspects");
                         for (String sentence : sentences) {
                             Sentence savedSentence = this.saveSentenceTags(OpennlpTagger.tag(sentence), sentence);
                             sentencesInReview.add(savedSentence);
                         }
 
                         //Tagging implicit Aspects
-                        //sentencesInReview = implicitAspects.find(sentencesInReview);
+                        System.out.println("Tagging implicit Aspects");
+                        sentencesInReview = implicitAspects.find(sentencesInReview);
 
                         //Sentiment analysis per sentence
+                        System.out.println("Processing Sentiment analysis");
                         for (Sentence sentence : sentencesInReview) {
                             sentence = this.getSentimentScore(sentence, typedDependencyEngine);
                             this.persistRatings(sentence, restaurentId);
@@ -173,15 +175,36 @@ public class EateryMain {
         * score - update if the rating object already available else create new object and initiate score
         * noofoccurance - same as score*/
 
-//        BusinessEntity restaurant = hibernateMain.getRestaurant(restaurantId);
-//        if (restaurant == null) {
-//            restaurant = new BusinessEntity(restaurantId);
-//            hibernateMain.insertRestaurant(restaurant);
-//        }
+        BusinessEntity restaurant = hibernateMain.getRestaurant(restaurantId);
+        if (restaurant == null) {
+            restaurant = new BusinessEntity(restaurantId);
+            hibernateMain.insertRestaurant(restaurant);
+        }
 
         for (WordTag tag : sentence.getTags().values()) {
-            if (!tag.getTag().equals("F_FoodItem") || tag.getScore() != null) {
-                List results = hibernateMain.getRating(restaurantId,tag.getTag());
+            if (!tag.getTag().equals("F_FoodItem") && tag.getScore() != null) {
+                List results = hibernateMain.getRating(restaurantId, tag.getTag());
+
+                RatingsEntity ratingsEntity;
+                if (results.size() != 0) {
+                    ratingsEntity = (RatingsEntity) results.get(0);
+                    ratingsEntity.setNoOfOccurance(ratingsEntity.getNoOfOccurance() + 1);
+                    ratingsEntity.addScore(tag.getScore());
+                    hibernateMain.insertRatings(ratingsEntity);
+                } else {
+                    ratingsEntity = new RatingsEntity();
+                    ratingsEntity.setNoOfOccurance(ratingsEntity.getNoOfOccurance() + 1);
+                    ratingsEntity.addScore(tag.getScore());
+                    ratingsEntity.setAspectTag(tag.getTag());
+                    ratingsEntity.setRestaurantId(restaurantId);
+                    hibernateMain.insertRatings(ratingsEntity);
+                }
+            }
+        }
+
+        for (WordTag tag : sentence.getImplicitTags().values()) {
+            if (!tag.getTag().equals("F_FoodItem") && tag.getScore() != null) {
+                List results = hibernateMain.getRating(restaurantId, tag.getTag());
 
                 RatingsEntity ratingsEntity;
                 if (results.size() != 0) {
@@ -379,50 +402,50 @@ public class EateryMain {
         }
     }
 
-    public double getCompositeRating(String restaurantName){
-        HibernateMain hibernateMain=new HibernateMain();
-        List ratings=hibernateMain.getRatings(restaurantName);
+    public double getCompositeRating(String restaurantName) {
+        HibernateMain hibernateMain = new HibernateMain();
+        List ratings = hibernateMain.getRatings(restaurantName);
 
-        double foodItemScore=getSubRatings("F_FoodItem",ratings);
-        double staffScore=getSubRatings("S_Staff",ratings);
-        double deliveryScore=getSubRatings("S_Delivery",ratings);
-        double entertainmentScore=getSubRatings("A_Entertainment",ratings);
-        double furnitureScore=getSubRatings("A_Furniture",ratings);
-        double placesScore=getSubRatings("A_Places",ratings);
-        double locatedAreaScore=getSubRatings("A_LocatedArea",ratings);
-        double paymentScore=getSubRatings("O_Payment",ratings);
-        double reservationScore=getSubRatings("O_Reservation",ratings);
-        double experienceScore=getSubRatings("O_Experience",ratings);
-        double environmentScore=getSubRatings("A_Environment",ratings);
-        double serviceScore=getSubRatings("Service",ratings);
-        double worthinessScore=getSubRatings("Worthiness",ratings);
-        double ambienceScore=getSubRatings("Ambience",ratings);
-        double foodScore=getSubRatings("Food",ratings);
-        double offersScore=getSubRatings("Offers",ratings);
-        double restaurantScore=getSubRatings("Restaurant",ratings);
+        double foodItemScore = getSubRatings("F_FoodItem", ratings);
+        double staffScore = getSubRatings("S_Staff", ratings);
+        double deliveryScore = getSubRatings("S_Delivery", ratings);
+        double entertainmentScore = getSubRatings("A_Entertainment", ratings);
+        double furnitureScore = getSubRatings("A_Furniture", ratings);
+        double placesScore = getSubRatings("A_Places", ratings);
+        double locatedAreaScore = getSubRatings("A_LocatedArea", ratings);
+        double paymentScore = getSubRatings("O_Payment", ratings);
+        double reservationScore = getSubRatings("O_Reservation", ratings);
+        double experienceScore = getSubRatings("O_Experience", ratings);
+        double environmentScore = getSubRatings("A_Environment", ratings);
+        double serviceScore = getSubRatings("Service", ratings);
+        double worthinessScore = getSubRatings("Worthiness", ratings);
+        double ambienceScore = getSubRatings("Ambience", ratings);
+        double foodScore = getSubRatings("Food", ratings);
+        double offersScore = getSubRatings("Offers", ratings);
+        double restaurantScore = getSubRatings("Restaurant", ratings);
 
 
         return 0.0;
     }
 
     private double getSubRatings(String parentAspect, List ratings) {
-        HibernateMain hibernateMain=new HibernateMain();
-        List weights=hibernateMain.getWeights(parentAspect);
+        HibernateMain hibernateMain = new HibernateMain();
+        List weights = hibernateMain.getWeights(parentAspect);
 
-        double subRating=0.0;
+        double subRating = 0.0;
         for (int i = 0; i < weights.size(); i++) {
-            WeightsEntity weightsEntity= (WeightsEntity) weights.get(i);
-            subRating+=weightsEntity.getWeight()*getRatingForAspect(weightsEntity.getAspect(),ratings);
+            WeightsEntity weightsEntity = (WeightsEntity) weights.get(i);
+            subRating += weightsEntity.getWeight() * getRatingForAspect(weightsEntity.getAspect(), ratings);
         }
         return subRating;
     }
 
     private double getRatingForAspect(String aspect, List ratings) {
-        double rating=0.0;
+        double rating = 0.0;
         for (int i = 0; i < ratings.size(); i++) {
-            RatingsEntity ratingsEntity= (RatingsEntity) ratings.get(i);
+            RatingsEntity ratingsEntity = (RatingsEntity) ratings.get(i);
             if (ratingsEntity.getAspectTag().matches(aspect)) {
-                rating=ratingsEntity.getScore();
+                rating = ratingsEntity.getScore();
                 break;
             }
         }
