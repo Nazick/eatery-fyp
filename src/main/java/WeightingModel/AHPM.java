@@ -147,7 +147,6 @@ public class AHPM {
             calculateWeights("O_Reservation", "A_Env", 2, aspectHashtable);
             calculateWeights("O_Experience", "O_Exp", 2, aspectHashtable);
             calculateWeights("A_Environment", "A_Env", 2, aspectHashtable);
-            calculateWeights("A_Environment", "A_Env", 2, aspectHashtable);
 
 
         } catch (IOException e) {

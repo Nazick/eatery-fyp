@@ -1,7 +1,6 @@
 package hibernate;
 
 import WeightingModel.AHPM;
-import model.AspectEntity;
 import model.BusinessEntity;
 import model.RatingsEntity;
 import org.hibernate.NonUniqueObjectException;
@@ -21,10 +20,36 @@ public class HibernateMain {
         HibernateUtil.getSessionFactory().close();
     }
 
+    public List getRatings(String restaurantID) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Query query = session.createQuery("from RatingsEntity where restaurantId = :id ");
+        query.setParameter("id", restaurantID);
+        List<?> list = query.list();
+        return list;
+    }
+
+    public List getWeights(String parentAspect) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Query query = session.createQuery("from WeightsEntity where parentAspect = :id ");
+        query.setParameter("id", parentAspect);
+        List<?> list = query.list();
+        return list;
+    }
+
+    public List getWeights()
+    {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Query query = session.createQuery("from WeightsEntity ");
+        List<?> list = query.list();
+        return list;
+    }
+
     public static void main(String[] args) {
         HibernateMain hibernateMain = new HibernateMain();
         //hibernateMain.updateWeightsTable();
-        hibernateMain.aspectTest();
+        List list=hibernateMain.getRatings("DDD");
+        System.out.println(list.size());
+
     }
 
     public void test() {
@@ -43,32 +68,32 @@ public class HibernateMain {
         HibernateUtil.getSessionFactory().close();
     }
 
-    public void aspectTest(){
-        //Get Session
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        //start transaction
-        session.beginTransaction();
-        //Save the Model object
-        //session.save(businessEntity);
-        AspectEntity aspectEntity = (AspectEntity)session.get(AspectEntity.class, "Food");
-
-        BusinessEntity businessEntity = (BusinessEntity)session.get(BusinessEntity.class,"2e2e7WgqU1BnpxmQL5jbfw");
-
-        RatingsEntity ratingsEntity = new RatingsEntity();
-
-        ratingsEntity.setAspect(aspectEntity);
-        ratingsEntity.setRestaurant(businessEntity);
-        ratingsEntity.setNoOfoccurance(1);
-        ratingsEntity.setScore(4.0);
-
-        session.save(ratingsEntity);
-                //Commit transaction
-        session.getTransaction().commit();
-
-        //terminate session factory, otherwise program won't end
-        HibernateUtil.getSessionFactory().close();
-
-    }
+//    public void aspectTest(){
+//        //Get Session
+//        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+//        //start transaction
+//        session.beginTransaction();
+//        //Save the Model object
+//        //session.save(businessEntity);
+//        AspectEntity aspectEntity = (AspectEntity)session.get(AspectEntity.class, "Food");
+//
+//        BusinessEntity businessEntity = (BusinessEntity)session.get(BusinessEntity.class,"2e2e7WgqU1BnpxmQL5jbfw");
+//
+//        RatingsEntity ratingsEntity = new RatingsEntity();
+//
+//        ratingsEntity.setAspect(aspectEntity);
+//        ratingsEntity.setRestaurant(businessEntity);
+//        ratingsEntity.setNoOfoccurance(1);
+//        ratingsEntity.setScore(4.0);
+//
+//        session.save(ratingsEntity);
+//                //Commit transaction
+//        session.getTransaction().commit();
+//
+//        //terminate session factory, otherwise program won't end
+//        HibernateUtil.getSessionFactory().close();
+//
+//    }
 
     public void testRating(){
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();

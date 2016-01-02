@@ -1,87 +1,105 @@
 package model;
 
-import AggregatingModel.LBNCI;
-
 import javax.persistence.*;
 
 /**
- * Created by bruntha on 12/24/15.
+ * Created by bruntha on 1/1/16.
  */
 @Entity
 @Table(name = "ratings", schema = "", catalog = "eatery")
 public class RatingsEntity {
+    private int ratingId;
+    private String aspectTag;
+    private String restaurantId;
+    private double score;
+    private int noOfOccurance;
 
-    @Id @GeneratedValue
+    public RatingsEntity() {
+    }
+
+    public RatingsEntity(String aspectTag, String restaurantId, double score, int noOfOccurance) {
+        this.aspectTag = aspectTag;
+        this.restaurantId = restaurantId;
+        this.score = score;
+        this.noOfOccurance = noOfOccurance;
+    }
+
+    @Id
     @Column(name = "rating_id")
-    private Integer ratingId;
-
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "restaurant_id",referencedColumnName = "business_id")
-    private BusinessEntity restaurant;
-
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "aspect_tag", referencedColumnName = "aspect_tag")
-    private AspectEntity aspect;
-
-    @Column(name = "score")
-    private Double score;
-
-    @Column(name = "no_of_occurance")
-    private Integer noOfoccurance;
-
-    public Integer getRatingId() {
+    public int getRatingId() {
         return ratingId;
     }
 
-    public void setRatingId(Integer ratingId) {
+    public void setRatingId(int ratingId) {
         this.ratingId = ratingId;
     }
 
-    public BusinessEntity getRestaurant() {
-        return restaurant;
+    @Basic
+    @Column(name = "aspect_tag")
+    public String getAspectTag() {
+        return aspectTag;
     }
 
-    public void setRestaurant(BusinessEntity restaurant) {
-        this.restaurant = restaurant;
+    public void setAspectTag(String aspectTag) {
+        this.aspectTag = aspectTag;
     }
 
-    public AspectEntity getAspect() {
-        return aspect;
+    @Basic
+    @Column(name = "restaurant_id")
+    public String getRestaurantId() {
+        return restaurantId;
     }
 
-    public void setAspect(AspectEntity aspect) {
-        this.aspect = aspect;
+    public void setRestaurantId(String restaurantId) {
+        this.restaurantId = restaurantId;
     }
 
-    public Double getScore() {
+    @Basic
+    @Column(name = "score")
+    public double getScore() {
         return score;
     }
 
-    public void setScore(Double score) {
+    public void setScore(double score) {
         this.score = score;
     }
 
-    public Integer getNoOfoccurance() {
-        return noOfoccurance;
+    @Basic
+    @Column(name = "no_of_occurance")
+    public int getNoOfOccurance() {
+        return noOfOccurance;
     }
 
-    public void setNoOfoccurance(Integer noOfoccurance) {
-        this.noOfoccurance = noOfoccurance;
+    public void setNoOfOccurance(int noOfOccurance) {
+        this.noOfOccurance = noOfOccurance;
     }
 
-    public void increaseNoOfOccurance(){
-        if(this.noOfoccurance == null){
-            this.noOfoccurance = 0;
-        }
-        this.noOfoccurance +=1;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        RatingsEntity that = (RatingsEntity) o;
+
+        if (noOfOccurance != that.noOfOccurance) return false;
+        if (ratingId != that.ratingId) return false;
+        if (Double.compare(that.score, score) != 0) return false;
+        if (aspectTag != null ? !aspectTag.equals(that.aspectTag) : that.aspectTag != null) return false;
+        if (restaurantId != null ? !restaurantId.equals(that.restaurantId) : that.restaurantId != null) return false;
+
+        return true;
     }
 
-    public void addScore(Integer score){
-        LBNCI lbnci = new LBNCI();
-        if(this.score == null){
-            this.score = 0.0;
-            this.noOfoccurance = 0;
-        }
-        this.score = lbnci.calculateLBNCI(this.score,noOfoccurance,score.doubleValue());
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = ratingId;
+        result = 31 * result + (aspectTag != null ? aspectTag.hashCode() : 0);
+        result = 31 * result + (restaurantId != null ? restaurantId.hashCode() : 0);
+        temp = Double.doubleToLongBits(score);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + noOfOccurance;
+        return result;
     }
 }
