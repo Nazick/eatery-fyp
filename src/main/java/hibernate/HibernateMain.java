@@ -6,39 +6,77 @@ import model.RatingsEntity;
 import org.hibernate.NonUniqueObjectException;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import util.HibernateUtil;
 
 import java.util.List;
 
 public class HibernateMain {
 
-    public void insert(RatingsEntity ratingsEntity) {
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+    SessionFactory sessionFactory;
+
+    public HibernateMain() {
+        sessionFactory = HibernateUtil.getSessionFactory();
+    }
+
+    public void insertRatings(RatingsEntity ratingsEntity) {
+        Session session = sessionFactory.openSession();
         session.beginTransaction();
-        session.save(ratingsEntity);
+        session.saveOrUpdate(ratingsEntity);
         session.getTransaction().commit();
-        HibernateUtil.getSessionFactory().close();
+    }
+
+    public void insertRestaurant(BusinessEntity restaurent) {
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        session.save(restaurent);
+        session.getTransaction().commit();
     }
 
     public List getRatings(String restaurantID) {
-        Session session = HibernateUtil.getSessionFactory().openSession();
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
         Query query = session.createQuery("from RatingsEntity where restaurantId = :id ");
         query.setParameter("id", restaurantID);
         List<?> list = query.list();
+        session.getTransaction().commit();
         return list;
     }
 
     public List getWeights(String parentAspect) {
-        Session session = HibernateUtil.getSessionFactory().openSession();
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
         Query query = session.createQuery("from WeightsEntity where parentAspect = :id ");
         query.setParameter("id", parentAspect);
         List<?> list = query.list();
+
+        session.getTransaction().commit();
         return list;
+    }
+
+    public List getRating(String restaurantId, String aspectTag) {
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        String hql = "FROM RatingsEntity R WHERE R.restaurantId = :restaurantId AND R.aspectTag = :aspectTag";
+        Query query = session.createQuery(hql);
+        query.setParameter("restaurantId", restaurantId);
+        query.setParameter("aspectTag", aspectTag);
+        List list = query.list();
+        session.getTransaction().commit();
+        return list;
+    }
+
+    public BusinessEntity getRestaurant(String restaurantId){
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        BusinessEntity businessEntity =(BusinessEntity) session.get(BusinessEntity.class, restaurantId);
+        session.getTransaction().commit();
+        return businessEntity;
     }
 
     public List getWeights()
     {
-        Session session = HibernateUtil.getSessionFactory().openSession();
+        Session session = sessionFactory.openSession();
         Query query = session.createQuery("from WeightsEntity ");
         List<?> list = query.list();
         return list;

@@ -76,7 +76,7 @@ public class OpennlpTagger {
         InputStream eateryModel = null;
         Span[] taggedTokens = null;
         try {
-            eateryModel = new FileInputStream("src/hibernate/resources/opennlp/evaluation/models/reviews_1500.bin");
+            eateryModel = new FileInputStream("src/main/resources/opennlp/evaluation/models/reviews_1500.bin");
             TokenNameFinderModel model = new TokenNameFinderModel(eateryModel);
 
             NameFinderME nameFinder = new NameFinderME(model);
@@ -99,7 +99,7 @@ public class OpennlpTagger {
         InputStream sentenceModel = null;
         String[] sentences = null;
         try {
-            sentenceModel = new FileInputStream("src/hibernate/resources/opennlp/en-sent.bin");
+            sentenceModel = new FileInputStream("src/main/resources/opennlp/en-sent.bin");
             SentenceModel model = new SentenceModel(sentenceModel);
 
             SentenceDetectorME sentenceDetector = new SentenceDetectorME(model);
@@ -123,7 +123,7 @@ public class OpennlpTagger {
         String[] tokens = null;
 
         try {
-            tokenModel = new FileInputStream("src/hibernate/resources/opennlp/en-token.bin");
+            tokenModel = new FileInputStream("src/main/resources/opennlp/en-token.bin");
             TokenizerModel model = new TokenizerModel(tokenModel);
 
             Tokenizer tokenizer = new TokenizerME(model);

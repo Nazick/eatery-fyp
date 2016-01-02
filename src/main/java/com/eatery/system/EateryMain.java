@@ -29,16 +29,18 @@ import java.util.Map;
  */
 public class EateryMain {
 
-    final static String processedFilePath = "src/hibernate/resources/" +
+    final static String processedFilePath = "src/main/resources/" +
+                    // "test.json";
+            "review_100_A.json";
+
+    final static String filePathRead = "src/main/resources/" +
+            "review_100_A.json";
+
+    final static String implicitTestFile = "src/main/resources/" +
             //         "processedFile.json";
             "review_100_A.json";
 
-    final static String filePathRead = "src/hibernate/resources/" +
-            "review_100_A.json";
-
-    final static String implicitTestFile = "src/hibernate/resources/" +
-            //         "processedFile.json";
-            "review_100_A.json";
+    HibernateMain hibernateMain = new HibernateMain();
 
     public static void main(String[] args) {
         EateryMain eateryMain = new EateryMain();
@@ -170,41 +172,33 @@ public class EateryMain {
         * aspect_id - retrieve aspect object using Tag in WordTag objecct
         * score - update if the rating object already available else create new object and initiate score
         * noofoccurance - same as score*/
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        session.beginTransaction();
 
-        BusinessEntity restaurant = (BusinessEntity) session.get(BusinessEntity.class, restaurantId);
-        if (restaurant == null) {
-            restaurant = new BusinessEntity(restaurantId);
-        }
+//        BusinessEntity restaurant = hibernateMain.getRestaurant(restaurantId);
+//        if (restaurant == null) {
+//            restaurant = new BusinessEntity(restaurantId);
+//            hibernateMain.insertRestaurant(restaurant);
+//        }
 
         for (WordTag tag : sentence.getTags().values()) {
             if (!tag.getTag().equals("F_FoodItem") || tag.getScore() != null) {
-//                String hql = "FROM RatingsEntity R WHERE R.restaurant.businessId = :restaurantId AND R.aspect.aspectName = :aspectName";
-//                Query query = session.createQuery(hql);
-//                query.setParameter("restaurantId", restaurantId);
-//                query.setParameter("aspectName", tag.getTag());
-//                List results = query.list();
+                List results = hibernateMain.getRating(restaurantId,tag.getTag());
 
-//                RatingsEntity ratingsEntity;
-//                if (results.size() != 0) {
-//                    ratingsEntity = (RatingsEntity) results.get(0);
-//                    ratingsEntity.increaseNoOfOccurance();
-//                    ratingsEntity.addScore(tag.getScore());
-//                    session.update(ratingsEntity);
-//                } else {
-//                    ratingsEntity = new RatingsEntity();
-//                    ratingsEntity.increaseNoOfOccurance();
-//                    ratingsEntity.addScore(tag.getScore());
-//                    ratingsEntity.setAspect((AspectEntity) session.get(AspectEntity.class, tag.getTag()));
-//                    ratingsEntity.setRestaurant(restaurant);
-//                    session.save(ratingsEntity);
-//                }
-                session.getTransaction().commit();
+                RatingsEntity ratingsEntity;
+                if (results.size() != 0) {
+                    ratingsEntity = (RatingsEntity) results.get(0);
+                    ratingsEntity.setNoOfOccurance(ratingsEntity.getNoOfOccurance() + 1);
+                    ratingsEntity.addScore(tag.getScore());
+                    hibernateMain.insertRatings(ratingsEntity);
+                } else {
+                    ratingsEntity = new RatingsEntity();
+                    ratingsEntity.setNoOfOccurance(ratingsEntity.getNoOfOccurance() + 1);
+                    ratingsEntity.addScore(tag.getScore());
+                    ratingsEntity.setAspectTag(tag.getTag());
+                    ratingsEntity.setRestaurantId(restaurantId);
+                    hibernateMain.insertRatings(ratingsEntity);
+                }
             }
         }
-
-        HibernateUtil.getSessionFactory().close();
     }
 
     public Sentence getSentimentScore(Sentence sentence, TypedDependencyEngine typedDependencyEngine) {

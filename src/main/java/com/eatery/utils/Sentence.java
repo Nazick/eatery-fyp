@@ -34,7 +34,7 @@ public class Sentence {
         InputStream tokenModel = null;
 
         try {
-            tokenModel = new FileInputStream("src/hibernate/resources/opennlp/en-token.bin");
+            tokenModel = new FileInputStream("src/main/resources/opennlp/en-token.bin");
             TokenizerModel model = new TokenizerModel(tokenModel);
 
             Tokenizer tokenizer = new TokenizerME(model);

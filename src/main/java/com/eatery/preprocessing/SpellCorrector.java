@@ -9,7 +9,7 @@ public class SpellCorrector {
     ToySpellingCorrector sc = new ToySpellingCorrector();
 
     public SpellCorrector() {
-        sc.trainFile("src/hibernate/resources/preprocessing/newDictWords.txt");
+        sc.trainFile("src/main/resources/preprocessing/newDictWords.txt");
     }
 
     public String correct(String word){
@@ -19,7 +19,7 @@ public class SpellCorrector {
     public static void main(String args[]){
 
         ToySpellingCorrector sc = new ToySpellingCorrector();
-        sc.trainFile("src/hibernate/resources/preprocessing/newDictWords.txt");
+        sc.trainFile("src/main/resources/preprocessing/newDictWords.txt");
         System.out.println(sc.correct("overdone"));
 
     }

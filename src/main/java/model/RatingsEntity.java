@@ -1,5 +1,7 @@
 package model;
 
+import AggregatingModel.LBNCI;
+
 import javax.persistence.*;
 
 /**
@@ -72,6 +74,11 @@ public class RatingsEntity {
 
     public void setNoOfOccurance(int noOfOccurance) {
         this.noOfOccurance = noOfOccurance;
+    }
+
+    public void addScore(Integer score){
+        LBNCI lbnci = new LBNCI();
+        this.score = lbnci.calculateLBNCI(this.score,noOfOccurance,this.score);
     }
 
     @Override
