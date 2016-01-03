@@ -188,12 +188,10 @@ public class EateryMain {
                 RatingsEntity ratingsEntity;
                 if (results.size() != 0) {
                     ratingsEntity = (RatingsEntity) results.get(0);
-                    ratingsEntity.setNoOfOccurance(ratingsEntity.getNoOfOccurance() + 1);
                     ratingsEntity.addScore(tag.getScore());
                     hibernateMain.insertRatings(ratingsEntity);
                 } else {
                     ratingsEntity = new RatingsEntity();
-                    ratingsEntity.setNoOfOccurance(ratingsEntity.getNoOfOccurance() + 1);
                     ratingsEntity.addScore(tag.getScore());
                     ratingsEntity.setAspectTag(tag.getTag());
                     ratingsEntity.setRestaurantId(restaurantId);

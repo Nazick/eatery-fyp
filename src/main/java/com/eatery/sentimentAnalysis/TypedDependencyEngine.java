@@ -88,7 +88,7 @@ public class TypedDependencyEngine {
             }
         }
         //    System.out.println(mainSentiment + " - " + line);
-        return mainSentiment;
+        return mainSentiment+1; //very (-) to very (+) => 1 to 5
     }
 
     /**

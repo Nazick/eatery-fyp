@@ -76,9 +76,10 @@ public class RatingsEntity {
         this.noOfOccurance = noOfOccurance;
     }
 
-    public void addScore(Integer score){
+    public void addScore(Integer newScore){
         LBNCI lbnci = new LBNCI();
-        this.score = lbnci.calculateLBNCI(this.score,noOfOccurance,this.score);
+        this.score = lbnci.calculateLBNCI(this.score,this.noOfOccurance,newScore);
+        this.noOfOccurance += 1;
     }
 
     @Override
