@@ -14,7 +14,7 @@ public class LBNCI {
         }
         average=total/ratings.length;
 
-        double score=average-zValue*variation/Math.sqrt(ratings.length);
+        double score=average-(zValue*variation)/Math.sqrt(ratings.length);
 
         return score;
     }
@@ -22,7 +22,7 @@ public class LBNCI {
     public double calculateLBNCI(double ratingsOld,int noOfOldRatings,double ratingNew) {
         double average=(ratingsOld*noOfOldRatings+ratingNew)/(noOfOldRatings+1);
 
-        double score=average-zValue*variation/Math.sqrt(noOfOldRatings+1);
+        double score=average-(zValue*variation)/Math.sqrt(noOfOldRatings+1);
 
         return score;
     }
@@ -44,6 +44,6 @@ public class LBNCI {
         double[] ratings4={5.0,4.0,5.0,2.0};
         System.out.println(lbnci.calculateLBNCI(ratings));
         System.out.println(lbnci.calculateLBNCI(ratings4));
-        System.out.println(lbnci.calculateLBNCI(14/3.0,3,2.0));
+        System.out.println(lbnci.calculateLBNCI(0.0,0,0.26));
     }
 }
