@@ -44,7 +44,8 @@ public class EateryMain {
     public static void main(String[] args) {
         EateryMain eateryMain = new EateryMain();
         //eateryMain.preProcessData();
-        eateryMain.process();
+//        eateryMain.process();
+        System.out.println(eateryMain.getCompositeRating("SDwYQ6eSu1htn8vHWv128g"));
     }
 
     public void process() {
@@ -406,6 +407,8 @@ public class EateryMain {
         HibernateMain hibernateMain = new HibernateMain();
         List ratings = hibernateMain.getRatings(restaurantName);
 
+        print(ratings);
+
         double foodItemScore = getSubRatings("F_FoodItem", ratings);
         double staffScore = getSubRatings("S_Staff", ratings);
         double deliveryScore = getSubRatings("S_Delivery", ratings);
@@ -417,17 +420,59 @@ public class EateryMain {
         double reservationScore = getSubRatings("O_Reservation", ratings);
         double experienceScore = getSubRatings("O_Experience", ratings);
         double environmentScore = getSubRatings("A_Environment", ratings);
+
+        updateSubRatings(ratings,"F_FoodItem",foodItemScore);
+        updateSubRatings(ratings,"S_Staff",staffScore);
+        updateSubRatings(ratings,"S_Delivery",deliveryScore);
+        updateSubRatings(ratings,"A_Entertainment",entertainmentScore);
+        updateSubRatings(ratings,"A_Furniture",furnitureScore);
+        updateSubRatings(ratings,"A_Places",placesScore);
+        updateSubRatings(ratings,"A_LocatedArea",locatedAreaScore);
+        updateSubRatings(ratings,"O_Payment",paymentScore);
+        updateSubRatings(ratings,"O_Reservation",reservationScore);
+        updateSubRatings(ratings,"O_Experience",experienceScore);
+        updateSubRatings(ratings,"A_Environment",environmentScore);
+
+        print(ratings);
+
         double serviceScore = getSubRatings("Service", ratings);
         double worthinessScore = getSubRatings("Worthiness", ratings);
         double ambienceScore = getSubRatings("Ambience", ratings);
         double foodScore = getSubRatings("Food", ratings);
         double offersScore = getSubRatings("Offers", ratings);
+        double othersScore = getSubRatings("Others", ratings);
+
+        updateSubRatings(ratings,"Service",serviceScore);
+        updateSubRatings(ratings,"Worthiness",worthinessScore);
+        updateSubRatings(ratings,"Ambience",ambienceScore);
+        updateSubRatings(ratings,"Food",foodScore);
+        updateSubRatings(ratings,"Offers",offersScore);
+        updateSubRatings(ratings,"Others",othersScore);
+
+        print(ratings);
+
         double restaurantScore = getSubRatings("Restaurant", ratings);
 
-
-        return 0.0;
+        return restaurantScore;
     }
 
+    private void updateSubRatings(List ratings, String aspect, double score) {
+        for (int i = 0; i < ratings.size(); i++) {
+            RatingsEntity ratingsEntity = (RatingsEntity) ratings.get(i);
+            if (ratingsEntity.getAspectTag().matches(aspect)) {
+               ratingsEntity.setScore(score);
+                ratings.remove(i);
+                ratings.add(ratingsEntity);
+            }
+        }
+    }
+
+    private void print(List ratings) {
+        for (int i = 0; i < ratings.size(); i++) {
+            RatingsEntity ratingsEntity = (RatingsEntity) ratings.get(i);
+            System.out.println(ratingsEntity.getAspectTag()+" "+ratingsEntity.getScore());
+        }
+    }
     private double getSubRatings(String parentAspect, List ratings) {
         HibernateMain hibernateMain = new HibernateMain();
         List weights = hibernateMain.getWeights(parentAspect);
