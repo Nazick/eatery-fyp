@@ -114,6 +114,8 @@ public class ImplicitAspects {
     public List<Sentence> find(List<Sentence> sentences){
         String[] tokens;
         sentenceObjects = sentences;
+        formattedSentences = new ArrayList<>();
+
         for (Sentence sentence : sentenceObjects){
             tokens = sentence.getTokens();
 
@@ -267,8 +269,11 @@ public class ImplicitAspects {
                             wordTag.setWord(word);
                             wordTag.setTag(winningAspect.substring (2,winningAspect.length()));
                             wordTag.setWordIndex(n);
-
-                            sentenceObjects.get(actualPos).getImplicitTags().put(n,wordTag);
+                            try {
+                                sentenceObjects.get(actualPos).getImplicitTags().put(n, wordTag);
+                            }catch (Exception e){
+                                System.out.println(actualPos+" "+sentenceObjects.size());
+                            }
                         }
                     }
 

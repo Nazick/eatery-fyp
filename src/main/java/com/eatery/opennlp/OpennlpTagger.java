@@ -63,9 +63,9 @@ public class OpennlpTagger {
                 String[] tokens = opennlpTagger.tokenizeSentence(sentence);
                 if (tokens != null) {
                     taggedTokens = opennlpTagger.tagger(tokens);
-                    if (taggedTokens != null) {
-                        opennlpTagger.printTags(sentence, taggedTokens, tokens);
-                    }
+//                    if (taggedTokens != null) {
+//                        opennlpTagger.printTags(sentence, taggedTokens, tokens);
+//                    }
                 }
             }
         }
