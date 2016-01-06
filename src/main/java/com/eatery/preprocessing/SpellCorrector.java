@@ -9,7 +9,7 @@ public class SpellCorrector {
     ToySpellingCorrector sc = new ToySpellingCorrector();
 
     public SpellCorrector() {
-        sc.trainFile("src/main/resources/preprocessing/newDictWords.txt");
+        sc.trainFile("src/main/resources/preprocessing/WordSource.txt");
     }
 
     public String correct(String word){

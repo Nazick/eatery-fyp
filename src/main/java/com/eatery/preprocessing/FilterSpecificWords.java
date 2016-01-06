@@ -14,7 +14,7 @@ public class FilterSpecificWords {
     public static void main(String args[]) {
         try {
             ArrayList storeWordList = new ArrayList();
-            FileInputStream fstream = new FileInputStream("src/main/resources/preprocessing/newDictWords.txt");
+            FileInputStream fstream = new FileInputStream("src/main/resources/preprocessing/WordSource.txt");
             // Get the object of DataInputStream
             DataInputStream in = new DataInputStream(fstream);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
@@ -39,7 +39,7 @@ public class FilterSpecificWords {
                 }
             }
             Writer output = null;
-            File file = new File("src/hibernate/resources/preprocessing/newWordlist.txt");
+            File file = new File("src/main/resources/preprocessing/WordSource.txt");
             output = new BufferedWriter(new FileWriter(file));
 
             for (String word: uniqueWords) {

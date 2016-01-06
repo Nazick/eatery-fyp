@@ -28,12 +28,12 @@ import java.util.Map;
 public class EateryMain {
 
     final static String processedFilePath = "src/main/resources/" +
-            // "test.json"; "review_100_A.json";
+             "test.json"; //"review_100_A.json";
             //"top100Business.json";
-            "100Reviews.json";
+            //"100Reviews.json";
 
     final static String filePathRead = "src/main/resources/" +
-            "review_100_A.json";
+            "100Reviews.json";
 
     final static String implicitTestFile = "src/main/resources/" +
             //         "processedFile.json";
@@ -43,8 +43,8 @@ public class EateryMain {
 
     public static void main(String[] args) {
         EateryMain eateryMain = new EateryMain();
-        //eateryMain.preProcessData();
-        eateryMain.process();
+        eateryMain.preProcessData();
+        //eateryMain.process();
     }
 
     public void process() {
@@ -126,18 +126,21 @@ public class EateryMain {
             Writer output = new BufferedWriter(new FileWriter(processedFile, false));
 
             String line;
+            int count = 0;
 
             long startTime = System.currentTimeMillis();
 
             while ((line = br.readLine()) != null) {
                 String review;
                 String tempReview = "";
-
+                count++;
                 Object obj = parser.parse(line);
                 jsonObject = (JSONObject) obj;
 
 
                 if (!jsonObject.equals(null)) {
+
+                    System.out.println("\n############# "+count+" ##############");
                     review = (String) jsonObject.get("text");
                     if (languageDetect.isReviewInEnglish(review)) {
                         String[] sentences = OpennlpTagger.detectSentence(review);
