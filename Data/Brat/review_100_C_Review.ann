@@ -1,0 +1,616 @@
+T1	Food 41 47	diners
+T2	Food 76 85	breakfast
+T3	A_Furniture 110 116	tables
+T4	Food 181 191	breakfasts
+T5	Others 247 252	clean
+T6	S_Staff 258 264	server
+T7	S_Stf_Behavior 278 287	attentive
+T8	Food 300 309	breakfast
+T9	F_FoodItem 335 339	eggs
+T10	F_FoodItem 341 353	crispy bacon
+T11	F_FoodItem 359 374	fluffy pancakes
+T12	S_Stf_Experience 439 449	experience
+T13	A_Plc_Bathroom 539 548	bathrooms
+T14	Food 623 627	food
+T15	Service 781 788	service
+T16	A_Env_Type 811 828	family atmosphere
+T17	Food 839 843	food
+T18	W_Price 874 880	prices
+T19	F_FoodItem 1032 1042	Short Ribs
+T20	F_FoodItem 1048 1057	Canneloni
+T21	F_FoodItem 1109 1119	Red Snappe
+T22	F_FoodItem 1126 1139	lemon piccata
+T23	F_FoodItem 1155 1163	linguine
+T24	F_Dessert 1259 1265	desert
+T25	F_FoodItem 1297 1301	fish
+T26	F_Dessert 1240 1251	red snapper
+T27	F_FoodItem 1356 1372	brisket sandwich
+T28	S_OpenHours 1456 1466	late night
+T29	F_FoodItem 1504 1509	chips
+T30	F_FoodItem 1518 1523	salsa
+T31	Food 1538 1542	food
+T32	Service 1571 1578	service
+T33	F_FoodItem 1604 1619	guacamole cream
+T34	F_FoodItem 1639 1649	Tres Leche
+T35	F_FoodItem 1630 1634	flan
+T36	F_FoodItem 1675 1687	Mexican food
+T37	A_Env_Type 1749 1755	formal
+T38	Service 1781 1795	faster-service
+T39	Food 1972 1979	entrees
+T40	Service 2025 2032	Service
+T41	Ambience 2060 2065	place
+T42	A_Env_Size 2129 2134	small
+T43	A_Env_Size 2144 2154	big enough
+T44	A_Fur_Table 2202 2208	tables
+T45	Food 2380 2384	food
+T46	Food 2597 2603	entree
+T47	F_FoodItem 2693 2708	drunken chicken
+T48	Food 2722 2726	food
+T49	F_FoodItem 2751 2758	chicken
+T50	F_Appetizer 2778 2796	sweet potato fries
+T51	F_FoodItem 2853 2863	vegetables
+T52	O_Experience 3094 3108	gone down hill
+T53	S_Staff 3114 3119	staff
+T54	F_FoodItem 3294 3304	sandwiches
+T55	F_Ingredients 3317 3324	lettuce
+T56	A_Plc_Kitchen 3376 3383	kitchen
+T57	A_Plc_Bathroom 3404 3412	bathroom
+T58	Ambience 3479 3489	this place
+T59	S_Parking 3495 3502	parking
+T60	Service 3539 3546	service
+T61	S_Staff 3622 3625	guy
+T62	F_FoodItem 3710 3714	meat
+T63	F_FoodItem 3716 3720	rice
+T64	F_FoodItem 3723 3728	beans
+T65	F_FoodItem 3686 3694	burritos
+T66	F_FoodItem 3812 3825	chicken tacos
+T67	F_FoodItem 3998 4005	burrito
+T68	F_FoodItem 4073 4078	salsa
+T69	A_Fur_Table 4113 4119	booths
+T70	A_Decor 4186 4189	art
+T71	O_Experience 4572 4587	loyal customers
+T72	S_Menu 4698 4702	menu
+T73	A_Environment 4707 4717	atmosphere
+T74	O_Experience 4812 4822	FIRST-RATE
+T75	S_Staff 4872 4878	waiter
+T76	S_Stf_Behavior 4883 4891	friendly
+T77	S_Stf_Behavior 4896 4904	outgoing
+T78	S_Staff 4913 4931	the executive chef
+T79	F_FoodItem 4951 4956	bread
+T80	A_Environment 5038 5048	atmosphere
+T81	A_Ent_Music 5062 5067	piano
+T82	F_FoodItem 5147 5171	Fruits de Mur Aux Gratin
+T83	F_FoodItem 5240 5250	lamb shank
+T84	F_Appetizer 5298 5312	fried calamari
+T85	F_Appetizer 5319 5328	appetizer
+T86	O_Experience 5446 5457	exceptional
+T87	W_Price 5468 5481	fairly priced
+T88	Service 5510 5517	service
+T89	O_Experience 5614 5631	GO TRY THIS PLACE
+T90	O_Experience 5695 5711	must-visit place
+T92	A_Environment 5956 5966	atmosphere
+T93	Food 5976 5980	food
+T94	A_Env_Size 6161 6165	huge
+T95	A_Decor 6206 6214	fountain
+T96	Service 6326 6333	service
+T97	Food 6339 6343	food
+T98	A_Decor 6349 6354	decor
+T99	O_Experience 6540 6560	wonderful experience
+T100	O_Experience 6568 6585	will be returning
+T102	O_Exp_StarsByCus 6662 6669	4 stars
+T103	O_Exp_StarsByCus 6758 6765	3 stars
+T101	A_Fur_Table 6879 6884	table
+T104	A_Decor 6973 6983	water show
+T105	A_Furniture 6947 6954	windows
+T106	A_Decor 7049 7054	decor
+T107	F_FoodItem 7504 7510	salads
+T108	F_FoodItem 7514 7524	prosciutto
+T109	F_FoodItem 7527 7538	melon salad
+T110	F_FoodItem 7555 7562	Caprese
+T111	F_FI_Taste 7631 7637	tasted
+T112	F_FoodItem 7592 7597	bread
+T113	F_FoodItem 7701 7712	Pappardelle
+T114	F_Ingredients 7863 7868	sauce
+T115	F_Ingredients 7963 7969	butter
+T116	F_Appetizer 8121 8130	appetizer
+T117	F_FoodItem 8293 8301	raviolis
+T118	F_FoodItem 8375 8380	quail
+T119	F_Dessert 8528 8535	Dessert
+T120	F_Ingredients 8614 8629	raspberry sauce
+T121	F_Ingredients 8643 8658	chocolate sauce
+T122	W_Price 8842 8847	cheap
+T123	O_Exp_StarsByCus 8965 8972	4 stars
+T124	S_Staff 9010 9016	waiter
+T125	Food 9036 9040	food
+T126	F_FoodItem 9077 9093	Chicken empandas
+T127	F_FoodItem 9111 9122	skirt steak
+T128	F_FoodItem 9129 9138	empanadas
+T129	S_Staff 9242 9248	waiter
+T130	F_FoodItem 9406 9417	bread rolls
+T131	F_FI_Size 9501 9515	sandwich sizes
+T132	F_FI_Size 9517 9522	small
+T133	F_FI_Size 9530 9536	medium
+T134	F_FI_Size 9549 9554	large
+T135	F_FoodItem 9972 9980	sandwich
+T136	F_FoodItem 10031 10036	bread
+T137	F_Ingredients 10099 10114	cranberry sauce
+T138	F_Appetizer 10319 10327	appetite
+T139	F_FoodItem 10368 10376	sandwich
+T140	F_FI_CookingLevel 10441 10448	toasted
+T141	F_FoodItem 10449 10454	bread
+T142	F_FoodItem 10532 10540	sandwich
+T143	F_Ingredients 10631 10642	ingredients
+T144	F_FoodItem 10727 10739	cheesesteaks
+T145	F_FoodItem 10741 10754	meatball subs
+T146	F_FoodItem 10760 10780	Italian sausage subs
+T147	F_FoodItem 10800 10806	turkey
+T148	F_FoodItem 10808 10818	roast beef
+T149	F_FoodItem 10824 10828	tuna
+T150	Service 10843 10850	service
+T151	O_Experience 10857 10870	friendly feel
+T152	Service 11057 11073	customer service
+T153	A_LocatedArea 11101 11109	location
+T154	S_Staff 11131 11144	delivery girl
+T155	F_FoodItem 11610 11615	Pizza
+T156	F_FI_Religious 11635 11649	vegan friendly
+T157	O_Experience 11728 11737	impressed
+T158	F_FoodItem 11853 11864	olive salsa
+T159	F_FoodItem 11843 11848	bread
+T160	F_FoodItem 11907 11912	chips
+T161	F_FoodItem 11917 11922	salsa
+T162	F_FoodItem 12002 12008	olives
+T163	F_FoodItem 12014 12026	shrimp tacos
+T164	F_Drinks 12048 12057	margarita
+T165	F_FI_Taste 12147 12152	tasty
+T166	F_Ingredients 12176 12179	ice
+T167	Ambience 12267 12272	place
+T168	F_FoodItem 12323 12334	crispy duck
+T169	F_FoodItem 12395 12408	garlic shrimp
+T170	F_FI_CookingLevel 12480 12483	fry
+T171	Service 12571 12578	service
+T172	S_Staff 12632 12638	waiter
+T173	Food 12864 12870	dishes
+T174	F_Appetizer 12873 12882	appetizer
+T175	W_Price 12934 12941	pricier
+T176	A_Plc_Bar 12999 13002	bar
+T177	F_Drinks 13053 13058	vodka
+T178	F_Drinks 13093 13101	martinis
+T179	F_Drinks 13113 13121	martinis
+T180	F_Drinks 13161 13169	martinis
+T181	F_Appetizer 13287 13292	fries
+T182	A_Environment 13369 13379	atmosphere
+T183	A_Decor 13392 13395	art
+T184	F_FoodItem 13462 13473	mean burger
+T185	F_Ingredients 13546 13552	sauces
+T186	F_FI_Taste 13667 13672	tasty
+T187	F_FoodItem 13673 13679	burger
+T188	F_FoodItem 13839 13844	wings
+T189	F_FoodItem 13849 13861	cheese curds
+T190	F_FoodItem 13905 13910	curds
+T191	F_Ingredients 14006 14011	chili
+T192	F_FoodItem 14042 14055	chicken wings
+T193	S_Staff 14385 14394	bartender
+T194	S_Stf_Behavior 14469 14477	response
+T195	S_Stf_Behavior 14454 14468	unenthusiastic
+T196	F_FoodItem 14974 14988	Ahi tuna salad
+T197	F_FoodItem 15140 15145	steak
+T198	F_FoodItem 15150 15157	frittes
+T199	F_FoodItem 15163 15168	steak
+T200	F_Ingredients 15200 15211	onion sauce
+T201	F_FI_CookingLevel 15188 15199	caramelized
+T202	F_FoodItem 15260 15265	steak
+T203	F_FI_Size 15266 15272	medium
+T204	F_FoodItem 15288 15293	steak
+T205	F_FI_Size 15305 15309	thin
+T91	F_Drinks 7125 7130	water
+T206	S_Staff 7139 7149	wait staff
+T207	F_Drinks 7246 7259	bottled water
+T208	F_FoodItem 7647 7652	pizza
+T209	Service 14127 14141	service aspect
+T210	F_FoodItem 15382 15388	frites
+T211	F_FI_CookingLevel 15445 15451	soaked
+T212	W_Price 15477 15494	reasonably priced
+T213	F_FoodItem 15650 15655	steak
+T214	F_FoodItem 15660 15666	frites
+T215	Service 15705 15712	Service
+T216	S_Staff 15722 15728	server
+T217	F_Drinks 15748 15759	French wine
+T218	S_Menu 15854 15863	wine list
+T219	S_Staff 15875 15881	server
+T220	F_Appetizer 15898 15915	seafood appetizer
+T221	A_LocatedArea 15958 15968	Tamale Bay
+T222	F_FoodItem 16029 16036	oysters
+T223	F_FI_CookingLevel 16049 16056	shucked
+T224	F_FoodItem 16125 16130	bread
+T225	F_FoodItem 16133 16143	pistachios
+T226	Food 16176 16180	Food
+T227	F_FoodItem 16247 16257	lamb shank
+T228	S_Staff 16338 16343	staff
+T229	F_FoodItem 16461 16482	ahi tuna taco platter
+T230	F_FoodItem 16498 16510	french fries
+T231	F_Appetizer 16710 16725	red pepper soup
+T232	S_Staff 16767 16773	waiter
+T233	Service 16927 16934	service
+T234	Service 16998 17005	service
+T235	A_Fur_Table 17182 17188	tables
+T236	A_Decor 17209 17223	advertisements
+T237	F_FoodItem 17284 17298	grilled cheese
+T238	F_FoodItem 17335 17350	sourdough bread
+T239	F_FoodItem 17356 17361	fries
+T240	F_Ingredients 17320 17325	bacon
+T241	F_FoodItem 17395 17410	sourdough bread
+T242	F_FoodItem 17416 17421	fries
+T243	F_FoodItem 17380 17391	turkey melt
+T244	F_FoodItem 17426 17434	sandwich
+T245	F_FoodItem 17475 17480	fries
+T246	S_Menu 17522 17535	lunch options
+T247	F_FoodItem 17600 17605	lunch
+T248	Food 17649 17658	breakfast
+T249	S_Staff 17706 17712	server
+T250	F_FoodItem 17743 17758	seafood skewers
+T251	F_FI_CookingLevel 17777 17787	overcooked
+T252	F_FoodItem 17808 17815	seafood
+T253	F_FoodItem 17934 17941	seafood
+T254	Food 18006 18012	buffet
+T255	F_Ingredients 18067 18079	salad greens
+T256	S_Staff 18080 18091	The manager
+T257	F_FoodItem 18164 18171	seafood
+T258	F_FI_CookingLevel 18204 18219	properly cooked
+T259	F_Dessert 18246 18253	dessert
+T260	F_FoodItem 18330 18350	chocolate cheesecake
+T261	F_Ingredients 18459 18474	raspberry culee
+T262	F_Ingredients 18479 18491	mint garnish
+T263	F_FoodItem 18555 18562	seafood
+T264	O_Experience 18594 18604	experience
+T265	S_Staff 18634 18639	staff
+T266	O_Experience 18843 18853	experience
+T267	S_Staff 18918 18927	show girl
+T268	F_FoodItem 18997 19002	lunch
+T269	F_FoodItem 19084 19089	meats
+T270	F_Drinks 19249 19259	tepid beer
+T271	O_Experience 19284 19292	Not good
+T272	F_Ingredients 19334 19346	green chilli
+T273	Ambience 19411 19421	restaurant
+T274	Service 19455 19462	service
+T275	Food 19484 19488	food
+T276	Ambience 19556 19566	restaurant
+T277	A_LocatedArea 19590 19605	city of Alameda
+T278	F_FoodItem 19770 19782	Nigri pieces
+T279	F_FoodItem 19810 19825	Chirashi pieces
+T280	Ambience 19999 20009	restaurant
+T281	O_Experience 20095 20106	not go back
+T282	Food 20222 20226	food
+T283	S_Staff 20401 20408	manager
+T284	S_Staff 20412 20417	owner
+T285	S_Staff 20662 20669	cashier
+T286	O_Experience 20810 20831	never eat there again
+T287	F_FoodItem 20982 20988	dinner
+T288	F_FoodItem 21021 21039	fettuccine alfredo
+T289	F_FoodItem 21066 21073	chicken
+T290	O_Experience 21163 21171	sad face
+T291	F_FoodItem 21175 21187	Sans chicken
+T292	F_Ingredients 21216 21221	sauce
+T293	F_FoodItem 21310 21325	pepperoni pizza
+T294	F_FoodItem 21434 21439	pizza
+T295	F_Dessert 21510 21517	dessert
+T296	F_FoodItem 21532 21540	tiramisu
+T297	F_FoodItem 21591 21610	strawberry tiramisu
+T298	F_FoodItem 21674 21681	cannoli
+T299	S_Staff 21712 21717	staff
+T300	F_FoodItem 21778 21785	chicken
+T301	S_Staff 21819 21825	waiter
+T302	S_Stf_Experience 21830 21839	very slow
+T303	Food 22075 22079	meal
+T304	Food 22148 22152	food
+T305	F_FoodItem 22349 22365	bagel sandwiches
+T306	Ambience 22637 22642	place
+T307	F_Drinks 22881 22886	drink
+T308	Service 23001 23017	customer service
+T309	F_FoodItem 23059 23066	spinach
+T310	F_FoodItem 23071 23088	feta cheese omlet
+T311	F_FoodItem 23118 23128	home fries
+T312	F_FoodItem 23135 23140	bagel
+T313	F_FoodItem 23164 23169	bagel
+T314	F_FoodItem 23183 23193	home fries
+T315	F_FoodItem 23210 23215	omlet
+T316	F_FoodItem 23232 23239	spinach
+T317	F_FI_CookingLevel 23285 23291	frozen
+T318	F_FoodItem 23302 23306	crap
+T319	F_FoodItem 23353 23358	omlet
+T320	F_FoodItem 23381 23385	eggs
+T321	F_FoodItem 23394 23398	eggs
+T322	F_FI_CookingLevel 23427 23438	over cooked
+T323	F_FoodItem 23518 23524	bagels
+T324	F_FoodItem 23529 23532	lox
+T325	Food 23626 23630	food
+T326	F_Drinks 23706 23718	orange juice
+T327	F_Drinks 23895 23900	juice
+T328	Service 24085 24092	service
+T329	S_Staff 24154 24162	waitress
+T330	S_Stf_Behavior 24134 24146	friendliness
+T331	Food 24218 24222	food
+T332	W_Price 24413 24419	prices
+T333	Service 24487 24494	service
+T334	S_Staff 24625 24631	server
+T335	S_Staff 24686 24692	server
+T336	S_Stf_Behavior 24800 24804	rude
+T337	F_FoodItem 24879 24886	burgers
+T338	F_FoodItem 24888 24896	zucchini
+T339	F_FoodItem 24901 24917	root beer floats
+T340	Food 24961 24965	food
+T341	Ambience 24978 24983	place
+T342	Food 25045 25049	food
+T343	Food 25116 25120	food
+T344	F_FoodItem 25134 25145	sushi rolls
+T345	F_FoodItem 25215 25219	rice
+T346	Food 25248 25252	food
+T347	F_Ingredients 25274 25285	ingredients
+T348	Ambience 25315 25323	ambiance
+T349	Service 25359 25366	service
+T350	Food 25448 25452	meal
+T351	A_Decor 25464 25469	Decor
+T352	S_Staff 25565 25566	t
+T353	S_Staff 25574 25581	waiters
+T354	F_Appetizer 25605 25615	appetizers
+T355	F_FoodItem 25649 25659	pork belly
+T356	F_FoodItem 25661 25672	bone marrow
+T357	F_FoodItem 25677 25686	asparagus
+T358	F_FoodItem 25693 25703	pork belly
+T359	F_FI_Taste 25717 25723	crispy
+T360	F_FoodItem 25787 25798	bone marrow
+T361	F_FI_Quality 25814 25823	delicious
+T362	F_FI_CookingLevel 25803 25809	creamy
+T363	Food 25876 25883	entrees
+T364	F_FoodItem 25906 25912	steaks
+T365	Food 26194 26198	meal
+T366	W_Price 26215 26220	penny
+T367	Food 26536 26542	dinner
+T368	Food 26556 26562	dinner
+T369	F_FoodItem 26625 26641	Chilean Sea Bass
+T370	F_FI_Taste 26678 26683	tasty
+T371	F_FoodItem 26684 26688	fish
+T372	F_FoodItem 26729 26743	shrimp rissoto
+T373	F_FoodItem 26757 26767	bruschetta
+T374	F_FoodItem 26880 26890	waygu beef
+T375	F_FI_CookingLevel 26919 26925	tender
+T376	F_FI_Taste 26930 26935	tasty
+T377	W_Price 27031 27036	price
+T378	F_FoodItem 27083 27103	garlic mash potatoes
+T379	F_FoodItem 27105 27116	green beans
+T380	F_FoodItem 27121 27130	mushrooms
+T381	F_FoodItem 27147 27156	mushrooms
+T382	F_FoodItem 27190 27203	mash potatoes
+T383	F_FoodItem 27237 27248	green beans
+T384	F_FI_Quality 27254 27259	fresh
+T385	F_FI_CookingLevel 27264 27269	crisp
+T386	F_Dessert 27357 27364	dessert
+T387	S_Staff 27370 27376	waiter
+T388	F_Dessert 27402 27413	donut holes
+T389	F_Ingredients 27452 27479	peanut butter/coconut sauce
+T390	F_Ingredients 27494 27510	strawberry sauce
+T391	S_Staff 27527 27533	waiter
+T392	Service 27563 27570	service
+T393	O_Experience 27592 27608	highly recommend
+T394	F_FoodItem 27652 27663	Greek fries
+T395	F_FoodItem 27670 27674	gyro
+T396	Food 27682 27688	dishes
+T397	F_FI_Taste 27695 27709	vinegary taste
+T398	F_FoodItem 27801 27805	gyro
+T399	F_FoodItem 27983 27988	fries
+T400	F_FoodItem 28052 28063	Feta cheese
+T401	F_FoodItem 28065 28072	oregano
+T402	F_FoodItem 28084 28090	cheese
+T403	F_FoodItem 28130 28141	steak fries
+T404	F_FoodItem 28211 28215	gyro
+T405	F_FoodItem 28260 28264	meat
+T406	F_FI_CookingLevel 28275 28281	tender
+T407	F_FI_CookingLevel 28286 28291	moist
+T408	F_Ingredients 28300 28305	sauce
+T409	Service 28472 28479	service
+T410	F_FoodItem 28626 28633	baklava
+T411	Ambience 28704 28719	authentic place
+T412	Food 28757 28761	food
+T413	S_Menu 28819 28823	menu
+T414	A_Environment 29068 29078	atmosphere
+T415	Food 29083 29087	food
+T416	F_Dessert 29322 29330	desserts
+T417	F_Drinks 29314 29320	coffee
+T418	Food 29350 29357	cuisine
+T419	Food 29378 29382	food
+T420	W_Price 29398 29408	overpriced
+T421	F_Drinks 29466 29472	coffee
+T422	F_Dessert 29477 29484	dessert
+T423	A_Fur_Table 29534 29539	seats
+T424	F_FoodItem 29666 29671	Pecan
+T425	F_FoodItem 29676 29689	Chocolate pie
+T426	A_Environment 29729 29739	atmosphere
+T427	S_Staff 29777 29782	staff
+T428	S_Stf_Behavior 29793 29801	amicable
+T429	W_Price 29832 29838	prices
+T430	O_Exp_StarsByCus 29876 29886	five stars
+T431	F_FI_Price 29935 29942	cheaper
+T432	F_FI_Taste 30088 30097	delicious
+T433	F_FI_Taste 30243 30252	delicious
+T434	F_FI_Taste 30292 30297	tasty
+T435	F_FoodItem 30445 30450	pizza
+T436	F_FI_Taste 30455 30460	tasty
+T437	W_Price 30465 30471	prices
+T438	Service 30631 30647	customer service
+T439	Food 30668 30677	breakfast
+T440	F_FoodItem 30698 30708	hashbrowns
+T441	S_Staff 30733 30741	waitress
+T442	F_FoodItem 30838 30843	fries
+T443	F_FoodItem 30848 30853	fruit
+T444	W_Price 30882 30888	prices
+T445	S_Staff 30957 30964	manager
+T446	F_FI_Quality 30975 30984	cold food
+T447	S_Stf_Experience 31104 31120	terrible service
+T448	F_FoodItem 31158 31167	sushi fix
+T449	F_FoodItem 31174 31178	fish
+T450	F_FI_CookingLevel 31244 31249	roast
+T451	F_FoodItem 31250 31254	beef
+T452	F_FoodItem 31372 31384	green chilis
+T453	F_FI_Size 31386 31391	diced
+T454	F_FoodItem 31392 31398	onions
+T455	F_FoodItem 31421 31428	cabbage
+T456	F_FoodItem 31433 31441	tomatoes
+T457	F_FI_Size 31596 31602	medium
+T458	F_FoodItem 31603 31609	pizzas
+T459	F_FI_Price 31616 31629	regular price
+T460	F_FoodItem 31682 31687	beans
+T461	F_FoodItem 31692 31696	rice
+T462	F_FoodItem 31782 31794	Spanish rice
+T463	F_Ingredients 31809 31821	chili powder
+T464	F_FoodItem 31844 31849	beans
+T465	F_FoodItem 31883 31892	side dish
+T466	F_Ingredients 31972 31986	habanero sauce
+T467	A_Fur_Table 31994 31999	table
+T468	F_Drinks 32098 32106	lemonade
+T469	F_FoodItem 32117 32127	beef burro
+T470	F_FI_Taste 32187 32193	sugary
+T471	F_FoodItem 32214 32222	Freezees
+T472	F_FI_Size 32350 32354	tiny
+T473	F_FoodItem 32355 32370	Lenny's burgers
+T474	F_FoodItem 32400 32405	lunch
+T475	F_FoodItem 32641 32648	shrooms
+T476	O_Experience 32837 32855	exceptionally good
+T477	Service 32861 32868	service
+T478	Ambience 32898 32903	Place
+T479	O_Experience 32995 33004	welcoming
+T480	Food 33031 33035	food
+T481	F_FoodItem 33087 33094	seafood
+T482	F_FoodItem 33125 33135	vegetables
+T483	F_FI_CookingLevel 33141 33146	crisp
+T484	F_FI_Quality 33151 33156	fresh
+T485	Food 33330 33334	food
+T486	F_Ingredients 33351 33357	source
+T487	F_FI_Religious 33505 33511	veggie
+T488	F_FoodItem 33512 33518	burger
+T489	F_Appetizer 33542 33559	mozzarella sticks
+T490	F_Appetizer 33560 33569	appetizer
+T491	F_FoodItem 33604 33615	onion rings
+T492	S_Staff 33684 33691	hostess
+T493	F_FI_Religious 33738 33744	veggie
+T494	F_FoodItem 33745 33751	burger
+T495	F_FoodItem 33794 33800	Burger
+T496	F_FoodItem 33890 33896	burger
+T497	Food 33948 33952	food
+T498	F_FI_Taste 33964 33969	salty
+T499	F_FI_CookingLevel 33986 33992	frozen
+T500	F_FI_CookingLevel 33997 34007	thawed out
+T501	Service 34147 34154	service
+T502	Food 34204 34208	food
+T503	F_FoodItem 34245 34251	dinner
+T504	A_Environment 34310 34315	place
+T505	A_Decor 34326 34331	decor
+T506	A_Decor 34336 34342	colors
+T507	F_FoodItem 34434 34450	meatball sliders
+T508	F_FoodItem 34506 34511	bread
+T509	F_FI_CookingLevel 34539 34543	burn
+T510	F_FI_CookingLevel 34584 34588	burn
+T511	F_FI_CookingLevel 34641 34646	toast
+T512	F_FoodItem 34681 34686	bread
+T513	F_FoodItem 34697 34702	bread
+T514	S_Stf_Behavior 35138 35146	greeting
+T515	S_Staff 35166 35173	manager
+T516	S_Staff 35182 35191	sommelier
+T517	F_Drinks 35244 35260	Domaine Ott Rose
+T518	F_FoodItem 35388 35402	polenta sticks
+T519	F_FI_Taste 35408 35414	crispy
+T520	F_FI_Taste 35427 35433	creamy
+T521	F_Ingredients 35450 35460	meat sauce
+T522	Food 35483 35487	food
+T523	F_FoodItem 35527 35532	pasta
+T525	F_Ingredients 35617 35625	truffles
+T524	F_Ingredients 35600 35606	butter
+T526	F_FI_CookingLevel 35817 35831	over-saturated
+T527	F_FoodItem 36032 36037	lunch
+T528	F_FoodItem 36060 36081	Med chicken flatbread
+T529	F_FoodItem 36086 36097	Greek salad
+T530	F_Drinks 36104 36107	tea
+T531	Service 36130 36137	service
+T532	S_Staff 36186 36192	server
+T533	F_FoodItem 36242 36259	gluten-free bread
+T534	O_Experience 36444 36456	burger place
+T535	F_FoodItem 36626 36641	Chipotle Burger
+T536	F_FoodItem 36660 36672	Steak Burger
+T537	F_FoodItem 36825 36838	Italian combo
+T538	F_FoodItem 36858 36868	sandwiches
+T539	F_FoodItem 36906 36916	meal fries
+T540	F_Drinks 37054 37060	shakes
+T541	Food 37248 37252	food
+T542	A_Places 37269 37277	portions
+T543	F_FoodItem 37354 37358	eggs
+T544	F_FoodItem 37374 37381	burgers
+T545	F_FoodItem 37414 37420	tables
+T546	Ambience 37487 37492	place
+T547	F_FI_Size 37554 37561	regular
+T548	F_FoodItem 37562 37568	burger
+T549	F_FoodItem 37573 37578	fries
+T550	S_Menu 37639 37643	menu
+T551	S_Staff 37807 37812	owner
+T552	F_FoodItem 38193 38200	burgers
+T553	F_FoodItem 38350 38356	salsas
+T554	F_FoodItem 38403 38417	tortilla chips
+T555	F_FoodItem 38423 38427	pork
+T556	F_FI_CookingLevel 38432 38435	dry
+T557	F_FI_CookingLevel 38436 38446	overcooked
+T558	F_FoodItem 38452 38458	Shrimp
+T559	F_FoodItem 38463 38468	grits
+T560	F_Drinks 38539 38543	beer
+T561	A_Env_Type 38561 38572	amily owned
+T562	F_FI_Taste 38585 38595	Good taste
+T563	A_Plc_Bar 38682 38685	bar
+T564	Food 38701 38705	food
+T565	Food 38837 38841	food
+T566	W_Price 38861 38866	price
+T567	O_Experience 39114 39129	very satisfying
+T568	A_Env_Size 39253 39262	very smal
+T569	A_Env_Type 39268 39276	charming
+T570	F_FoodItem 39288 39292	eggs
+T571	A_Plc_Patio 39463 39468	patio
+T572	Service 39494 39501	service
+T573	F_FoodItem 39567 39579	animal fries
+T574	F_FoodItem 39626 39645	chambord maragarita
+T575	F_FoodItem 39814 39821	flautas
+T576	F_FoodItem 39869 39878	pork hash
+T577	F_FI_Religious 39964 39984	vegetarian selection
+T578	F_FoodItem 40012 40025	veggie burger
+T579	F_FoodItem 40048 40057	mushrooms
+T580	F_FoodItem 40062 40070	zucchini
+T581	F_FI_Quality 40105 40114	home made
+T582	F_FoodItem 40115 40122	morsels
+T583	F_FoodItem 40186 40196	veggie sub
+T584	F_FoodItem 40225 40231	burger
+T585	F_FoodItem 40237 40244	burgers
+T586	F_FoodItem 40282 40292	veggie sub
+T587	F_FoodItem 40328 40333	bread
+T588	F_FI_Quality 40358 40365	quality
+T589	F_FoodItem 40381 40388	veggies
+T590	F_FoodItem 40556 40561	fries
+T591	F_FoodItem 40566 40578	cheese curds
+T592	F_FoodItem 40592 40597	Fries
+T593	F_FI_CookingLevel 40603 40608	fresh
+T594	F_FI_CookingLevel 40610 40620	not frozen
+T595	F_FoodItem 40627 40639	Cheese curds
+T596	F_FI_Taste 40645 40650	tasty
+T597	F_Drinks 40651 40655	Soda
+T598	F_Drinks 40772 40776	beer
+T599	F_FI_Taste 40791 40800	Delicious
+T600	F_FoodItem 40824 40834	fried pork
+T601	F_FoodItem 40839 40848	coriander
+T602	F_FoodItem 41474 41483	bean cake
+T603	F_FoodItem 41489 41497	scallops
+T604	F_FI_CookingLevel 41503 41509	tender
+T605	F_FI_CookingLevel 41514 41521	buttery
+T606	F_FoodItem 41537 41546	bean cake
+T607	F_FoodItem 41604 41615	seared tuna
+T608	F_FoodItem 41666 41675	rice cake
+T609	F_Ingredients 41681 41692	ponzu sauce
+T610	F_FoodItem 41751 41755	tuna
+T611	F_FoodItem 41956 41963	buffets
+T612	F_FoodItem 42048 42053	lunch
+T613	Food 42085 42089	food
+T614	Service 42094 42101	service
+T615	Food 42193 42200	entrees
+T616	F_Dessert 42205 42213	desserts
