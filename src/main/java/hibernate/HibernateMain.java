@@ -22,16 +22,21 @@ public class HibernateMain {
     public static void main(String[] args) {
         HibernateMain hibernateMain = new HibernateMain();
         //hibernateMain.updateWeightsTable();
-        List list = hibernateMain.getRatings("DDD");
-        System.out.println(list.size());
+        List list = hibernateMain.searchByAspect("Food",5);
+        //List list2 = hibernateMain.searchAspectByRestaurant("Restaurant_11","Food");
+        System.out.println();
 
     }
 
     public void insertRatings(RatingsEntity ratingsEntity) {
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        session.saveOrUpdate(ratingsEntity);
-        session.getTransaction().commit();
+        try {
+            Session session = sessionFactory.openSession();
+            session.beginTransaction();
+            session.saveOrUpdate(ratingsEntity);
+            session.getTransaction().commit();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public void insertRestaurant(BusinessEntity restaurent) {
@@ -82,12 +87,48 @@ public class HibernateMain {
         return businessEntity;
     }
 
+    public List getRestaurantByName(String restaurantName) {
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        String hql = "FROM BusinessEntity B WHERE B.name = :restaurantName";
+        Query query = session.createQuery(hql);
+        query.setParameter("restaurantName", restaurantName);
+        List list = query.list();
+        session.getTransaction().commit();
+        return list;
+    }
+
     public List getWeights() {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from WeightsEntity ");
         List<?> list = query.list();
         return list;
     }
+
+    public List searchByAspect(String aspectName, int noOfResults){
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        String hql = "select b.name, r.score from RatingsEntity r, BusinessEntity b, AspectEntity a where r.restaurantId = b.businessId and r.aspectTag = a.aspectTag and a.aspectName = :aspectName order by r.score desc";
+        Query query = session.createQuery(hql);
+        query.setParameter("aspectName", aspectName);
+        query.setMaxResults(noOfResults);
+        List list = query.list();
+        session.getTransaction().commit();
+        return list;
+    }
+
+    public List searchAspectByRestaurant(String restaurantName, String aspectName){
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        String hql = "select r from RatingsEntity r, AspectEntity a, BusinessEntity b where r.restaurantId = b.businessId and b.name = :restaurantName and r.aspectTag = a.aspectTag and a.aspectName = :aspectName";
+        Query query = session.createQuery(hql);
+        query.setParameter("restaurantName", restaurantName);
+        query.setParameter("aspectName",aspectName);
+        List list = query.list();
+        session.getTransaction().commit();
+        return list;
+    }
+
 
     public void test() {
         BusinessEntity businessEntity = new BusinessEntity("nazick", "dd", "dd", "ddd", "erf", 1.02f);

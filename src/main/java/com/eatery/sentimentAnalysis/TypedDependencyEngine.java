@@ -135,7 +135,7 @@ public class TypedDependencyEngine {
             // nsubj relationship which has adjective
             if (grString.equals("nsubj")
                     && gov.tag().length() >= 2
-                    && (gov.tag().substring(0, 2).equals("JJ") || dep.tag()
+                    && (gov.tag().substring(0, 2).equals("JJ") || dep.tag().length() >= 2 && dep.tag()
                     .substring(0, 2).equals("JJ"))) {
                 ArrayList<MyWord> myWordList = new ArrayList<MyWord>();
                 MyWord govWord = new MyWord(gov);

@@ -546,7 +546,7 @@ P_F_FI_Size ::: and P_F_FI_Size/big F_FoodItem and plenty of them on top
 P_F_FI_Size ::: his F_FoodItem was too P_F_FI_Size/big and messy to pick up right away but F_FoodItem was P_F_FI_Taste/tasty
 P_F_FI_Size ::: i did switch once and try the F_FoodItem, which was P_F_FI_Size/big and lovely and P_F_FI_Taste/tasty with all the powdered F_Ingredients, F_Ingredients and F_Ingredients, but i really missed my F_FoodItem bennie and F_Ingredients F_FoodItem and have never looked back
 P_F_FI_Size ::: i try to be unobtrusive about it so i don't look like a tourist, but if it's stacked up and already cut, or if i see a P_F_FI_Size/big F_FoodItem, or a F_FI_CookingLevel on the back counter, i'll just flee, or i'll S_Delivery california F_FoodItem
-(P_F_FI_Size ::: instead it is a white gooey F_FoodItem F_FoodItem (not elbows) with F_FoodItem, bacon (P_F_FI_Size/big F_FoodItem), and a F_FoodItem (?)
+P_F_FI_Size ::: instead it is a white gooey F_FoodItem F_FoodItem (not elbows) with F_FoodItem, bacon ( P_F_FI_Size/big F_FoodItem), and a F_FoodItem (?)
 P_A_Env_Size ::: (before we went Restaurant the first S_Del_Time, i thought Restaurant was just a P_A_Env_Size/small fast-food Restaurant, but i was wrong - Restaurant is a P_A_Env_Size/big, full-service Restaurant
 P_F_FI_Size ::: Food was P_F_FI_Healthy/fresh and P_F_FI_Size/big F_FoodItem
 P_F_FI_Size ::: but you could have a got a P_F_FI_Size/big daddy's F_FoodItem for a similar F_FI_Price
