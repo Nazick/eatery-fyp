@@ -1,0 +1,1371 @@
+A_Entertainment casino
+O_Exp_StarsByCus stars
+S_Staff waitress
+F_FoodItem kimchi
+F_FI_CookingLevel roasts
+F_FoodItem taco combo
+F_Ingredients sesame nougatine
+P_F_FI_Quality marginal
+P_O_Experience unconscious
+Food breakfast
+F_Appetizer kobe beef sushi
+F_FoodItem coriander
+Offers football specials
+F_FoodItem :tuna
+S_Delivery ordering
+Food vegas buffet
+P_F_FoodItem excellen
+S_Del_Time rush line
+P_F_FI_Taste crap.
+S_OpenHours sunday
+F_Drinks patron
+F_Drinks coffee
+F_FI_Taste deliciousness
+P_S_Stf_Behavior kind
+F_Dessert cheesecake
+F_FI_CookingLevel frozen
+F_Ingredients grilled artichokes
+F_FoodItem short ribs
+P_S_Stf_Availability few
+F_FoodItem sundae
+S_Delivery packaging
+S_Staff wait staff
+F_FoodItem caviar
+S_Staff chef
+F_FI_Taste chilli
+P_Food got sick
+P_F_FoodItem great choice
+F_FoodItem danny's special.
+F_FoodItem tendon
+Food thai-style
+F_Appetizer artichoke dip
+P_O_Experience disappointed.
+W_Waiting on time
+F_FI_Size dice
+P_O_Experience go back
+Opinion deserve
+F_FoodItem olives
+S_Delivery delivering
+F_FoodItem gravy
+F_FoodItem kimchus
+A_Decor walls
+Food main course
+F_Dessert marshmallow
+A_Fur_Table seating
+F_Drinks coconut milk
+F_FoodItem tortilla chips
+F_FoodItem sandwiches
+P_F_Ingredients too much
+Opinion disgust
+F_Ingredients papaya
+F_FoodItem fried shrimp
+P_Food great food
+F_FoodItem lox
+P_F_FI_Price low
+F_Drinks liqueurs
+P_A_Env_Type busier
+F_FoodItem sandwiched
+Food dish.
+F_Ingredients butterfield
+F_FoodItem cabeza
+F_FoodItem french fries
+F_FoodItem salad
+F_Ingredients horseradish cream sauce
+Food beef brisket taco
+F_FoodItem flank
+F_Dessert deserts
+F_FI_CookingLevel burnt.
+Food chicken enchilada omelet
+P_F_FI_Taste sweetness
+F_Ingredients stew
+F_FoodItem chocolate cupcake
+P_O_Experience definitely go
+Ambience ceilings
+F_FoodItem pastry
+F_Ingredients stem
+Restaurant taco guild
+F_FoodItem ...strawberries
+F_FoodItem teriyakus
+P_Food quite nice
+F_Drinks soft drink
+F_FoodItem pho soup
+Opinion fan
+Food item
+F_FoodItem flatbreads
+S_Staff managers
+F_FoodItem kailua pig benedict
+F_FoodItem pumpkin pancakes
+A_Decor layout
+S_Staff craig
+Restaurant tapas
+O_Payment paid
+P_S_Delivery messed up
+F_FoodItem basil
+F_FoodItem meatballs
+F_FoodItem goat
+O_Reservation reservation
+S_Staff barista
+P_S_Stf_Behavior warmly
+F_Drinks liquor
+P_F_FI_Price fair
+F_FI_CookingLevel cater
+A_Furniture chair
+F_FI_Size thin
+F_FoodItem cheddar brisket
+F_FoodItem parmesan
+Restaurant chain
+A_Places kept clean
+F_FoodItem grilled cheese
+F_Drinks tequila
+W_Price cash
+F_FoodItem miso soup
+F_Ingredients orn
+O_Payment tipper
+F_Drinks iced coffee
+F_Ingredients topping
+S_Stf_Behavior care
+P_S_Stf_Behavior immediately
+F_FoodItem carb
+F_Drinks glass of stella
+F_FoodItem shrimp tempura roll
+F_FoodItem pecan pie
+A_Furniture fridge
+F_FoodItem honey walmut shrimp
+Food buffet
+S_Stf_Behavior rritated
+F_FoodItem adobe fried rice omelette
+P_Food grea
+O_Exp_StarsByCus star
+F_Ingredients ingredient
+A_Ent_Music karaoke
+Opinion three stars
+F_FoodItem mega nachos
+W_Waiting speedily
+F_FoodItem bagels
+P_A_Fur_Table clean
+F_FoodItem carpaccio
+F_FoodItem frites
+P_Food pleasantly
+P_A_OutsideView stunning
+A_Furniture couches
+P_A_Entertainment modern feel
+S_Staff waitresses
+A_Ent_Music music
+F_FoodItem schmear
+Offers seasoned
+A_Decor lit
+F_Appetizer cookie
+F_Appetizer pudding
+Restaurant ruth chris
+F_FoodItem pickles
+F_Ingredients ice
+P_S_Menu lot to choose
+F_FoodItem caprese omelet
+F_Appetizer .miso soup
+S_Staff server
+F_Drinks waters
+F_Drinks milkshake
+F_FoodItem bun
+S_OpenHours tonight
+F_FoodItem tenderloin
+Service served
+F_FoodItem poutine
+F_FoodItem sashimi
+S_Stf_Behavior acted
+F_FoodItem bacon pancakes
+F_FoodItem hamburger
+F_Ingredients ranch
+S_Stf_Behavior overbearing
+S_Staff staff
+Ambience ambience
+P_Restaurant absolutely fucking horrible
+F_FoodItem buffets
+F_Dessert chocolate mousse cake
+F_FoodItem mochus
+A_Decor wall
+F_Dessert bread pudding
+F_FoodItem albacore crunch roll
+F_FoodItem al pastor
+S_Stf_Behavior unresponsive
+F_FoodItem pankcake
+F_FoodItem phoenicia
+F_FoodItem garlic
+A_OutsideView outside
+F_FI_Size mall
+P_Others my favorite
+A_Plc_Kitchen kitchen
+F_FI_CookingLevel grill!
+F_FI_Quality old
+F_FoodItem hamburgers
+F_FoodItem karaage.
+P_Food warmer
+F_FI_CookingLevel thick cut
+P_Food wasn't disappointed
+Restaurant mortons
+F_Drinks beverages
+F_Ingredients lettuce
+F_FoodItem pavlova:a
+F_FoodItem roasted cashew
+F_FI_CookingLevel cooked
+F_FoodItem egg roll
+P_S_Del_Time long wai
+O_Experience completely unimpressed
+F_FoodItem catfish
+S_Cutlery pepper shakers
+F_FoodItem linguini al mare
+A_Plc_SmokingArea smoker friendly
+P_A_Environment perfectly reasonable
+Ambience establishment
+S_Staff serve
+P_F_FoodItem real good
+P_Worthiness publicity
+F_FoodItem salmon orzo
+F_FoodItem cake
+S_Del_Time wait
+A_Decor pictures
+F_Ingredients potato
+Restaurant resturant
+F_FoodItem sea bass
+F_Appetizer french cookies
+P_F_FI_Quality chilled
+P_Ambience very cool
+P_F_Ingredients assorted
+F_FoodItem main
+S_Del_Time hour
+P_A_Fur_Table crumby
+F_FoodItem chickens
+F_FoodItem seafood spaghett
+F_FI_Size large
+F_FI_Quality box
+F_Ingredients jalapeno
+S_Staff staffs
+F_Ingredients truffle
+F_FoodItem phenomenal mustard
+P_S_Delivery annoying
+P_F_FI_Price overrate
+F_FoodItem smoked turkey
+F_FI_CookingLevel over cooked
+F_Dessert custard
+O_Exp_StarsByCus 4 stars
+F_FoodItem pepperoni pizza
+P_S_Delivery annoy
+P_Ambience relaxing
+A_LocatedArea location
+A_Plc_DiningRoom inside
+S_Stf_Behavior socializing
+F_FI_CookingLevel pre cooked
+P_S_Menu dull
+F_FoodItem spicy beef combo
+F_Appetizer bites
+F_FoodItem spareribs
+F_FoodItem salsas
+P_F_FoodItem overly salty
+P_Restaurant brand new
+F_FoodItem mains
+F_FoodItem apple
+O_Exp_StarsByCus 3 stars
+S_Cutlery aluminum tin
+Food chipotle aioli
+F_FoodItem omakase
+P_O_Experience come again
+Restaurant tapa
+Food dishes
+P_O_Experience a++
+F_FoodItem kobe beef
+F_Appetizer ries
+F_FoodItem tripa
+F_FI_Size regular
+P_F_FI_Quality saucy
+F_FI_CookingLevel roasted
+P_F_FoodItem messy
+P_Restaurant nothing special
+F_Ingredients enchilada sauce
+Restaurant cafe
+Food ohana hawaiian bbq
+F_FoodItem jimmy johns
+Food chocolate
+P_Service improve
+F_FI_CookingLevel buttery
+S_Delivery deliver
+F_Ingredients sauce
+F_Ingredients butters
+P_F_FI_Price not happy
+P_A_Environment dirty
+W_Price moderate
+F_FI_CookingLevel roast
+F_FoodItem foie gras torchon
+F_Ingredients celery
+F_FI_Religious veggie
+S_Wifi wifus
+P_F_FI_CookingLevel odd
+S_Cutlery salt shakers
+F_FoodItem roll--
+A_Plc_DiningRoom room
+P_F_Appetizer rich
+O_Pay_Price price
+F_FoodItem rice
+F_Ingredients potatoes
+Restaurant hooter
+F_FoodItem pecan
+A_Decor water show
+F_FoodItem ribs
+Restaurant coffee shop
+F_FoodItem pastas
+A_Plc_DiningRoom eating area
+F_Appetizer rie
+F_FoodItem rib
+Restaurant donovans
+P_F_FI_CookingLevel over
+F_FoodItem salsa bar
+P_W_Price fair.
+P_Worthiness phenomenal
+F_FoodItem mushroom
+A_OutsideView views
+P_F_FoodItem reat.
+F_FoodItem bulgolgi
+F_FI_Size big
+F_FoodItem bbq pork fried rice
+F_Appetizer nachos,
+F_FI_CookingLevel soaked
+O_Experience overall experience
+Food leftovers
+A_Plc_DiningRoom dining rooms
+F_FoodItem apples
+F_FoodItem omelet
+A_LocatedArea marketplace
+P_Restaurant so cute
+A_Ent_Tv televisions
+Restaurant cafeteria
+F_Ingredients honey mustard dipping sauce
+F_FoodItem pancakes
+F_Ingredients mustard
+P_F_FoodItem good too
+F_FoodItem pita bread
+F_FI_Taste saltiness
+F_Ingredients creamer
+Food hispanic
+F_FoodItem oyster
+F_FoodItem roll
+S_Stf_Behavior rritate
+A_OutsideView waterfall
+F_FI_Size slice
+S_Staff waiter
+F_Drinks cappachio
+F_FoodItem beef wellington
+F_FI_Quality premium
+F_FoodItem berry cobbler
+P_O_Experience lovely
+P_Food soupy
+F_Ingredients garlic powder
+F_Appetizer bite
+F_FI_Taste snickerdoodle
+P_A_Entertainment fun spot
+F_Appetizer soups
+F_FoodItem trout
+P_F_FI_Size huge thick
+O_Experience not good
+A_Furniture heater
+P_S_Staff super nice
+S_Staff employee
+Ambience ceiling
+Offers special-carbonara
+A_Entertainment sporting
+P_S_Stf_Behavior warmly thanked
+F_FoodItem smoked duck
+F_Drinks cappuccinos
+P_F_FoodItem fajitas
+F_FI_Taste tasteless!
+F_FoodItem maple-bacon
+F_Ingredients parma ham
+F_Drinks green tea
+P_Restaurant worst
+Food marilyn monroe
+F_Dessert caramel ice
+F_FoodItem frite
+Opinion very disappointing.
+P_F_FI_Size good amount
+F_FoodItem foie gras poutine
+P_A_Environment sound
+F_FI_Size size
+P_F_FI_CookingLevel nice touch
+P_A_Environment sounds
+F_FI_Healthy bacteria
+F_Ingredients hot sauce
+F_Ingredients grease
+F_Drinks drank
+P_Restaurant not going back again
+F_Ingredients carrots
+W_Waiting less than 15 min.
+F_FoodItem 9 inch sub
+P_Service lousy
+Restaurant vegetarian restaurant
+F_Ingredients ingredients
+F_Drinks mimosa
+F_Drinks shakes
+P_F_FI_Healthy 5fresh
+P_F_FoodItem nicely prepared
+F_FI_Size very little
+F_FoodItem cocktails
+F_FI_CookingLevel steamed
+F_FI_Size slices
+F_FoodItem foie gras
+F_FoodItem kochujang
+P_F_FoodItem great!
+P_Food just good
+F_FoodItem lime pie
+F_FoodItem bbq
+Food mixed bruschetta board
+F_Ingredients cannabis
+Food hot wing
+F_FoodItem sashimus
+P_Food blur
+F_Drinks watered
+P_F_FI_CookingLevel very well
+Food hawaiian food
+F_Drinks cappuccino
+P_F_FI_CookingLevel burnt
+F_Dessert passion fruit meringue tart
+S_Staff sommelier
+S_Staff driver
+A_Plc_Bar bar
+S_OpenHours lunch-time
+F_FoodItem smokehouse beef
+F_Dessert sugar cookie
+A_Furniture leather couches
+S_Del_OrderingMethod line
+F_FoodItem foie gras:
+P_F_FoodItem insanely hot
+F_FoodItem hubs steak
+F_FoodItem egg
+F_FoodItem crab legs
+F_FoodItem chili dog
+F_FoodItem mochi
+P_O_Experience go back again
+F_FoodItem taco
+S_Stf_Behavior overbear
+F_FoodItem slider trio
+F_Dessert dessert
+F_FoodItem ork belly pastrami
+F_FI_CookingLevel moist
+Food thai food
+F_Appetizer entres
+Restaurant here
+P_Service impeccable
+F_FoodItem brussel sprouts
+F_FI_Quality dried out
+F_FoodItem cupcake
+F_FoodItem omelets
+F_FoodItem anago
+A_Entertainment game
+F_FoodItem chicken parm sub
+P_F_FI_Taste full of flavor
+Food entree
+F_FoodItem roast beef
+Restaurant island style
+F_Ingredients sour cream
+F_FoodItem morsel
+F_FoodItem feta cheese
+O_Payment paying
+O_Payment bill
+A_Fur_Table table
+F_FoodItem chorizo
+P_F_FoodItem rock
+F_Ingredients butterfields
+S_Staff serving
+P_Restaurant like
+F_FoodItem dates
+F_FoodItem yolk
+F_FI_Size medium
+P_S_Stf_Behavior extremely nice
+F_Appetizer soft pretzels
+Restaurant lunch spots
+S_Stf_Behavior friendliest
+F_FI_Taste bittersweet
+F_Ingredients nut
+F_FoodItem chilean sea bass
+F_Appetizer snack
+F_FI_Price bit pricey
+P_F_FoodItem love
+S_Del_Time times
+P_F_FI_Size undersized
+A_Decor poles
+A_Decor dressings
+F_FoodItem potato pie
+A_Plc_DiningRoom arcade
+F_FoodItem pecans
+P_Restaurant disapointment
+F_FoodItem raviolis
+F_FoodItem sushi rolls
+F_Ingredients batter
+F_FoodItem date
+F_FoodItem pickle
+F_FI_CookingLevel microwave
+A_Entertainment games
+S_OpenHours lunchtime
+F_FoodItem burger
+F_FoodItem la carte nigiri
+P_Restaurant very nicely designed
+P_Food sweets
+F_FoodItem king crab legs
+F_FoodItem raspberry
+F_FoodItem stuffed hot banana peppers
+Food renaisance-style
+F_FoodItem lamb shank
+P_F_FoodItem look enticing
+Ambience sit down area
+F_FoodItem burritos
+P_S_Stf_Availability accessible
+F_FoodItem brisket
+S_Del_Time minutes
+F_FoodItem potato salad
+P_F_FI_Price extra
+F_FoodItem snickers candy
+F_FoodItem tomato
+F_FoodItem french toast
+F_FI_CookingLevel iced
+Food left overs.
+F_Appetizer entre
+P_S_Staff help
+S_Delivery orders
+P_O_Experience no problem
+P_F_FI_CookingLevel freshly
+F_FoodItem ravioli
+A_OutsideView view
+P_F_FI_Taste hot bland mess
+S_Stf_Appearance professional
+A_Decor interior
+F_FoodItem dac biet soup
+A_Decor huge rustic chandelier
+S_Staff employees
+P_F_FI_Taste not very pleasant
+F_FoodItem pot stickers
+P_Food fluffy
+F_FoodItem vegetables
+P_O_Experience will be back
+A_Fur_Table booth
+A_OutsideView lake,
+P_O_Experience be back
+F_Appetizer snacks
+S_Menu wide variety
+P_F_FoodItem incredible
+P_F_FI_CookingLevel over looked
+F_FoodItem velvet pancake
+F_FoodItem chicken soup
+P_O_Experience won't go back
+Restaurant donovan
+F_FoodItem nacho
+F_FI_Healthy poisoning
+Food italian
+F_FoodItem cheeseburger
+F_FoodItem crepes
+F_FoodItem walnut sandwich
+F_Ingredients spiced
+A_Entertainment gambling
+F_Drinks margarita
+P_F_FI_Size huuuuge
+P_O_Experience must try
+F_FI_Taste flavour
+F_FoodItem palate cleanser
+A_Entertainment sport
+F_FI_Price costs
+A_Environment location/atmosphere
+F_FoodItem macncheese
+F_FoodItem butterfly shrimp
+P_Food seriously awesome
+P_S_Staff definitely high
+F_FoodItem mini sliders
+F_Drinks chicken noodle soup
+F_FI_CookingLevel heartburn.
+Service recommendation
+F_FoodItem mozzerella sticks
+F_FoodItem green curry
+Food chocolate creme brulee
+P_F_Drinks not grea
+P_Food rubber
+P_F_Dessert deliciously creamy
+F_FoodItem strawberries
+F_FoodItem capastramus
+S_Staff waitstaff
+Food lunch combo
+F_FI_CookingLevel fried
+F_FoodItem muffin
+Restaurant there
+F_FoodItem ham
+F_Dessert snickerdoodle cookie
+F_FI_CookingLevel catering
+W_Price cost.
+F_Drinks lemon cream
+Service serviced
+F_FoodItem shawarma.
+F_FoodItem empanada
+Food lunch
+F_FoodItem crab cakes
+W_Price pricing
+O_Exp_StarsByCus five stars
+F_Ingredients starch
+P_F_Drinks juicy
+P_Food not horrible
+P_S_Stf_Behavior courteous
+F_FoodItem pita
+F_Ingredients spice
+F_FoodItem veggies
+A_Decor art
+Service service
+Ambience building
+F_FI_CookingLevel boiled
+P_S_Del_Time slow
+P_S_Stf_Appearance very nice
+F_FI_CookingLevel crisp
+F_Appetizer soup
+F_Drinks juice
+P_A_Fur_Table cleaned
+F_FoodItem hot dog
+F_Appetizer sweet potato fries
+F_FI_CookingLevel melted
+P_S_Stf_Behavior smile
+F_FoodItem bulgolgus
+F_FoodItem mediterranean food
+P_F_FI_CookingLevel very carefully prepared
+F_FoodItem fish
+A_Ent_Tv tvs
+S_Parking parking
+F_Drinks vodka
+S_Staff stripper
+F_FoodItem carne asado & queso
+F_FoodItem gyro pita
+P_A_Places filthy
+P_F_FoodItem made well
+F_FI_CookingLevel toasted
+P_F_FI_Taste unique
+P_Service honest
+P_F_FI_Price raped
+F_FoodItem prawns
+S_Del_Time waiting
+A_Decor curtains
+P_S_Staff fire
+P_Restaurant favorite
+F_Drinks shake
+F_FoodItem berry
+F_Ingredients cocoa
+A_Furniture stools
+S_Delivery order
+F_Appetizer baby bella mushroom appetizer
+F_Appetizer appetizers
+P_A_LocatedArea convenient
+F_FoodItem chicken caesar
+A_Fur_Table seats
+F_FI_Religious traditional
+Food eggs benedict with ham
+F_FI_CookingLevel boil
+P_Restaurant pretentious
+F_FoodItem chicken enchilada
+P_Service sucked
+Opinion plus
+F_FoodItem barbeque
+P_A_Plc_DiningRoom elegant
+F_Appetizer french onion soup
+P_O_Experience frustrated
+F_FoodItem pancake
+F_FoodItem hamachi kama
+F_FoodItem rolling
+P_Food very fresh
+S_Del_Time 10 minutes
+Opinion downhill
+A_Furniture chairs
+F_FoodItem kalbi short ribs
+F_FI_Price cheaper
+F_FI_Taste tastes
+Food testure
+F_FoodItem eel,
+F_FoodItem lamb vindaloo
+F_FoodItem brunswick stew
+Opinion less
+P_F_FI_Quality extremely high
+F_FoodItem polenta
+Restaurant golden steer
+F_FI_Taste tasted
+F_FoodItem chicken flatbread
+F_FoodItem karaage
+P_Food acceptable
+A_Decor high ceilings
+P_Food fine
+F_Appetizer cookies
+F_FoodItem prawn
+P_O_Experience disappoint
+F_FI_CookingLevel burn
+F_FoodItem phoenicium
+F_FoodItem snickers candy bar
+A_Entertainment gaming
+P_Service improved
+F_FoodItem wraps
+F_Ingredients soy sauce
+P_F_FoodItem really sweet
+F_FI_Size quantity
+P_Restaurant really liked
+P_O_Experience come back
+P_A_Decor pretty average
+F_FoodItem scallop
+P_O_Exp_StarsByCus 3-michelin star
+P_A_Environment sounded
+P_Food fill
+P_F_FI_Quality chill
+F_Ingredients chili
+P_O_Experience enjoy
+F_FI_CookingLevel top
+S_OpenHours thursday
+O_Reservation reservations
+P_F_FI_Taste delish
+F_FoodItem noodles
+F_FoodItem beef steakhouse
+P_Restaurant nice place
+Restaurant this place
+P_F_FoodItem uninspired
+F_FoodItem smoked salmon
+A_Env_Type crowd
+Offers specials
+A_OutsideView picturesque
+S_Staff guy
+S_OpenHours night
+F_Ingredients nutella macarons
+A_Env_AC air
+F_FoodItem curry
+P_Restaurant reluctant
+S_Staff servers
+F_FoodItem dog
+F_FoodItem unagi sushi
+F_FI_Size great portion sizes
+F_Drinks beers
+O_Exp_StarsByCus rate
+F_FoodItem grits
+F_Drinks tropical ice tea
+F_Ingredients nutellum
+A_Plc_Bathroom bathrooms
+F_FoodItem green wasabi
+F_FoodItem steak nachos
+P_F_FoodItem yuck
+F_FoodItem turkey
+F_FoodItem miso
+F_FI_Size scoop
+F_FoodItem med-fish
+P_F_FI_Healthy surprisingly
+F_FoodItem bananas foster
+F_Dessert shortcake
+F_Drinks champagne
+F_FoodItem scallops
+Service facilities
+F_FoodItem duck carpaccio
+P_Service could be improved
+F_Ingredients loaf
+P_A_Places foul
+F_FoodItem veggy
+F_FoodItem meatloaf
+F_Ingredients mayonnaise
+F_FoodItem mackerel combo
+S_Menu wine list
+P_F_Dessert looks great
+F_FoodItem capastrami.
+S_Staff female
+F_FoodItem sage chili
+P_O_Experience disappointing experience
+F_FI_CookingLevel crisp.
+F_FoodItem chipotle chicken
+F_Ingredients rosemary
+Restaurant del friscos
+F_FoodItem oysters
+F_FoodItem bbq pork
+F_Ingredients ghost chilli extract
+P_Ambience great location
+P_Food nice size
+F_FoodItem lotus roll
+F_FoodItem macaroni
+F_Ingredients sugar
+P_O_Experience happy
+F_FoodItem cabbage
+F_FoodItem pork
+P_Service speedy
+F_FoodItem pankcakes
+P_F_FI_Taste simply amazing
+A_Plc_DiningRoom dining room
+W_Price more expensive
+A_Environment open area
+A_Env_Type messiness
+P_F_FI_Price rape
+P_A_Environment dingy
+Service treat
+F_Drinks alcohol
+F_FoodItem chicken salad
+Food luncheon
+F_FoodItem slaw
+F_FI_CookingLevel smoke
+F_FoodItem birthday cake
+F_FoodItem sparerib
+Opinion thumbs up
+P_F_FI_Taste delicate
+P_Food appreciate
+F_FoodItem omelette
+F_FoodItem sauerkraut balls
+F_FoodItem swarms combo
+F_FI_Quality uneaten
+P_A_Environment noisy
+F_FoodItem eggs rojo
+P_Food disgusted
+P_Restaurant very pleasant experience
+F_Ingredients coleslaw
+F_Drinks water
+S_Staff cashier
+S_Stf_Behavior act
+F_FoodItem dumplings.
+F_FoodItem wing
+F_Drinks wine
+F_FoodItem giant carumba burrito
+S_Stf_Behavior socialize
+P_Service pretty decent
+F_Ingredients mint
+P_O_Experience high rating
+F_Drinks lemonade
+P_Ambience great spot
+P_S_Stf_Experience knowledgable
+P_O_Pay_Price overprice
+Food diner
+S_Stf_Behavior guide
+F_FoodItem bread
+Opinion deserves
+P_O_Experience poor
+P_F_FI_Price overrated
+F_FoodItem onion
+F_Ingredients vegetation
+P_F_FI_Taste something awesome
+W_Price expensive
+F_Drinks :margaritas
+F_FoodItem matzo
+P_F_FoodItem delightful
+F_Ingredients habanero sauce
+F_FoodItem escargot
+Opinion unattractive
+A_Plc_Patio patio
+Food lunch food
+F_FoodItem waffle.
+P_F_FI_Size undersize
+F_FI_Taste fig & goat
+Food food
+F_Drinks milk
+F_FoodItem fruit
+A_Environment environment
+Restaurant lounge-y vibe
+F_Drinks soda
+F_FoodItem bruschetta
+P_F_FoodItem sub-optimal
+F_FI_Size larger
+F_FoodItem rolled
+F_FoodItem sla-be-joe
+F_FoodItem beef rice
+S_Cutlery napkins
+F_FoodItem spniach
+F_FoodItem pork sandwich
+P_Restaurant impressive
+F_FoodItem green chile burger
+F_FI_Size half
+Food tiger blood
+F_Ingredients montgomery cheddar
+P_Restaurant heaven
+F_FoodItem bobby
+Restaurant hotel
+Service great job
+F_Drinks tea
+F_FoodItem noodle
+P_F_FI_CookingLevel very strong
+Food cuisine
+P_S_Del_Time unacceptable
+W_Price penny
+A_Furniture stool
+F_FoodItem pepper
+F_FoodItem king prawns
+Restaurant hawaiian restaurants
+P_Food too hard
+P_F_FI_Size right
+O_Experience experience
+P_S_Menu great and diverse
+A_LocatedArea locations
+A_OutsideView outdoor
+F_FoodItem chocolate-covered strawberry
+F_FoodItem enchilada
+F_FoodItem tempura
+Food chorizo meat balls
+F_Ingredients ketchup
+A_Fur_Table seated
+A_Decor pole
+A_Places floor
+S_Staff everyone
+F_FI_Quality better"
+F_Ingredients ragstone goats cheese
+P_S_Stf_Appearance amuse
+P_F_FI_Size gigantic
+Food hawaiian
+F_FoodItem chicken habanero sausage
+F_FoodItem pizzas
+F_FI_Healthy nutritional
+F_Drinks beer
+A_Decor color
+F_FI_CookingLevel soak
+P_A_Environment truck stop
+Food foods
+F_FoodItem greek salad
+F_FoodItem beef
+P_O_Experience easy
+P_O_Experience great dining experience
+F_FoodItem coconut
+P_F_FoodItem rocks
+F_Appetizer biscuit
+P_Restaurant great place
+F_FoodItem flatbread
+Opinion more relaxed
+F_FoodItem enchiladas
+F_Ingredients swiss cheese
+F_FoodItem bruchetta
+O_Experience welcome
+A_Ent_LiveShow live music
+A_Ent_Tv hdtv's
+F_Ingredients rustica olives
+O_Experience not go back
+P_Food filling
+F_FI_Size regulars
+P_S_Stf_Experience knowledgeable
+F_FI_Quality home made
+S_Staff waiters
+S_OpenHours day
+F_FoodItem teriyaki
+S_Wifi wifi
+P_Restaurant cleanest
+F_FoodItem cream pie.
+Offers happy hour
+P_F_FI_CookingLevel luke warm
+F_FI_Price cost
+S_Delivery foil
+P_F_FI_Quality decently
+F_FoodItem chicken katsu
+F_FoodItem peppery zinfandel
+Restaurant mexican restaurant
+A_Entertainment dance floor
+W_Price more
+P_F_FoodItem pretty good
+S_Stf_Behavior cared
+F_Ingredients corn
+P_F_FI_Quality wet
+O_Experience welcoming
+F_FoodItem bean
+F_FI_Size tiny
+P_F_FoodItem least favorite
+F_Dessert desserts
+F_FoodItem onion rings
+F_Ingredients honey butter
+S_Del_Time minute
+P_A_Environment sparkling clean
+F_FoodItem cocktail
+A_Entertainment show
+A_Ent_Tv television
+P_S_Menu wide
+F_Dessert bordeaux wine
+F_FoodItem flan
+Restaurant shop
+P_Food great deal
+F_FI_Taste flavorfu
+F_Ingredients crispy breaded chicken
+F_Ingredients toppings
+A_Fur_Table booths
+Food cheese scramble
+P_Service really bad
+P_F_FI_Taste pretty tasty
+P_A_Plc_RestRoom smell
+P_Restaurant 3.5 stars
+F_FoodItem chocolate chip cookies
+P_O_Experience unimpressed
+F_FoodItem asparagus
+S_Del_Time time
+P_Ambience vivacious
+P_Food quite delicious
+P_S_Stf_Appearance amused
+F_FI_CookingLevel overcooked
+P_F_FI_Taste tasteless
+F_FoodItem green beans
+Food lunches
+F_FoodItem bbq chicken
+A_Furniture red leather
+P_F_Drinks unfilled
+F_FoodItem carbs
+F_FoodItem fried fish
+F_Drinks hot chocolate
+F_FoodItem poke tuna
+P_F_FI_Size smaller
+F_FI_CookingLevel cook
+F_FoodItem pineapple
+F_Ingredients jalapenos
+S_Gift gift card
+F_FoodItem american kobe
+F_Drinks sodas
+F_FI_Quality boxed
+P_O_Experience will go back
+P_Food very sweet
+P_F_FoodItem old fashioned
+F_Appetizer appetizer
+A_Entertainment gamble
+S_Menu choices
+F_Ingredients green peppers
+P_Food earlicius
+F_Dessert fruit pavlova
+F_Drinks alcoholic drink
+F_FI_Size scoops
+Food chinese food
+P_W_Price cheapest
+P_Food delectable
+F_FoodItem blueberry pancake
+W_Price money back.
+F_FoodItem warm brie
+P_F_FoodItem orgasmic
+P_Food really good
+F_FI_CookingLevel topped
+A_Furniture windows
+F_FoodItem crepe
+F_FoodItem prosciutto
+F_FI_Healthy bacterium
+F_Dessert cone
+P_F_FoodItem fatty
+F_Appetizer crispy spicy tuna appetizer
+P_O_Experience super super
+P_S_Del_Time forever
+P_Food mediocre
+S_Menu menus
+S_Staff gal
+F_Ingredients cauliflower
+F_FoodItem spinach
+F_FoodItem lemon chicken
+F_Ingredients ginger
+P_Food really great
+P_Food appreciated
+F_Drinks liqueur
+F_Drinks drinks
+F_FoodItem turkeys
+S_Cutlery plate
+P_S_OpenHours late
+F_FoodItem deviled eggs
+P_S_Del_Time 10 minute wait
+F_FoodItem portobello burger
+F_FoodItem wasabi tuna burrito
+A_Decor decor
+F_FI_CookingLevel cooks
+S_Staff owners
+P_Service suck
+F_FoodItem squash
+S_Staff the manager
+P_S_Stf_Experience accommodate
+F_FoodItem apple pancake
+F_FoodItem cheeses
+P_S_Menu straightforward
+F_FoodItem burgers
+P_F_FoodItem aren't good
+F_FI_CookingLevel toast
+F_FoodItem gyro
+F_FoodItem sushi
+A_Furniture refrigerator
+F_FoodItem thai hummus
+F_FoodItem subs
+F_Ingredients mojo
+F_Drinks coke
+P_Food sweet
+W_Price refunds.
+F_Appetizer tofu soup
+O_Experience highly recommend
+P_Food scrumptious
+F_FoodItem chicken
+F_FoodItem cioppino
+F_FI_Size piece
+F_Ingredients vinegar
+A_Plc_Bar bars
+F_FI_Size in size
+F_FoodItem spring rolls
+Restaurant fleming
+P_F_FI_Price inflated
+F_FI_CookingLevel caramelized
+F_Drinks drink
+A_Ent_Tv tv
+F_FoodItem crab balls
+F_FoodItem toro
+A_Fur_Table seat
+F_FoodItem burrito
+S_OpenHours close
+F_FoodItem orange
+F_FoodItem salads
+F_FoodItem yolks
+Worthiness worthy
+P_S_Wifi free
+F_FoodItem stir fry
+F_FoodItem chicken teriyaki
+F_Ingredients stems
+F_FoodItem sub
+P_S_Stf_Behavior smiling
+F_FI_Size massive
+F_FoodItem pumpkin bread
+Opinion tired
+S_Cutlery cup
+P_F_FoodItem flavoursome
+P_A_LocatedArea closer
+F_FoodItem cilantro
+P_Restaurant cute
+S_Staff management
+F_FoodItem spicy chipotle burrito
+Restaurant fleme
+Food chicken apple compote waffle
+F_Ingredients chinese
+S_OpenHours closed
+P_F_Ingredients plain unseasoned chicken slices
+A_OutsideView background
+Restaurant steakhouse
+F_FoodItem pitcher of sunbru
+P_A_Environment bright
+P_S_Staff helped
+A_Plc_RestRoom restroom
+A_Furniture glass,
+F_FoodItem tomatoes
+Service treats
+F_FoodItem kabob
+Food dinner
+S_Staff manager
+F_Dessert salted caramel
+P_O_Experience great experience
+P_F_FoodItem perfection
+F_FoodItem chocolate soufflé
+F_FoodItem strawberry
+F_FoodItem meats
+A_Plc_Patio patios
+F_Ingredients lamb
+P_S_Stf_Experience informative
+P_S_Parking hectic
+S_OpenHours pm
+Offers save
+P_Food meh
+P_Restaurant admire
+F_FoodItem pasta
+S_Stf_Behavior really nice
+S_Stf_Behavior personable
+F_Ingredients salted
+F_FoodItem "buttermilk ranch"
+F_FoodItem salmon salad
+Food "buffet
+F_FoodItem cheesesteak
+F_FoodItem rolls
+P_A_Plc_RestRoom smelled
+F_FoodItem beans
+F_FoodItem drunken chicken
+F_FI_Size small pieces
+S_Cutlery plates
+F_FoodItem meatball
+F_Ingredients sauces
+S_Staff chefs
+A_LocatedArea located
+P_A_Decor rustic
+F_Ingredients jalapeño
+F_FoodItem eggplant
+P_Restaurant adore
+Food testures
+S_Staff owner
+P_O_Experience definitely return
+S_Menu choice
+F_Ingredients sauced
+P_F_FI_Healthy super dry
+Food anything
+F_FoodItem philly cheese steaks
+P_O_Experience biggest fans
+F_FoodItem wings
+S_OpenHours late night
+A_Decor picture
+Opinion entertaining
+F_Ingredients soft heated bun
+A_Decor colors
+A_Decor stained glass
+Ambience eather
+F_Ingredients truffled
+P_O_Experience best places
+S_Menu menu
+Food vietnamese food
+F_FoodItem bagel
+F_FoodItem mushrooms
+F_FoodItem salsa
+P_Food bustling
+O_Experience dining experiences
+P_F_FoodItem flavourful
+F_FoodItem beef eater
+Restaurant hooters
+Offers special
+F_FI_CookingLevel steame
+S_Cutlery plate.
+Food dish
+S_Staff chef.
+F_Ingredients carrot
+F_Ingredients salt.
+A_Furniture window
+F_FoodItem cheese sticks
+S_Staff bartender
+A_Decor decorations
+S_Menu variety
+F_FI_CookingLevel smoked
+P_O_Exp_StarsByCus zero stars
+P_S_Menu extensive
+F_Drinks wines
+F_Ingredients fennel
+F_FI_CookingLevel caramelize
+P_F_Appetizer enough
+P_F_FI_CookingLevel undercooked
+P_S_Stf_Behavior indifferent
+F_FI_CookingLevel melt
+O_Experience experiences
+F_FoodItem gyros
+F_FoodItem steaks
+P_O_Experience go again.
+A_Plc_DiningRoom dining side
+F_FoodItem cakes
+F_FI_Quality quality
+S_Stf_Experience very slow
+F_FI_CookingLevel fry
+O_Experience very satisfying
+F_FoodItem nachos
+A_Plc_Bathroom bathroom
+F_Dessert desert
+Food texture
+S_Gift gift
+P_F_FI_Taste very tasty
+F_FoodItem roasted lamb hummus
+F_FoodItem veggie burger
+S_OpenHours evening
+S_Gift gift cards
+F_FoodItem mexican food
+F_Drinks balsamic
+F_Ingredients butter
+F_Drinks martini
+O_Payment pays
+F_FoodItem collard greens
+F_FoodItem roasted potato
+P_F_FI_Quality delicious looking
+A_Environment neighborhood
+F_FoodItem empanadas
+F_FoodItem tofu
+S_Cutlery napkin
+P_F_FoodItem affordable
+Food meals
+A_Decor decoration
+S_Del_Time busy.
+F_FoodItem potato pancakes
+F_FoodItem eggs
+P_F_FoodItem yum
+F_FoodItem shrimps
+F_FoodItem wrap
+F_Dessert pavlova
+S_Cutlery chopstick
+P_O_Experience hungover
+F_FI_CookingLevel steam
+F_FoodItem steak
+Restaurant dine
+S_Menu one page
+Restaurant morton
+F_FoodItem cucumber
+F_FoodItem salmon
+A_Fur_Table tables
+F_FoodItem sandwich
+F_FoodItem zucchini
+S_Staff she
+Ambience ambiance
+P_O_Experience satisfied
+A_Furniture leather
+F_Ingredients salt
+A_Decor lighting
+F_FoodItem shrimp
+O_Payment pay
+F_FI_Taste spicier
+P_O_Experience need to visit
+F_FoodItem crap
+Food italian food
+F_FoodItem caesar salad
+W_Waiting thirty minutes
+F_FoodItem squid
+Service treated
+F_FoodItem crab
+F_Drinks beverage
+F_Ingredients goody
+F_Ingredients nutella
+F_FoodItem peppers
+F_FI_Taste taste
+Food stellar
+F_FoodItem egg benedict
+Food entrees
+F_FoodItem american fish
+A_Env_Size bland
+Service recommendations
+F_Ingredients flour tortillas
+F_Drinks americano
+P_A_Environment cleanliness
+F_FoodItem margherita pizza
+S_Staff guys
+S_Delivery ordered
+F_FoodItem cheese
+F_FoodItem bone-in ribeye
+A_Ent_Music dj
+F_FoodItem chateaubriand,
+F_FoodItem lobster
+F_FoodItem charcuterie board
+F_FoodItem tuna
+A_Places space
+S_Stf_Behavior greet
+F_FoodItem olive
+F_FoodItem vegetable
+A_Env_Type family
+P_Ambience relax
+F_FoodItem capastrami
+F_Drinks draught
+P_F_FI_Taste good,
+F_FoodItem seafood pancake
+S_Staff hostess
+F_FI_CookingLevel ced
+P_Service fast
+P_O_Exp_StarsByCus 1.5 stars
+A_Furniture couch
+Food spanish food
+F_Ingredients goodies
+P_S_Stf_Experience accommodating
+A_Places park
+Food japanese food
+F_FI_CookingLevel double baked
+F_FoodItem guacamole
+F_FoodItem bbq pork rice
+P_S_Menu balanced
+F_FoodItem shrimp tacos
+F_FoodItem pizza
+F_Drinks roasted butternut squash soup
+P_O_Experience definitely be back
+P_Food not super good
+Service customer service
+Opinion habanero hot
+A_Plc_Bar buckeye bar
+A_Decor dressing
+F_FoodItem fruits
+S_Cutlery chopsticks
+F_FoodItem chip
+F_FoodItem gourmet grilled sub
+F_FoodItem mixed
+A_Decor dress
+Restaurant flemings
+P_F_Drinks weak
+P_F_FoodItem fajita
+A_Decor curtain
+F_FoodItem sushi fever
+P_Restaurant prettiest
+F_FoodItem pastrami
+F_FoodItem yellowtail cheeks
+A_Decor light
+F_FoodItem meat
+Service facility
+F_FoodItem tacos
+F_Ingredients chipotle sauce
+F_FI_CookingLevel microwaved
+P_A_Decor white
+Food meal
+F_FoodItem pistachio macarons
+F_FI_Taste chillus
+S_Menu tasty options

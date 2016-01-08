@@ -28,9 +28,9 @@ import java.util.Map;
 public class EateryMain {
 
     final static String processedFilePath = "src/main/resources/" +
-             "test.json"; //"review_100_A.json";
-            //"top100Business.json";
-            //"100Reviews.json";
+            "test.json"; //"review_100_A.json";
+    //"top100Business.json";
+    //"100Reviews.json";
 
     final static String filePathRead = "src/main/resources/" +
             "100Reviews.json";
@@ -39,12 +39,23 @@ public class EateryMain {
             //         "processedFile.json";
             "review_100_A.json";
 
-    HibernateMain hibernateMain = new HibernateMain();
+    HibernateMain hibernateMain;
 
     public static void main(String[] args) {
-        EateryMain eateryMain = new EateryMain();
-        eateryMain.preProcessData();
-        //eateryMain.process();
+
+        EateryMain eateryMain = new EateryMain(new HibernateMain());
+        //eateryMain.preProcessData();
+        eateryMain.process();
+
+//        EateryMain eateryMain = new EateryMain();
+//        eateryMain.implicitTesting();
+    }
+
+    public EateryMain() {
+    }
+
+    public EateryMain(HibernateMain hibernateMain) {
+        this.hibernateMain = hibernateMain;
     }
 
     public void process() {
@@ -126,21 +137,17 @@ public class EateryMain {
             Writer output = new BufferedWriter(new FileWriter(processedFile, false));
 
             String line;
-            int count = 0;
 
             long startTime = System.currentTimeMillis();
 
             while ((line = br.readLine()) != null) {
                 String review;
                 String tempReview = "";
-                count++;
                 Object obj = parser.parse(line);
                 jsonObject = (JSONObject) obj;
 
 
                 if (!jsonObject.equals(null)) {
-
-                    System.out.println("\n############# "+count+" ##############");
                     review = (String) jsonObject.get("text");
                     if (languageDetect.isReviewInEnglish(review)) {
                         String[] sentences = OpennlpTagger.detectSentence(review);
@@ -407,6 +414,8 @@ public class EateryMain {
         HibernateMain hibernateMain = new HibernateMain();
         List ratings = hibernateMain.getRatings(restaurantName);
 
+        print(ratings);
+
         double foodItemScore = getSubRatings("F_FoodItem", ratings);
         double staffScore = getSubRatings("S_Staff", ratings);
         double deliveryScore = getSubRatings("S_Delivery", ratings);
@@ -418,15 +427,58 @@ public class EateryMain {
         double reservationScore = getSubRatings("O_Reservation", ratings);
         double experienceScore = getSubRatings("O_Experience", ratings);
         double environmentScore = getSubRatings("A_Environment", ratings);
+
+        updateSubRatings(ratings,"F_FoodItem",foodItemScore);
+        updateSubRatings(ratings,"S_Staff",staffScore);
+        updateSubRatings(ratings,"S_Delivery",deliveryScore);
+        updateSubRatings(ratings,"A_Entertainment",entertainmentScore);
+        updateSubRatings(ratings,"A_Furniture",furnitureScore);
+        updateSubRatings(ratings,"A_Places",placesScore);
+        updateSubRatings(ratings,"A_LocatedArea",locatedAreaScore);
+        updateSubRatings(ratings,"O_Payment",paymentScore);
+        updateSubRatings(ratings,"O_Reservation",reservationScore);
+        updateSubRatings(ratings,"O_Experience",experienceScore);
+        updateSubRatings(ratings,"A_Environment",environmentScore);
+
+        print(ratings);
+
         double serviceScore = getSubRatings("Service", ratings);
         double worthinessScore = getSubRatings("Worthiness", ratings);
         double ambienceScore = getSubRatings("Ambience", ratings);
         double foodScore = getSubRatings("Food", ratings);
         double offersScore = getSubRatings("Offers", ratings);
+        double othersScore = getSubRatings("Others", ratings);
+
+        updateSubRatings(ratings,"Service",serviceScore);
+        updateSubRatings(ratings,"Worthiness",worthinessScore);
+        updateSubRatings(ratings,"Ambience",ambienceScore);
+        updateSubRatings(ratings,"Food",foodScore);
+        updateSubRatings(ratings,"Offers",offersScore);
+        updateSubRatings(ratings,"Others",othersScore);
+
+        print(ratings);
+
         double restaurantScore = getSubRatings("Restaurant", ratings);
 
+        return restaurantScore;
+    }
 
-        return 0.0;
+    private void updateSubRatings(List ratings, String aspect, double score) {
+        for (int i = 0; i < ratings.size(); i++) {
+            RatingsEntity ratingsEntity = (RatingsEntity) ratings.get(i);
+            if (ratingsEntity.getAspectTag().matches(aspect)) {
+                ratingsEntity.setScore(score);
+                ratings.remove(i);
+                ratings.add(ratingsEntity);
+            }
+        }
+    }
+
+    private void print(List ratings) {
+        for (int i = 0; i < ratings.size(); i++) {
+            RatingsEntity ratingsEntity = (RatingsEntity) ratings.get(i);
+            System.out.println(ratingsEntity.getAspectTag()+" "+ratingsEntity.getScore());
+        }
     }
 
     private double getSubRatings(String parentAspect, List ratings) {
