@@ -24,16 +24,16 @@ public class OpennlpModelCreator {
         OpennlpModelCreator opennlpModelCreator = new OpennlpModelCreator();
         String trainFilePath, modelFilePath;
 
-        for(int i = 1 ;i<=15;i++){
-            trainFilePath = "src/main/resources/opennlp/evaluation/reviews_"+i+"00.train";
-            modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_"+i+"00.bin";
+        for(int i = 3 ;i<=4;i++){
+            trainFilePath = "src/main/resources/implicit/wo_u1"+i+".train";
+            modelFilePath = "=src/main/resources/implicit/wo_u1"+i+".bin";
 
             System.out.println("Creating model for" + trainFilePath);
             opennlpModelCreator.createModel(trainFilePath,modelFilePath);
         }
 //
-//        trainFilePath = "src/main/resources/opennlp/evaluation/reviews_1300.train";
-//        modelFilePath = "src/main/resources/opennlp/evaluation/models/reviews_1300.bin";
+//        trainFilePath = "src/main/resources/implicit/wo_u12.train";
+//        modelFilePath = "src/main/resources/implicit/wo_u12.bin";
 //
 //        System.out.println("Creating model for" + trainFilePath);
 //        opennlpModelCreator.createModel(trainFilePath,modelFilePath);

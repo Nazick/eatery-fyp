@@ -6,6 +6,7 @@ import com.eatery.preprocessing.LanguageDetect;
 import com.eatery.preprocessing.SpellCorrector;
 import com.eatery.sentimentAnalysis.MyWord;
 import com.eatery.sentimentAnalysis.TypedDependencyEngine;
+import com.eatery.utils.AspectTags;
 import com.eatery.utils.JsonData;
 import com.eatery.utils.Sentence;
 import com.eatery.utils.WordTag;
@@ -28,23 +29,32 @@ import java.util.Map;
 public class EateryMain {
 
     final static String processedFilePath = "src/main/resources/" +
-             "test.json"; //"review_100_A.json";
-            //"top100Business.json";
+             "test2.json"; //"review_100_A.json";
+            //"top2000Business.json";
             //"100Reviews.json";
 
     final static String filePathRead = "src/main/resources/" +
             "100Reviews.json";
 
-    final static String implicitTestFile = "src/main/resources/" +
-            //         "processedFile.json";
-            "review_100_A.json";
+    final static String implicitTestFile = "src/main/resources/implicit/u_14.txt";
 
-    HibernateMain hibernateMain = new HibernateMain();
+    HibernateMain hibernateMain;
 
     public static void main(String[] args) {
-        EateryMain eateryMain = new EateryMain();
-        eateryMain.preProcessData();
-        //eateryMain.process();
+
+        EateryMain eateryMain = new EateryMain(new HibernateMain());
+        //eateryMain.preProcessData();
+        eateryMain.process();
+
+//        EateryMain eateryMain = new EateryMain();
+//        eateryMain.implicitTesting();
+    }
+
+    public EateryMain() {
+    }
+
+    public EateryMain(HibernateMain hibernateMain) {
+        this.hibernateMain = hibernateMain;
     }
 
     public void process() {
@@ -71,7 +81,7 @@ public class EateryMain {
                     List<Sentence> sentencesInReview = new ArrayList<>();
                     List<Sentence> scoredSentences = new ArrayList<>();
                     System.out.println("\n############# "+count+" ##############");
-                    System.out.println("Restaurent ID : " + restaurentId);
+                    System.out.println("Restaurant ID : " + restaurentId);
 
                     if (languageDetect.isReviewInEnglish(review)) {
 
@@ -185,7 +195,7 @@ public class EateryMain {
         }
 
         for (WordTag tag : sentence.getTags().values()) {
-            if (!tag.getTag().equals("F_FoodItem") && tag.getScore() != null) {
+            if (!tag.getTag().equals("F_FoodItem") && tag.getScore() != null && AspectTags.isAspectExist(tag.getTag())) {
                 List results = hibernateMain.getRating(restaurantId, tag.getTag());
 
                 RatingsEntity ratingsEntity;
@@ -204,7 +214,7 @@ public class EateryMain {
         }
 
         for (WordTag tag : sentence.getImplicitTags().values()) {
-            if (!tag.getTag().equals("F_FoodItem") && tag.getScore() != null) {
+            if (!tag.getTag().equals("F_FoodItem") && tag.getScore() != null && AspectTags.isAspectExist(tag.getTag())) {
                 List results = hibernateMain.getRating(restaurantId, tag.getTag());
 
                 RatingsEntity ratingsEntity;
@@ -362,38 +372,47 @@ public class EateryMain {
     }
 
     public void implicitTesting() {
-        LanguageDetect languageDetect = new LanguageDetect();
         ImplicitAspects implicitAspects = new ImplicitAspects();
 
         try {
             File file = new File(implicitTestFile);
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
+            int count = 0;
             String line;
             long startTime = System.currentTimeMillis();
             while ((line = br.readLine()) != null) {
                 String review = line;
                 List<Sentence> sentencesInReview = new ArrayList<>();
-                List<Sentence> scoredSentences = new ArrayList<>();
 
 
-                TypedDependencyEngine typedDependencyEngine = new TypedDependencyEngine();
                 String[] sentences = OpennlpTagger.detectSentence(review);
 
                 //Tagging explicit aspects using OpenNLP
                 for (String sentence : sentences) {
-                    Sentence savedSentence = this.saveSentenceTags(OpennlpTagger.tag(sentence), sentence);
+                    //Sentence savedSentence = this.saveSentenceTags(OpennlpTagger.tag(sentence), sentence);
+                    Sentence savedSentence = new Sentence(sentence);
+
                     sentencesInReview.add(savedSentence);
                 }
 
                 //Tagging implicit Aspects
                 sentencesInReview = implicitAspects.find(sentencesInReview);
 
-                System.out.println();
+                for(Sentence sentence: sentencesInReview){
+                    System.out.println(sentence.getLine());
+                    if(sentence.getImplicitTags().size() != 0){
+                        for(WordTag tag:sentence.getImplicitTags().values()){
+                            System.out.println("##########"+tag.getWord()+ " - "+ tag.getTag());
+                            count++;
+                        }
+                    }
+                    System.out.println();
+                }
 
 
             }
-            System.out.println(System.currentTimeMillis() - startTime);
+            System.out.println("Tags count - "+implicitAspects.getCount());
             br.close();
             fr.close();
             System.out.println("Done...");

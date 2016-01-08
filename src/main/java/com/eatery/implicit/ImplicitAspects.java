@@ -49,6 +49,7 @@ public class ImplicitAspects {
     ArrayList<String> features,model ;
     static final String modelPath = "src/main/resources/implicit/model.txt";
     static final String implicitFeaturesFilePath = "src/main/resources/implicit/implicitFeatures.txt";
+    private int count;
 
     public ImplicitAspects() {
         Properties props = new Properties();
@@ -58,7 +59,7 @@ public class ImplicitAspects {
         npPattern = TregexPattern.compile("@NP");
         tlp = new PennTreebankLanguagePack();
         gsf = tlp.grammaticalStructureFactory();
-
+        count = 0;
         this.initiateModel();
     }
 
@@ -129,6 +130,7 @@ public class ImplicitAspects {
         this.findImplicitAspects();
         return sentenceObjects;
     }
+
 
     public void findImplicitAspects(){
 
@@ -443,5 +445,10 @@ public class ImplicitAspects {
         //CHANGE: call these two methods
         find();
         findImplicitAspects.findImplicitAspects();//change the results format if you want
+    }
+
+
+    public int getCount() {
+        return count;
     }
 }

@@ -24,20 +24,21 @@ import java.util.List;
 public class OpennlpTagger {
 
     public static void main(String args[]) {
-        String review = " The chips and salsa rock my world! The entree's are delicious! The staff is friendly and efficient";
+        String review = " Went to this spot because of recommendations from a few different people.  We got there at 7:45 am and by 8 the place was packed!  Clean place and nice, friendly wait staff.... and delicious food....\\n\\n.... in fact, the food was so fucking awesomely delicious that my taste buds had multiple orgasms during my meal.  \\n\\nI ordered the chicken and waffles.  I was kinda expecting to get the Roscoe's style chicken n waffles (which I also love).... but it was totally different.  They brought out my plate with a huge piece of chicken sitting on top of four big bacon waffles... yup that's right, BACON WAFFLES.  They actually had slices of bacon going through the middle of the waffles. I didn't read that part on the menu, so that was the best surprise a chicken n waffles dish could offer.  I mean who doesn't love bacon?!\\n\\nAnd the portions were HUGE.  Go to this place hungry.\\n\\nAnd if you have Twitter, tweet that your eating there (@HashHouseLV) and you get a free drink!\\n\\nHash House A Go Go is a must!!!!!";
         Span[] taggedTokens = null;
         OpennlpTagger opennlpTagger = new OpennlpTagger();
         String[] sentences = opennlpTagger.detectSentence(review);
         if (sentences != null) {
             for (String sentence : sentences) {
-                String[] tokens = opennlpTagger.tokenizeSentence(sentence);
+                //String[] tokens = opennlpTagger.tokenizeSentence(sentence);
 //                if (tokens != null) {
 //                    taggedTokens = opennlpTagger.tagger(tokens);
 //                    if (taggedTokens != null) {
 //                        opennlpTagger.printTags(sentence, taggedTokens, tokens);
 //                    }
 //                }
-                tokens = opennlpTagger.tokenizeSentence(opennlpTagger.detokenizeTokens(tokens));
+                //tokens = opennlpTagger.tokenizeSentence(opennlpTagger.detokenizeTokens(tokens));
+                opennlpTagger.tag(sentence);
             }
         }
 
@@ -72,11 +73,13 @@ public class OpennlpTagger {
         return taggedTokens;
     }
 
+    final static String modelPath = "src/main/resources/opennlp/evaluation/models/reviews_1500.bin";
+
     public Span[] tagger(String[] tokens) {
         InputStream eateryModel = null;
         Span[] taggedTokens = null;
         try {
-            eateryModel = new FileInputStream("src/main/resources/opennlp/evaluation/models/reviews_1500.bin");
+            eateryModel = new FileInputStream(modelPath);
             TokenNameFinderModel model = new TokenNameFinderModel(eateryModel);
 
             NameFinderME nameFinder = new NameFinderME(model);
