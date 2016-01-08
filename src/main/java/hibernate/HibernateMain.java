@@ -56,6 +56,15 @@ public class HibernateMain {
         return list;
     }
 
+    public List getRestaurants() {
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        Query query = session.createQuery("from BusinessEntity ");
+        List<?> list = query.list();
+        session.getTransaction().commit();
+        return list;
+    }
+
     public List getWeights(String parentAspect) {
         Session session = sessionFactory.openSession();
         session.beginTransaction();

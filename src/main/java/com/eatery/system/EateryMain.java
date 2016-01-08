@@ -416,6 +416,17 @@ public class EateryMain {
         }
     }
 
+    public HashMap<String,Double> getCompositeRatings(){
+        HibernateMain hibernateMain1=new HibernateMain();
+        List restaurants=hibernateMain1.getRestaurants();
+
+        HashMap<String,Double> compositeRatings=new HashMap<>();
+        for (int i = 0; i < restaurants.size(); i++) {
+            compositeRatings.put(restaurants.get(i).toString(),getCompositeRating(restaurants.get(i).toString()));
+            System.out.println(restaurants.get(i)+"\t"+getCompositeRating(restaurants.get(i).toString()));
+        }
+        return null;
+    }
     public double getCompositeRating(String restaurantName) {
         HibernateMain hibernateMain = new HibernateMain();
         List ratings = hibernateMain.getRatings(restaurantName);
