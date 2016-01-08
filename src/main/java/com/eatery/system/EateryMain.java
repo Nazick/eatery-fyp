@@ -44,8 +44,9 @@ public class EateryMain {
 
         EateryMain eateryMain = new EateryMain(new HibernateMain());
         //eateryMain.preProcessData();
-        eateryMain.process();
+        //eateryMain.process();
 
+        eateryMain.getCompositeRatings();
 //        EateryMain eateryMain = new EateryMain();
 //        eateryMain.implicitTesting();
     }
