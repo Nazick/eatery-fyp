@@ -1,5 +1,6 @@
 package com.eatery.opennlp;
 
+
 import opennlp.model.TrainUtil;
 import opennlp.tools.namefind.*;
 import opennlp.tools.util.ObjectStream;
@@ -61,10 +62,10 @@ public class OpenNLPModelAnalyzer {
             TrainingParameters params = TrainingParameters.defaultParams();
             params.put(TrainUtil.CUTOFF_PARAM, "100");
             params.put(TrainUtil.ITERATIONS_PARAM, "5");
-            TokenNameFinderCrossValidator evaluator = new TokenNameFinderCrossValidator("en", 100, 5);
-            evaluator.evaluate(sampleStream, 10);
+//            TokenNameFinderCrossValidator evaluator = new TokenNameFinderCrossValidator("en", 100, 5);
+//            evaluator.evaluate(sampleStream, 10);
 
-            result = evaluator.getFMeasure();
+//            result = evaluator.getFMeasure();
 
             System.out.println(result.toString());
         }catch(Exception e){

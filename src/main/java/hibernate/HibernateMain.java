@@ -34,6 +34,7 @@ public class HibernateMain {
             session.beginTransaction();
             session.saveOrUpdate(ratingsEntity);
             session.getTransaction().commit();
+            session.close();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -44,6 +45,8 @@ public class HibernateMain {
         session.beginTransaction();
         session.save(restaurent);
         session.getTransaction().commit();
+        session.close();
+
     }
 
     public List getRatings(String restaurantID) {
@@ -53,6 +56,7 @@ public class HibernateMain {
         query.setParameter("id", restaurantID);
         List<?> list = query.list();
         session.getTransaction().commit();
+        session.close();
         return list;
     }
 
@@ -62,6 +66,7 @@ public class HibernateMain {
         Query query = session.createQuery("from BusinessEntity ");
         List<?> list = query.list();
         session.getTransaction().commit();
+        session.close();
         return list;
     }
 
@@ -73,6 +78,7 @@ public class HibernateMain {
         List<?> list = query.list();
 
         session.getTransaction().commit();
+        session.close();
         return list;
     }
 
@@ -85,6 +91,7 @@ public class HibernateMain {
         query.setParameter("aspectTag", aspectTag);
         List list = query.list();
         session.getTransaction().commit();
+        session.close();
         return list;
     }
 
@@ -93,6 +100,7 @@ public class HibernateMain {
         session.beginTransaction();
         BusinessEntity businessEntity = (BusinessEntity) session.get(BusinessEntity.class, restaurantId);
         session.getTransaction().commit();
+        session.close();
         return businessEntity;
     }
 
@@ -104,6 +112,7 @@ public class HibernateMain {
         query.setParameter("restaurantName", restaurantName);
         List list = query.list();
         session.getTransaction().commit();
+        session.close();
         return list;
     }
 
@@ -123,6 +132,7 @@ public class HibernateMain {
         query.setMaxResults(noOfResults);
         List list = query.list();
         session.getTransaction().commit();
+        session.close();
         return list;
     }
 
@@ -135,6 +145,7 @@ public class HibernateMain {
         query.setParameter("aspectName",aspectName);
         List list = query.list();
         session.getTransaction().commit();
+        session.close();
         return list;
     }
 
@@ -182,19 +193,7 @@ public class HibernateMain {
 //
 //    }
 
-    public void testRating() {
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        //start transaction
-        session.beginTransaction();
 
-        String hql = "FROM RatingsEntity R WHERE R.restaurant.businessId = :restaurantId AND R.aspect.aspectName = :aspectName";
-        Query query = session.createQuery(hql);
-        query.setParameter("restaurantId", "2e2e7WgqU1BnpxmQL5jbfw");
-        query.setParameter("aspectName", "Food");
-        List results = query.list();
-
-        RatingsEntity ratingsEntity;
-    }
 
     public void updateWeightsTable() {
         AHPM ahpm = new AHPM();

@@ -38,11 +38,11 @@ public class EateryMain {
 
     final static String implicitTestFile = "src/main/resources/implicit/u_14.txt";
 
-    HibernateMain hibernateMain;
+    HibernateMain hibernateMain=new HibernateMain();
 
     public static void main(String[] args) {
 
-        EateryMain eateryMain = new EateryMain(new HibernateMain());
+        EateryMain eateryMain = new EateryMain();
         //eateryMain.preProcessData();
         //eateryMain.process();
 
@@ -418,21 +418,21 @@ public class EateryMain {
     }
 
     public HashMap<String,Double> getCompositeRatings(){
-        HibernateMain hibernateMain1=new HibernateMain();
-        List restaurants=hibernateMain1.getRestaurants();
+        List restaurants=hibernateMain.getRestaurants();
 
         HashMap<String,Double> compositeRatings=new HashMap<>();
         for (int i = 0; i < restaurants.size(); i++) {
-            compositeRatings.put(restaurants.get(i).toString(),getCompositeRating(restaurants.get(i).toString()));
-            System.out.println(restaurants.get(i)+"\t"+getCompositeRating(restaurants.get(i).toString()));
+            BusinessEntity businessEntity= (BusinessEntity) restaurants.get(i);
+            compositeRatings.put(businessEntity.getBusinessId(),getCompositeRating(businessEntity.getBusinessId()));
+            System.out.println(businessEntity.getBusinessId()+"\t"+getCompositeRating(businessEntity.getBusinessId()));
         }
         return null;
     }
     public double getCompositeRating(String restaurantName) {
-        HibernateMain hibernateMain = new HibernateMain();
+//        HibernateMain hibernateMain = new HibernateMain();
         List ratings = hibernateMain.getRatings(restaurantName);
 
-        print(ratings);
+//        print(ratings);
 
         double foodItemScore = getSubRatings("F_FoodItem", ratings);
         double staffScore = getSubRatings("S_Staff", ratings);
@@ -458,7 +458,7 @@ public class EateryMain {
         updateSubRatings(ratings,"O_Experience",experienceScore);
         updateSubRatings(ratings,"A_Environment",environmentScore);
 
-        print(ratings);
+//        print(ratings);
 
         double serviceScore = getSubRatings("Service", ratings);
         double worthinessScore = getSubRatings("Worthiness", ratings);
@@ -474,7 +474,7 @@ public class EateryMain {
         updateSubRatings(ratings,"Offers",offersScore);
         updateSubRatings(ratings,"Others",othersScore);
 
-        print(ratings);
+//        print(ratings);
 
         double restaurantScore = getSubRatings("Restaurant", ratings);
 
@@ -500,7 +500,7 @@ public class EateryMain {
     }
 
     private double getSubRatings(String parentAspect, List ratings) {
-        HibernateMain hibernateMain = new HibernateMain();
+//        HibernateMain hibernateMain = new HibernateMain();
         List weights = hibernateMain.getWeights(parentAspect);
 
         double subRating = 0.0;
