@@ -5245,7 +5245,7 @@ P_F_FI_CookingLevel/overcooked, and A_Env_Size F_FI_Taste
 awesome F_Dessert
 this Restaurant is an excellent example of A_LocatedArea fine dining at its best
 some excellent highlights; the F_FoodItem are fantastically made, the seafood trio F_Appetizer is a must when dining Restaurant, and the Service should be, and was, perfect
-we truly P_O_Experience/enjoyed our O_Experience Restaurant, and although Restaurant are many fine dining Restaurant in A_LocatedArea to choose from, Restaurant are few that tend to get all those key elements and Service standards working together harmoniously perfect such as aquaknox
+we truly P_O_Experience/enjoyed our O_Experience Restaurant, and although Restaurant are many fine dining Restaurant in A_LocatedArea to choose from, Restaurant are few that tend to get all those key foodList and Service standards working together harmoniously perfect such as aquaknox
 the only reason i give this place four O_Exp_StarsByCus instead of five is because the Service was lacking a bit
 it took forever for us to get F_Drinks/extra S_Cutlery/F_Ingredients
 other than that, the Food was outstanding

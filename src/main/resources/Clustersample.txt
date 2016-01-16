@@ -1,0 +1,684 @@
+0
+['mango lassi', 'skinny classic blt', 'mint lassi', 'sans liege glass', 'rose glass', 'shv gewuzt glass', 'cotes du coast glass', 'jelly jar rose glass', 'lorenza glass', 'gevrey chambertin glass', 'shv gewuzt glass hh', 'merisi glass', 'merisi pinot gris glass', 'julie lepla  glass', 'bordeaux glass', 'quercus cab glass', 'port glass', 'viognier glass', 'white bordeaux glass', 'vitus sauvignon blanc glass', 'sparkling rose glass', 'albarino glass', 'rumpus glass', 'red bordeaux glass', 'barbera glass', 'rossi glass', 'white bordeaux hh glass', 'berryessa gap glass', 'colombard glass', 'berryessa gap sav blanc glass', 'julie zin glass', 'jelly jar glass', 'la marca prosecco glass', 'berryessa gap zin glass', 'petite sirah glass', 'shv late harvest semillon glass', 'rossi glass hh', 'vitus cab glass', 'cremant sparkling rose glass', 'groundwork glass', 'groundwork grenache glass', 'le pla glass', 'balletto glass', 'turkovich glass', 'berryessa gap sauv blanc glass', 'jelly rose glass']
+('glass', 43)
+
+
+1
+['groundwork grenache bottle', 'sparkling bottle', 'la marca prosecco bottle', 'jelly rose bottle', 'julie zin bottle', 'shv gewurzt bottle hh', 'colombard bottle', 'rose bottle', 'bordeaux bottle', 'turkovich bottle', 'balletto bottle', 'vitus cab bottle', 'sparkling rose bottle', 'dom bottle', 'budweiser bottle', 'rumpus bottle', 'petie sirah bottle', 'berryessa gap bottle', 'sans liege bottle', 'julie lepla bottle', 'jelly jar rose bottle', 'quercus cab bottle', 'merisi pinot gris bottle', 'barbera bottle', 'lorenza bottle', 'port bottle', 'groundwork bottle', 'cotes du coast bottle', 'shv gewurzt bottle', 'red bordeaux bottle', 'bourassa reisling bottle', 'merisi bottle', 'vitus sauvignon blanc bottle', 'cremant sparkling rose bottle', 'viognier bottle', 'berryessa gap zin bottle', 'shv late harvest semillon bottle', 'le pla bottle', 'rossi bottle', 'jelly jar bottle']
+('bottle', 40)
+
+
+2
+['fried chicken sandwich', 'chicken tikka', 'chicken paillard', 'chicken madras', 'thai chicken', 'tandoori chicken wrap', 'koobideh and chicken', 'monster chicken burrito', 'butter chicken', 'thai chicken salad', 'hyderabadi chicken dum biryani', 'chili chicken masala', 'chicken saag', 'chicken tikka masala', 'chicken breast salad', 'side of sausage: chicken-apple', 'chickenpot salad platter', 'grilled chicken breast', 'tuesday kid chicken', 'chicken chimichanga burrito', 'chicken tikka masala wrap', 'chicken dum biryani', 'chicken tikka wrap', 'tuesday fried chicken', 'chicken breast', 'carbless greek chicken', 'chicken pasenda', 'tuscan chicken', 'tandoori chicken breast', 'chicken sandwich']
+('chicken', 28)
+
+
+3
+['spring lettuce salad', 'peach salad', 'garden salad', 'octopus salad', 'simple green salad', 'side salad', 'thai chicken salad', 'chicken breast salad', 'spring greens salad', 'beet salad', 'egg salad app', 'confit beet salad', 'chickenpot salad platter', 'veg salad', 'kale salad', 'asian chix salad', 'squash salad crostini', 'butter lettuce salad', 'cold farro salad', 'caesar salad', 'melon salad', 'albacore salad', 'red leaf salad', 'whitefish salad', 'duck salad', 'salad sm plate', 'farro salad']
+('salad', 27)
+
+
+4
+['cheesecake', 'mac n cheese spec', 'cinnamon maple cream cheese', 'cheese cake', 'lite cream cheese', 'grilled cheese', 'cheese after happy', "chef's cheese selection", 'cheese platter', 'cheese afterhours', 'home fries with cheese', 'mac n cheese', 'lunch mac n cheese', 'cheese plate', 'cheesecake', 'cheese platter hh', 'mozzarella cheese sticks', 'cheeseburger', "kids' cheeseburger"]
+('cheese', 15)
+
+
+5
+['paneer pakora', 'pork belly afterhours', 'bacon wrapped pork sirloin', 'pork chop', 'combo pork burrito', 'pork belly', 'wednesday pork tamale special', 'pork quesadilla ranchera', 'pork belly hh', 'pork tenderloin']
+('pork', 9)
+
+
+6
+['breakfast sandwich', 'side of sausage: maple breakfast', 'new breakfast special', "king's breakfast special", 'bread pudding', 'side of seasonal bread']
+('breakfast', 4)
+
+
+7
+['cheese plate', 'salad sm plate', 'charcuterie platter', 'cheese platter', 'chickenpot salad platter', 'cheese platter hh', 'lite cream cheese', "leena's lite turkey reuben"]
+('cheese', 4)
+
+
+8
+['blackberry mousse', 'mousse', 'choc mousse']
+('mousse', 3)
+
+
+9
+['beef enchilada', 'ground beef chimichanga burrito', 'corned beef meal', 'shredded beef chimichanga burrito', 'beef wrap', 'monster ground beef burrito', 'braised beef short rib stroganoff', 'beef burger', 'beer steamed mussles & clams']
+('beef', 8)
+
+
+10
+['lemonade', 'lemon tart', 'salmon cakes', 'salmon cakes afterhours', 'salmon cake', 'salmon', 'grilled balsamic salmon', 'lunch salmon', 'smoked salmon']
+('salmon', 7)
+
+
+11
+['pork belly afterhours', 'pork belly', 'pork belly hh']
+('belly', 3)
+
+
+12
+['clams and mussels', 'clams afterhours', 'clams & mussles', 'clam & mussels entree', 'clams & mussels app', 'mussels and clams', 'steamed manila clams', 'beer steamed mussles & clams', 'clams & mussels hh']
+('clams', 8)
+
+
+13
+['lobster risotto', 'lobster roll']
+('lobster', 2)
+
+
+14
+['cinnamon maple cream cheese', 'lite cream cheese', 'ice cream scoop', 'ice cream']
+('cream', 4)
+
+
+15
+['gluten free', 'gluten free bagel']
+('gluten', 2)
+
+
+16
+['goa fish curry', 'fish n chips', 'fish & chips', 'grilled california swordfish', 'chili fish', 'fish n chips appetizer', 'whitefish salad', 'swordfish']
+('fish', 5)
+
+
+17
+["martinelli's apple cider", 'bananaapple', 'side of sausage: chicken-apple', 'pineapple juice', 'apple fritters', 'smoked applewood bacon', 'apple juice']
+('apple', 3)
+
+
+18
+['tartine', 'tartine', 'tart', 'lemon tart', 'tunatartare', 'pecan tart', 'tuna tartare', 'choc tart', 'tartare']
+('tart', 4)
+
+
+19
+['saag paneer', 'butter paneer masala', 'kadai paneer', 'paneer pakora', 'chili paneer', 'mutter paneer', 'paneer tikka wrap']
+('paneer', 7)
+
+
+20
+['shrimp couscous', 'shrimp madras', 'shrimp dum biryani', 'koobideh and shrimp', 'small shrimp soup', 'shrimp enchilada', 'shrimp vendura']
+('shrimp', 7)
+
+
+21
+['deviled eggs', 'eggs, ham and hash browns', 'veggie burst', 'two pancakes eggs and sausage', 'egg salad app', 'veggie omlet', 'andy no egg wmeat', 'egg', 'veggies']
+('egg', 3)
+
+
+22
+['bistro rose']
+('rose', 1)
+
+
+23
+['pineapple juice', 'apple juice']
+('juice', 2)
+
+
+24
+['monster chicken burrito', 'ground beef chimichanga burrito', 'combo pork burrito', 'shredded beef chimichanga burrito', 'chicken chimichanga burrito', 'monster ground beef burrito']
+('burrito', 6)
+
+
+25
+['salmon cakes', 'shortcake', 'cheese cake', 'carrot cake', 'salmon cakes afterhours', 'two pancakes eggs and sausage', 'salmon cake', 'three pancakes', 'crab cake', 'pancakes', 'cheesecake', 'pancake side']
+('cake', 4)
+
+
+26
+['chicken saag', 'plain saag', 'saag paneer', 'side of sausage: maple breakfast', 'two pancakes eggs and sausage', 'side of sausage: chicken-apple']
+('saag', 3)
+
+
+27
+['shrimp dum biryani', 'hyderabadi lamb dum biryani', 'hyderabadi chicken dum biryani', 'vegetable dum biryani', 'chicken dum biryani']
+('biryani', 5)
+
+
+28
+['rice kheer', 'plain white basmati rice']
+('rice', 2)
+
+
+29
+['side of toast: wheat', 'french toast', 'side of toast: sourdough']
+('toast:', 2)
+
+
+30
+['butter chicken', 'butter paneer masala', 'butter lettuce salad', 'butterscotch pots de creme']
+('butter', 3)
+
+
+31
+['side of fruit']
+('of', 1)
+
+
+32
+['fried chicken sandwich', 'breakfast sandwich', 'shortrib sandwich', 'chicken sandwich']
+('sandwich', 4)
+
+
+33
+['jelly jar rose glass', 'jelly jar', 'jelly jar rose bottle', 'jelly jar glass', 'jelly jar bottle']
+('jar', 5)
+
+
+34
+['chicken tikka', 'chicken tikka masala', 'chicken tikka masala wrap', 'chicken tikka wrap', 'paneer tikka wrap']
+('tikka', 5)
+
+
+35
+['plain mini bagels', 'gluten free bagel', 'bagel dozen', 'everything bagel styx dozen']
+('bagel', 3)
+
+
+36
+['chilaquiles']
+('chilaquiles', 1)
+
+
+37
+['bacon wrapped pork sirloin', 'side of bacon', 'guacamole bacon burger', 'smoked applewood bacon']
+('bacon', 4)
+
+
+38
+['lemonade']
+('lemonade', 1)
+
+
+39
+['milkchoc milk kids', 'kid choc milk', 'choc milk']
+('milk', 3)
+
+
+40
+['vegetable pulao', 'vegetable dum biryani', 'koobideh and vegetables', 'mixed vegetable masala']
+('vegetable', 3)
+
+
+41
+['hearty wheat dozen', 'side of toast: wheat', 'hearty wheat each']
+('wheat', 3)
+
+
+42
+['indian masala tea', 'steak frites', 'tea', 'steamed manila clams', 'beer steamed mussles & clams', 't-bone rib-eye steak', 'steak frites', 't-bone rib-eye steak']
+('steak', 4)
+
+
+43
+['two pancakes eggs and sausage', 'three pancakes', 'pancakes', 'pancake side']
+('pancakes', 3)
+
+
+44
+['crab risotto', 'risotto', 'risotto-lunch', 'lobster risotto']
+('risotto', 3)
+
+
+45
+['ground beef chimichanga burrito', 'shredded beef chimichanga burrito', 'chicken chimichanga burrito']
+('burrito', 3)
+
+
+46
+['spring lettuce salad', 'butter lettuce salad', 'fettuccine']
+('salad', 2)
+
+
+47
+['odwalla oj', 'yellow dal tadka', 'lamb vindalo', 'dal makhani']
+('dal', 2)
+
+
+48
+['savory']
+('savory', 1)
+
+
+49
+['winemaker dinner', 'bbq rib dinner']
+('dinner', 2)
+
+
+50
+['trio truffle']
+('trio', 1)
+
+
+51
+['beef enchilada', 'shrimp enchilada', 'michelada']
+('enchilada', 2)
+
+
+52
+['ceviche decamaron', 'ceviche', 'ceviche de sierra']
+('ceviche', 3)
+
+
+53
+['panna cotta']
+('panna', 1)
+
+
+54
+['asian chix salad']
+('salad', 1)
+
+
+55
+['side of potatoes', 'potato fritters', 'tomato cucumber']
+('fritters', 1)
+
+
+56
+['chowder', 'cod']
+('chowder', 1)
+
+
+57
+['duck breast', 'seared duck breast', 'duck salad']
+('duck', 3)
+
+
+58
+['seasonal soup', 'small shrimp soup']
+('soup', 2)
+
+
+59
+['carrot cake', 'cold farro salad', 'farro salad']
+('salad', 2)
+
+
+60
+['brunch panini']
+('brunch', 1)
+
+
+61
+['plain white basmati rice']
+('rice', 1)
+
+
+62
+['combo pork burrito']
+('combo', 1)
+
+
+63
+['colombard bottle', 'colombard glass']
+('colombard', 2)
+
+
+64
+['bahn mi tacos', 'soft carne asada taco']
+('soft', 1)
+
+
+65
+['garlic herb']
+('garlic', 1)
+
+
+66
+['paella']
+('paella', 1)
+
+
+67
+['bouillabaisse-lunch', 'bouillabaisse']
+('bouillabaisse', 1)
+
+
+68
+['kitchen test print']
+('print', 1)
+
+
+69
+['pastry', 'free pastry']
+('pastry', 2)
+
+
+70
+['ribollita']
+('ribollita', 1)
+
+
+71
+['grilled california swordfish', 'seared california mahi mahi']
+('california', 2)
+
+
+72
+['hearty wheat dozen', 'side of toast: wheat', 'hearty wheat each']
+('wheat', 3)
+
+
+73
+['garden salad', 'gatorade']
+('salad', 1)
+
+
+74
+['garlic herb', 'garlic dozen']
+('garlic', 2)
+
+
+75
+['bread pudding', 'pudding']
+('pudding', 2)
+
+
+76
+['mango lassi', 'skinny classic blt', 'mint lassi']
+('lassi', 2)
+
+
+77
+['valentine special wine pairing', 'winemaker dinner']
+('pairing', 1)
+
+
+78
+['cheeseburger', "kids' cheeseburger"]
+('cheeseburger', 2)
+
+
+79
+['tempura squash']
+('tempura', 1)
+
+
+80
+['eggs, ham and hash browns', 'hash']
+('hash', 2)
+
+
+81
+['bruschetta']
+('bruschetta', 1)
+
+
+82
+['romali roti']
+('roti', 1)
+
+
+83
+['charcuterie platter', 'charcuterie hh']
+('charcuterie', 2)
+
+
+84
+['gumbo']
+('gumbo', 1)
+
+
+85
+['cinnamon maple cream cheese']
+('maple', 1)
+
+
+86
+['figs & honey']
+('&', 1)
+
+
+87
+['falafel']
+('falafel', 1)
+
+
+88
+['pork quesadilla ranchera']
+('quesadilla', 1)
+
+
+89
+['shrimp couscous']
+('couscous', 1)
+
+
+90
+["martinelli's apple cider"]
+('apple', 1)
+
+
+91
+['canned soda']
+('canned', 1)
+
+
+92
+['guacamole bacon burger']
+('bacon', 1)
+
+
+93
+["s'more"]
+("s'more", 1)
+
+
+94
+['hushpuppies', 'pot pie']
+('hushpuppies', 1)
+
+
+95
+['butterscotch pots de creme']
+('creme', 1)
+
+
+96
+['croissant sando']
+('croissant', 1)
+
+
+97
+['confit beet salad']
+('confit', 1)
+
+
+98
+['side of toast: sourdough']
+('toast:', 1)
+
+
+99
+['gyros']
+('gyros', 1)
+
+
+100
+['wednesday pork tamale special']
+('tamale', 1)
+
+
+101
+['hummus']
+('hummus', 1)
+
+
+102
+['yogurt brulee']
+('yogurt', 1)
+
+
+103
+['gevrey chambertin glass', 'eggs, ham and hash browns', 'turkey hamswiss', 'mini danishhamentachen']
+('chambertin', 1)
+
+
+104
+['restaurant week special']
+('restaurant', 1)
+
+
+105
+['semifreddo']
+('semifreddo', 1)
+
+
+106
+['homentachen', 'home fries with cheese']
+('fries', 1)
+
+
+107
+['onion bhajji']
+('onion', 1)
+
+
+108
+['mixed vegetable masala']
+('masala', 1)
+
+
+109
+['fat free']
+('free', 1)
+
+
+110
+['mutter mushroom']
+('mushroom', 1)
+
+
+111
+['albacore salad']
+('salad', 1)
+
+
+112
+['polenta']
+('polenta', 1)
+
+
+113
+['special dessert']
+('dessert', 1)
+
+
+114
+['sugar free strudel']
+('free', 1)
+
+
+115
+['endive']
+('endive', 1)
+
+
+116
+['coffee refill to go']
+('to', 1)
+
+
+117
+['shortcake']
+('shortcake', 1)
+
+
+118
+['ahi tuna carpaccio']
+('ahi', 1)
+
+
+119
+['goa fish curry']
+('curry', 1)
+
+
+120
+['mozzarella cheese sticks']
+('mozzarella', 1)
+
+
+121
+['shawarma']
+('shawarma', 1)
+
+
+122
+['gratin']
+('gratin', 1)
+
+
+123
+['corned beef meal']
+('corned', 1)
+
+
+124
+['rice kheer']
+('rice', 1)
+
+
+125
+['almond amaretto']
+('amaretto', 1)
+
+
+126
+['crispy sweet coleslaw']
+('crispy', 1)
+
+
+127
+['valentine special no drinks']
+('drinks', 1)
+
+
+128
+['sesame each']
+('each', 1)
+
+
+129
+['smooth lox']
+('smooth', 1)
+
+
+130
+['chinese almond cookie']
+('cookie', 1)
+
+
+131
+['halibut']
+('halibut', 1)
+
+
+132
+['quiche']
+('quiche', 1)
+
+
+133
+['frittata']
+('frittata', 1)
+
+
+134
+['sugar free strudel']
+('free', 1)
+
+
+135
+['slow food']
+('food', 1)
+
+
+136
+['onion bhajji']
+('onion', 1)
+
