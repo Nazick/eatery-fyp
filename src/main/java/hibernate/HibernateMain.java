@@ -21,10 +21,10 @@ public class HibernateMain {
 
     public static void main(String[] args) {
         HibernateMain hibernateMain = new HibernateMain();
-        //hibernateMain.updateWeightsTable();
-        List list = hibernateMain.searchByAspect("Food",5);
-        //List list2 = hibernateMain.searchAspectByRestaurant("Restaurant_11","Food");
-        System.out.println();
+        hibernateMain.updateWeightsTable();
+//        List list = hibernateMain.searchByAspect("Food",5);
+//        //List list2 = hibernateMain.searchAspectByRestaurant("Restaurant_11","Food");
+//        System.out.println();
 
     }
 

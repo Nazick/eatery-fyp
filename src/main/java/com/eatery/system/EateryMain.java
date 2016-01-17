@@ -29,16 +29,16 @@ import java.util.Map;
 public class EateryMain {
 
     final static String processedFilePath = "src/main/resources/" +
-             "test.json"; //"review_100_A.json";
-            //"top100Business.json";
-            //"100Reviews.json";
+            "test.json"; //"review_100_A.json";
+    //"top100Business.json";
+    //"100Reviews.json";
 
     final static String filePathRead = "src/main/resources/" +
             "100Reviews.json";
 
     final static String implicitTestFile = "src/main/resources/implicit/u_14.txt";
 
-    HibernateMain hibernateMain=new HibernateMain();
+    HibernateMain hibernateMain = new HibernateMain();
 
     public static void main(String[] args) {
 
@@ -81,7 +81,7 @@ public class EateryMain {
                     restaurentId = jsonData.getRestaurentId();
                     List<Sentence> sentencesInReview = new ArrayList<>();
                     List<Sentence> scoredSentences = new ArrayList<>();
-                    System.out.println("\n############# "+count+" ##############");
+                    System.out.println("\n############# " + count + " ##############");
                     System.out.println("Restaurant ID : " + restaurentId);
 
                     if (languageDetect.isReviewInEnglish(review)) {
@@ -394,11 +394,11 @@ public class EateryMain {
                 //Tagging implicit Aspects
                 sentencesInReview = implicitAspects.find(sentencesInReview);
 
-                for(Sentence sentence: sentencesInReview){
+                for (Sentence sentence : sentencesInReview) {
                     System.out.println(sentence.getLine());
-                    if(sentence.getImplicitTags().size() != 0){
-                        for(WordTag tag:sentence.getImplicitTags().values()){
-                            System.out.println("##########"+tag.getWord()+ " - "+ tag.getTag());
+                    if (sentence.getImplicitTags().size() != 0) {
+                        for (WordTag tag : sentence.getImplicitTags().values()) {
+                            System.out.println("##########" + tag.getWord() + " - " + tag.getTag());
                             count++;
                         }
                     }
@@ -407,7 +407,7 @@ public class EateryMain {
 
 
             }
-            System.out.println("Tags count - "+implicitAspects.getCount());
+            System.out.println("Tags count - " + implicitAspects.getCount());
             br.close();
             fr.close();
             System.out.println("Done...");
@@ -417,17 +417,18 @@ public class EateryMain {
         }
     }
 
-    public HashMap<String,Double> getCompositeRatings(){
-        List restaurants=hibernateMain.getRestaurants();
+    public HashMap<String, Double> getCompositeRatings() {
+        List restaurants = hibernateMain.getRestaurants();
 
-        HashMap<String,Double> compositeRatings=new HashMap<>();
+        HashMap<String, Double> compositeRatings = new HashMap<>();
         for (int i = 0; i < restaurants.size(); i++) {
-            BusinessEntity businessEntity= (BusinessEntity) restaurants.get(i);
-            compositeRatings.put(businessEntity.getBusinessId(),getCompositeRating(businessEntity.getBusinessId()));
-            System.out.println(businessEntity.getBusinessId()+"\t"+getCompositeRating(businessEntity.getBusinessId()));
+            BusinessEntity businessEntity = (BusinessEntity) restaurants.get(i);
+            compositeRatings.put(businessEntity.getBusinessId(), getCompositeRating(businessEntity.getBusinessId()));
+            System.out.println(businessEntity.getBusinessId() + "\t" + getCompositeRating(businessEntity.getBusinessId()));
         }
         return null;
     }
+
     public double getCompositeRating(String restaurantName) {
 //        HibernateMain hibernateMain = new HibernateMain();
         List ratings = hibernateMain.getRatings(restaurantName);
@@ -446,17 +447,17 @@ public class EateryMain {
         double experienceScore = getSubRatings("O_Experience", ratings);
         double environmentScore = getSubRatings("A_Environment", ratings);
 
-        updateSubRatings(ratings,"F_FoodItem",foodItemScore);
-        updateSubRatings(ratings,"S_Staff",staffScore);
-        updateSubRatings(ratings,"S_Delivery",deliveryScore);
-        updateSubRatings(ratings,"A_Entertainment",entertainmentScore);
-        updateSubRatings(ratings,"A_Furniture",furnitureScore);
-        updateSubRatings(ratings,"A_Places",placesScore);
-        updateSubRatings(ratings,"A_LocatedArea",locatedAreaScore);
-        updateSubRatings(ratings,"O_Payment",paymentScore);
-        updateSubRatings(ratings,"O_Reservation",reservationScore);
-        updateSubRatings(ratings,"O_Experience",experienceScore);
-        updateSubRatings(ratings,"A_Environment",environmentScore);
+        updateSubRatings(ratings, "F_FoodItem", foodItemScore);
+        updateSubRatings(ratings, "S_Staff", staffScore);
+        updateSubRatings(ratings, "S_Delivery", deliveryScore);
+        updateSubRatings(ratings, "A_Entertainment", entertainmentScore);
+        updateSubRatings(ratings, "A_Furniture", furnitureScore);
+        updateSubRatings(ratings, "A_Places", placesScore);
+        updateSubRatings(ratings, "A_LocatedArea", locatedAreaScore);
+        updateSubRatings(ratings, "O_Payment", paymentScore);
+        updateSubRatings(ratings, "O_Reservation", reservationScore);
+        updateSubRatings(ratings, "O_Experience", experienceScore);
+        updateSubRatings(ratings, "A_Environment", environmentScore);
 
 //        print(ratings);
 
@@ -467,12 +468,12 @@ public class EateryMain {
         double offersScore = getSubRatings("Offers", ratings);
         double othersScore = getSubRatings("Others", ratings);
 
-        updateSubRatings(ratings,"Service",serviceScore);
-        updateSubRatings(ratings,"Worthiness",worthinessScore);
-        updateSubRatings(ratings,"Ambience",ambienceScore);
-        updateSubRatings(ratings,"Food",foodScore);
-        updateSubRatings(ratings,"Offers",offersScore);
-        updateSubRatings(ratings,"Others",othersScore);
+        updateSubRatings(ratings, "Service", serviceScore);
+        updateSubRatings(ratings, "Worthiness", worthinessScore);
+        updateSubRatings(ratings, "Ambience", ambienceScore);
+        updateSubRatings(ratings, "Food", foodScore);
+        updateSubRatings(ratings, "Offers", offersScore);
+        updateSubRatings(ratings, "Others", othersScore);
 
 //        print(ratings);
 
@@ -482,20 +483,25 @@ public class EateryMain {
     }
 
     private void updateSubRatings(List ratings, String aspect, double score) {
+        boolean isAvailable=false;
         for (int i = 0; i < ratings.size(); i++) {
             RatingsEntity ratingsEntity = (RatingsEntity) ratings.get(i);
             if (ratingsEntity.getAspectTag().matches(aspect)) {
                 ratingsEntity.setScore(score);
                 ratings.remove(i);
                 ratings.add(ratingsEntity);
+                isAvailable=true;
             }
+        }
+        if (!isAvailable) {
+            ratings.add(new RatingsEntity(aspect,"",score,1));
         }
     }
 
     private void print(List ratings) {
         for (int i = 0; i < ratings.size(); i++) {
             RatingsEntity ratingsEntity = (RatingsEntity) ratings.get(i);
-            System.out.println(ratingsEntity.getAspectTag()+" "+ratingsEntity.getScore());
+            System.out.println(ratingsEntity.getAspectTag() + " " + ratingsEntity.getScore());
         }
     }
 
@@ -504,11 +510,19 @@ public class EateryMain {
         List weights = hibernateMain.getWeights(parentAspect);
 
         double subRating = 0.0;
+        double factor = 0.0;
         for (int i = 0; i < weights.size(); i++) {
             WeightsEntity weightsEntity = (WeightsEntity) weights.get(i);
-            subRating += weightsEntity.getWeight() * getRatingForAspect(weightsEntity.getAspect(), ratings);
+            double rating = getRatingForAspect(weightsEntity.getAspect(), ratings);
+            if (rating != 0) {
+                subRating += weightsEntity.getWeight() * rating;
+                factor += weightsEntity.getWeight();
+            }
         }
-        return subRating;
+        if (subRating != 0)
+            return subRating / factor;
+        else
+            return 0.0;
     }
 
     private double getRatingForAspect(String aspect, List ratings) {

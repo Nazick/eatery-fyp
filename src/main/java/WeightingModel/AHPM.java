@@ -20,16 +20,19 @@ import java.util.*;
 public class AHPM {
     static double factor = 1e4; // = 1 * 10^5 = 100000.
 
-    String[] filePathToAnnFileArray = {"/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_1.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_2.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_3.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_4.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_5.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_9.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_11.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_12.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_13.ann",
-            "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/u_14.ann",
+    String[] filePathToAnnFileArray = {"brat/u_1.ann",
+            "brat/u_2.ann",
+            "brat/u_3.ann",
+            "brat/u_4.ann",
+            "brat/u_5.ann",
+            "brat/u_6.ann",
+            "brat/u_7.ann",
+            "brat/u_8.ann",
+            "brat/u_9.ann",
+            "brat/u_11.ann",
+            "brat/u_12.ann",
+            "brat/u_13.ann",
+            "brat/u_14.ann",
     };
     Hashtable<String, Integer> aspectHashtable = new Hashtable<>();
     double[] ri = {0, 0, 0, 0.58, 0.90, 1.12, 1.24, 1.32, 1.41, 1.45, 1.51, 1.51, 1.51, 1.51};
@@ -84,10 +87,6 @@ public class AHPM {
             for (int i = 0; i < list.size(); i++) {
                 listFinal.add(list.get(i));
             }
-            list = calculateWeightsAPI("A_LocatedArea", "S_Stf", 2, aspectHashtable);
-            for (int i = 0; i < list.size(); i++) {
-                listFinal.add(list.get(i));
-            }
             list = calculateWeightsAPI("F_FoodItem", "F_FI", 2, aspectHashtable);
             for (int i = 0; i < list.size(); i++) {
                 listFinal.add(list.get(i));
@@ -96,15 +95,7 @@ public class AHPM {
             for (int i = 0; i < list.size(); i++) {
                 listFinal.add(list.get(i));
             }
-            list = calculateWeightsAPI("O_Reservation", "A_Env", 2, aspectHashtable);
-            for (int i = 0; i < list.size(); i++) {
-                listFinal.add(list.get(i));
-            }
             list = calculateWeightsAPI("O_Experience", "O_Exp", 2, aspectHashtable);
-            for (int i = 0; i < list.size(); i++) {
-                listFinal.add(list.get(i));
-            }
-            list = calculateWeightsAPI("A_Environment", "A_Env", 2, aspectHashtable);
             for (int i = 0; i < list.size(); i++) {
                 listFinal.add(list.get(i));
             }
@@ -120,7 +111,7 @@ public class AHPM {
 
     public static void main(String args[]) {
         AHPM ahpm = new AHPM();
-        ahpm.calculateWeights();
+        ahpm.getWeights();
 
     }
 
@@ -301,8 +292,9 @@ public class AHPM {
     }
 
     private void getAspectCount(String filePath) throws IOException {
-        File fileAnnotation = new File(filePath);
-        FileReader fr = new FileReader(fileAnnotation);
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource(filePath).getFile());
+        FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
         String line;
 
