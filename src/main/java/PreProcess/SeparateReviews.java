@@ -33,8 +33,29 @@ public class SeparateReviews {
 
     public static void main(String[] args) {
         SeparateReviews separateReviews = new SeparateReviews();
-        separateReviews.seperateTopReviews();
+        separateReviews.separateReviewsForARestaurant("top2000Business.json", "Data/testWM.txt", "zt1TpTuJ6y9n551sw9TaEg");
 
+    }
+
+    public void separateReviewsForARestaurant(String filePathIn, String filePathOut, String restaurantID) {
+
+        try {
+            ClassLoader classLoader = getClass().getClassLoader();
+            File file = new File(classLoader.getResource(filePathIn).getFile());
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+
+            while ((line = br.readLine()) != null) {
+                splitJson(line, restaurantID, filePathOut);    //splitting each json into ...
+            }
+            br.close();
+            fr.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Done...");
     }
 
     public void separateReviews() {
@@ -185,10 +206,7 @@ public class SeparateReviews {
             e.printStackTrace();
         }
         fileStream.println(line);
-//        fileStream.println();
         fileStream.close();
-
-
     }
 
     private void splitJson(String json) {
@@ -204,6 +222,29 @@ public class SeparateReviews {
             String reviewWONewLine = review.replace("\n", "").replace("\r", "");
             System.out.println("R   " + reviewWONewLine);
             writePrintStream(reviewWONewLine, filePathWrite); //write review as json if it is english
+
+        } catch (org.json.simple.parser.ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void splitJson(String json,String restaurantID,String filePathOut) {
+        org.json.simple.parser.JSONParser parser = new org.json.simple.parser.JSONParser();
+
+        try {
+
+            Object obj = parser.parse(json);
+
+            JSONObject jsonObject = (JSONObject) obj;
+
+            String review = (String) jsonObject.get("text");    // get review text from json
+            String reviewWONewLine = review.replace("\n", "").replace("\r", "");
+            String business_id = (String) jsonObject.get("business_id");    // get review text from json
+
+            if (business_id.matches(restaurantID)) {
+                System.out.println("R   " + reviewWONewLine);
+                writePrintStream(reviewWONewLine, filePathOut); //write review as json if it is english
+            }
 
         } catch (org.json.simple.parser.ParseException e) {
             e.printStackTrace();

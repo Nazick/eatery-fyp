@@ -1,3 +1,5 @@
+import excel.Excel;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -13,50 +15,52 @@ import java.util.Set;
 public class KappaMeasure {
     Hashtable<String,String> autoTagged=new Hashtable<>();
     Hashtable<String,String> manuallyTagged=new Hashtable<>();
-
-    final String ann1 = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/Test/" +
-            "u_12-Ann_Sorted.txt";  //manually tagged ann file
-
-    final String ann2 = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/Test/" +
-            "u_12 new.ann";  //manually tagged ann file
-
     int taggedWords=0;
-    int correctTaggs=0;
-    int totalTaggs=0;
+    int correctTags =0;
+    int totalTags =0;
 
     public static void main(String args[]) {
         KappaMeasure kappaMeasure=new KappaMeasure();
-        kappaMeasure.measurePerformance();
+        kappaMeasure.generateKappaInputFile();
+//        kappaMeasure.measurePerformance();
     }
 
+    public void generateKappaInputFile(){
+        try {
+            readAnnFile("Kappa/u_11.ann",autoTagged);
+            readAnnFile("Kappa/u_11_2.txt",manuallyTagged);
+
+            Excel.writeKappa(autoTagged,manuallyTagged,"kappa");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public void measurePerformance()
     {
         try {
-            readAnnFile(ann1,autoTagged);
-            readAnnFile(ann2,manuallyTagged);
-            totalTaggs=manuallyTagged.size();
+            readAnnFile("",autoTagged);
+            readAnnFile("",manuallyTagged);
+            totalTags =manuallyTagged.size();
             taggedWords=autoTagged.size();
             compare(autoTagged,manuallyTagged);
 
-            System.out.println("Total tags = "+totalTaggs);
-            System.out.println("Matched tags = "+correctTaggs);
+            System.out.println("Total tags = "+ totalTags);
+            System.out.println("Matched tags = "+ correctTags);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private void readAnnFile(String file,Hashtable<String,String> hashtable) throws IOException {
-        File fileAnnotation = new File(file);
-        FileReader fr = new FileReader(fileAnnotation);
+    private void readAnnFile(String filePath,Hashtable<String,String> hashtable) throws IOException {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource(filePath).getFile());
+        FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
         String line;
 
         while ((line = br.readLine()) != null) {
             String[] annotations = line.split("[ \t]");
-
             hashtable.put(annotations[2]+" "+annotations[3]+" "+annotations[4],annotations[1]);
-
-
         }
         br.close();
         fr.close();
@@ -71,7 +75,7 @@ public class KappaMeasure {
 
             if (hashtable2.containsKey(entry.getKey())) {
                 if (entry.getValue().equals(hashtable2.get(entry.getKey()))) {
-                    correctTaggs++;
+                    correctTags++;
                 }
             }
         }
