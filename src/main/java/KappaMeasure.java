@@ -17,12 +17,13 @@ public class KappaMeasure {
     Hashtable<String,String> manuallyTagged=new Hashtable<>();
     int taggedWords=0;
     int correctTags =0;
+    int nonCorrectTags =0;
     int totalTags =0;
 
     public static void main(String args[]) {
         KappaMeasure kappaMeasure=new KappaMeasure();
-        kappaMeasure.generateKappaInputFile();
-//        kappaMeasure.measurePerformance();
+//        kappaMeasure.generateKappaInputFile();
+        kappaMeasure.measurePerformance();
     }
 
     public void generateKappaInputFile(){
@@ -38,14 +39,15 @@ public class KappaMeasure {
     public void measurePerformance()
     {
         try {
-            readAnnFile("",autoTagged);
-            readAnnFile("",manuallyTagged);
+            readAnnFile("Kappa/u_13-Ann_Sorted.txt",autoTagged);
+            readAnnFile("Kappa/u_13-new-Ann_Sorted.txt",manuallyTagged);
             totalTags =manuallyTagged.size();
             taggedWords=autoTagged.size();
             compare(autoTagged,manuallyTagged);
 
             System.out.println("Total tags = "+ totalTags);
             System.out.println("Matched tags = "+ correctTags);
+            System.out.println("Non Matched tags = "+ nonCorrectTags);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -76,6 +78,8 @@ public class KappaMeasure {
             if (hashtable2.containsKey(entry.getKey())) {
                 if (entry.getValue().equals(hashtable2.get(entry.getKey()))) {
                     correctTags++;
+                }else {
+                    nonCorrectTags++;
                 }
             }
         }

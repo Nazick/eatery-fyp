@@ -40,8 +40,8 @@ public class LBNCI {
 
     public static void main(String[] args) {
         LBNCI lbnci=new LBNCI();
-        double[] ratings={5.0,4.0,5.0};
-        double[] ratings4={5.0,4.0,5.0,2.0};
+        double[] ratings={5.0,5.0,5.0};
+        double[] ratings4={5.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0};
         System.out.println(lbnci.calculateLBNCI(ratings));
         System.out.println(lbnci.calculateLBNCI(ratings4));
         System.out.println(lbnci.calculateLBNCI(0.0,0,0.26));

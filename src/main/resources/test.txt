@@ -1,0 +1,1379 @@
+*** The inside has a large community table in the back for when the restaurant gets crowded.
+Y has a large community table in
+N for when restaurant gets crowded
+
+*** They have an extensive beer selection.
+Y have an extensive beer selection
+
+*** As far as the food goes you have to be very careful.
+N As far goes have
+N you have to be very careful
+
+*** I have tried many things on the menu
+N tried many things
+
+*** I have only been impressed by the bacon cheeseburger and the fish and chips.
+N I have only been impressed by
+
+*** But, the bacon cheeseburger is the best you'll get anywhere.
+Y But the bacon cheeseburger is the best get
+N best you 'll get anywhere
+
+*** The food is also very affordable.
+Y The food is also very affordable
+
+*** I am not a vegetarian but I am a big fan!
+N vegetarian I am a big fan
+
+*** your typical Indian restaurant with its Chicken curry dishes and so on.
+N your typical Indian restaurant with
+
+*** A lot more interesting South India cuisine.
+N lot more interesting India
+
+*** The place is not fancy but the owner is really nice and the food really interesting!
+Y The place is not fancy nice
+Y fancy but the owner is really nice and
+Y nice food really interesting
+
+*** Went there P times in the last N months and the experience is consistent.
+N Went there P consistent
+N P times in is consistent
+N in the last N months and experience
+
+*** This little mexican joint has to have the best, mouth watering, orgasmic beef tongue tacos on the face of this planet.
+N This little mexican joint has have
+Y have the best mouth watering orgasmic beef tongue tacos on
+
+*** My pastor introduced me to this place
+
+*** my friend and I were starving in our little office ready to devour every thing we laid eyes on.
+N in our little office ready
+
+*** I ordered 6 beef tongue tacos and I tell you IT'S AMAZING!!
+
+*** The tortillas are made fresh in front of your eyes and the tongue must of been braised for hours upon hours.
+
+*** Because the meat just melts in your mouth.
+Y Because meat just melts in
+
+*** Matter a fact get the burrito.
+
+*** You'll get more meat and is cheaper.
+N get more meat
+
+*** With your burrito and tacos that you purchase you also receive a roasted onion and jalapeno.
+N With you also receive onion and jalapeno
+Y receive a roasted onion
+
+*** On the side if you want more pickled jalapenos or carrots, radishes, amazing salsas, they're available.
+N more pickled jalapenos
+Y radishes amazing salsas
+N On they 're available
+
+*** If you truly want a delicious burrito drop by any, I think there are 8 locations in Phoenix?
+N If you truly want drop by think
+Y want a delicious burrito drop
+
+*** Don't eat the Americanized chipotle junk.
+N eat the Americanized chipotle junk
+
+*** This place blows chipotle out of the water.
+
+*** I have no idea how they ever received a P star rating.
+N idea how they ever received rating
+
+*** This place was below mediocre first of all it had a very distinct smell in the whole restaurant
+N This place was below mediocre of
+N mediocre first of all
+Y very distinct smell
+N in the whole restaurant
+
+*** it was not a very appetizing one that's for sure.
+Y very appetizing one
+
+*** Secondly the server only came by twice once to get our order and the second time to bring out the food,
+N Secondly only came by get
+N by twice once
+N order the second time
+
+*** she never bothered checking up on us or anything we actually had to flag someone else down just to get a refill.
+N anything we actually had flag get
+N flag else down
+N we had just to get refill
+
+*** The food was ok I ordered two blueberry pancakes with an egg and bacon as well as a half order of the biscuits and gravy.
+N ordered two blueberry pancakes
+N egg as well as
+N egg a half order of
+
+*** The pancakes tasted as if they used a Bisquick mix and tossed in some unripe blueberries which was very disappointing because I usually LOVE pancakes out.
+n tasted as if they used mix and tossed
+Y in some unripe blueberries which disappointing
+Y blueberries which was very disappointing LOVE
+N disappointing because I usually LOVE pancakes out
+
+*** The biscuits and gravy on the other hand were much better but still not good enough to bring me back .
+Y The biscuits and on were much better but still enough bring
+N on the other hand
+Y biscuits better to bring me back
+
+*** John had the country fried steak and gravy served with hashbrowns and eggs.
+N had the country fried steak and gravy
+
+*** He said the country fried steak itself wasn't bad but not his favorite, the hashbrowns despite having them topped with cheese, onions, peppers and jalapenos were very bland and needed a good dash of salt.
+N said the country fried steak bad not favorite
+Y steak itself was n't bad
+Y said onions and were very bland and
+N needed a good dash of
+
+*** you would be much more satisfied going to your neighborhood Denny's than Hoosier Cafe in my opinion.
+Y you would be much more satisfied going
+
+*** I stopped by quickly the other day before my dinner at The Herb Box for a quick drink and enjoyed a delicious cherry cocktail
+N by quickly the other day before
+N for a quick drink
+Y enjoyed a delicious cherry cocktail
+
+*** the waitress promised wouldn't taste like a cherry popsicle and she was right.
+N like a cherry popsicle
+N she was right
+
+*** The last time I had been here was for dinner but that was probably seven years ago.
+N The last time been was
+N time I had been here
+N was that was probably ago
+
+*** A repeat visit is definitely in order.
+N visit is definitely in
+
+*** Their cocktails are delicious and ambiance is lively.
+Y Their cocktails are delicious and
+Y ambiance is lively
+
+*** I've been coming here for years - dating back to when it was in an old coffee shop on Scottsdale Road before they moved into the current Bat Cave
+N I 've been coming here for
+N to when it was in moved
+N in an old coffee shop on
+N into the current Bat Cave
+
+*** the food never disappoints.
+
+*** The stacked enchiladas are my favorite, complete with the fried egg on top to make everything better.
+N The stacked enchiladas favorite
+N enchiladas are my favorite complete with make
+Y with the fried egg on
+Y favorite to make everything better
+
+*** The carne avobada is always tender, and all of the dishes pack plenty of heat.
+N The carne avobada tender
+Y avobada is always tender and all
+
+*** Service is friendly.
+Y Service is friendly
+
+*** You can't come to Scottsdale and not eat here at least once.
+N eat here at least once
+
+*** Anything worth a damn is out of order.
+N Anything is out of
+
+*** Waste of time.
+
+*** why go any where else?
+N why go any else
+N go where else
+
+*** Food is the best on the strip, best executed,wine list rocks with interesting choices, and the view is well, the best in Vegas
+Y Food is the best on and
+Y with interesting choices
+Y view is well
+
+*** One of the few places I have stored in my phone.
+
+*** This particular location is open 24/7.
+N This particular location open
+
+*** If you already know what you want, I'd recommend calling it in, as they can get busy.
+N If you already know want recommend
+N recommend as they can get busy
+
+*** I'd say their sandwiches are amazing.
+Y say their sandwiches are amazing
+
+*** Veggie cheese steak is my favorite (take it to go and add Famous Dave's Devil Spit bbq sauce to it, trust me).
+N Veggie cheese steak favorite
+
+*** The veggie cole turkey is awesome too
+Y The veggie cole turkey awesome
+Y turkey is awesome too
+
+*** The veggie burger sandwich is a garden burger patty, good if you like garden burgers.
+Y The veggie burger sandwich good
+Y sandwich is burger patty good like
+
+*** You can also order the bobbie with veggie turkey.
+N You can also order bobbie with
+N with veggie turkey
+
+*** It's worth the $N more than the subway across the street, that's for sure.
+It 's worth $
+
+*** They also sell really good chips, I'd recommend the Walker's Honey BBQ.
+N They also sell chips recommend
+Y really good chips
+
+*** Writing this review makes me want to order a sandwich right now!!
+N order right now
+N me want to order sandwich now !!
+
+*** Super yummy burgers, fries, onion rings.
+Y Super yummy burgers fries onion
+
+*** Good beer selection too which seems to be a rarity in Vegas.
+Y Good beer selection
+Y beer selection too seems
+
+*** We had to wait about 20 minutes at lunch on a Monday, so I would be prepared for a line.Sadly, our waitress was not the sharpest knife in the drawer thus taking away a P star rating.
+N had waitress was not the sharpest knife in taking
+N knife thus taking away rating
+
+*** Best burger I've had in a long time though!Oh, and there was someone famous at the bar when we were there.
+Y Best burger had and
+N in a long time though!Oh
+N was someone famous at
+N bar when we were there
+
+*** But we were too lame or hungover to know who she was.
+N But we were too lame or know
+
+*** Still, it must be a good place to scope out celebs...if you can figure out who they are.
+Y Still it must be a good place scope
+
+*** Being the only location in Arizona the Rainforest Cafe at the Arizona Mills Mall automatically earns itself a positive reputation.
+N Being the only location in earns
+N location Cafe at automatically earns reputation
+N earns itself a positive reputation
+
+*** However, the restaurant's success and appeal are also a result of the restaurant's fun-oriented atmosphere as well as its individuality.
+N However success are also a result of well individuality
+Y of restaurant fun-oriented atmosphere
+N result as well as
+
+*** As mentioned earlier, Rainforest Cafe is located at the Arizona Mills Mall in Tempe, a large mall different from other malls in Arizona.
+N at a large mall different
+N from other malls in
+
+*** There are plenty of things to do here because the mall is home to a Harkins IMAX movie theater and a Gameworks in addition to all of the stores.
+N things to do here is
+N do because mall is home to to
+
+*** All in all, it proved to be an entertaining day, and the highlight of it was our fun-filled visit to the Rainforest Cafe.
+N All in it proved day and visit
+N it proved to be an entertaining day
+N proved highlight was our fun-filled visit to
+
+*** The setting of the Rainforest Cafe is similar to that of an amusement park rather than a regular restaurant, and is the main reason that people choose to visit here.
+N The setting of is similar to and
+N that a regular restaurant
+N similar is the main reason choose
+N people choose to visit here
+
+*** The restaurant was designed to look like a tropical rainforest, and is filled with artificial trees, animatronic animals, and large aquariums filled with live fish.
+N like a tropical rainforest
+N with artificial trees animals and aquariums
+N trees animatronic animals
+N trees large aquariums filled
+N with live fish
+
+*** Fake fog and thunderstorms add to the wild vibe, and provide an entertaining environment different from other locales.
+N Fake fog and thunderstorms add
+N to the wild vibe
+Y an entertaining environment different
+N from other locales
+
+*** Because of its similarity to amusement parks such as Disneyland, the Rainforest Cafe is popular among families and teenagers looking to have a good time.
+N Because the Rainforest Cafe is popular among
+N have a good time
+
+*** As a result, the restaurant is often filled with loud, energetic children, which can be annoying but also adds to the overall mood because their antics are similar to those of the electronic gorillas that periodically cause an uproar in their of the restaurant.
+N As restaurant is often filled with but adds
+N with loud energetic children which annoying
+N children which can be annoying
+N filled also adds to similar
+N to the overall mood
+N adds because their antics are similar to
+N of the electronic gorillas that cause
+N gorillas that periodically cause uproar
+
+*** Besides, since most of the people dining at the restaurant are there to have a good time, it does little to disturb their visit.In terms of service, Rainforest Cafe is just average; they often appear rushed and a little confused, which is understandable because the restaurant is always so busy.
+Y Besides are little Cafe is just average appear
+N since most of are there have average
+N have a good time
+N it does little disturb average
+N average they often appear rushed understandable
+N appear which is understandable busy
+N understandable because the restaurant is always so busy
+
+*** However, they are always friendly and willing to help, making up for their overwhelmed service.
+Y However they are always friendly and willing help making
+Y for their overwhelmed service
+
+*** The only fault of the Rainforest Cafe is the pricing, which is a little excessive considering that the majority of the items are of common quality.
+Y The only fault of pricing
+Y pricing which is little excessive considering
+N of common quality
+
+*** But the prices are not so extreme that they take away from the restaurant's appeal because the unique experience offered by this location is worth paying a little extra.
+Y But the prices are not so extreme take
+N extreme that they take away from worth
+N the unique experience offered worth
+N paying a little extra
+
+*** stars for the Spice Market Buffet.
+
+*** I'm being slightly generous but these P stars make sense in context of the fact that we're talking about a Las Vegas Buffet.
+N I 'm being slightly generous but
+
+*** I'm not even comparing this place with Picasso across the street or any "honest" restaurant, for that matter.
+N I 'm not even comparing place for
+Y street any honest restaurant
+
+*** When one accounts for the fact, though, that this is an all-you-can-eat buffet, Spice Market Buffet should evidently get P stars.
+N When one accounts for though buffet get
+N accounts that this is an all-you-can-eat buffet
+N accounts Buffet should evidently get stars
+
+*** Other reviewers have already mentioned this:  They have a wide variety of different cuisines:  Seafood, Salads, Italian, American, Asian, Middle Eastern, Mexican, and Desserts.
+N Other reviewers mentioned
+N reviewers have already mentioned this have
+Y have a wide variety of Seafood
+N of different cuisines
+N variety Seafood Salads Italian American Asian Middle Mexican and Desserts
+N Seafood Middle Eastern
+
+*** This means you can get sushi to start with, then load up egg benedicts, then switch over and get a bagel with lox and cream cheese, then get a quesadilla or some pasta, and finish it up with a couple of desserts.
+N start then load up benedicts
+N start then switch over
+N start then get quesadilla
+
+*** We didn't get an opportunity to try nearly that many foods here, but this is just to illustrate the variety of foods that they serve.I started with their lox and cream cheese, incidentally.
+N try nearly that many foods
+N opportunity to try foods here
+N get this is just illustrate started
+N is that they serve.I started with incidentally
+
+*** The salmon was really extremely good.
+Y The salmon was really extremely good
+
+*** I also tasted their egg benedict and their crab benedict, and I gotta say the egg benedict was quite good.
+N I also tasted benedict and got
+Y say the egg benedict was quite good
+
+*** The crab one... only so so.
+N only so so
+
+*** Their lobster pasta was *SERIOUS* disappointment, as was their sushi.
+Y pasta was SERIOUS * disappointment sushi
+
+*** Let's just say that I didn't even touch the sushi:  my wife got it for me as she knows I love it, but just eyeing the fish, I knew it was probably not even close to fresh and didn't really feel like spending my Vegas weekend puking, so I left it.
+N Let just say touch got
+N say that I did n't even touch sushi
+N just eyeing fish knew
+N knew it was probably not even close to and
+N close did n't really feel like
+N knows I love it but knew so left
+
+*** The sausage pizza was cooked with a wine-based sauce and was way tastey!
+N with a wine-based sauce
+Y cooked was way tastey
+
+*** Finally, their dessert selection was astounding.
+Y Finally selection was astounding
+
+*** I had the tiramisu and it really was quite a treat!$20 a head for sunday brunch...
+Y had it really was quite
+
+*** It's pricey, but then again you're gonna eat a lot of different foods and lots of it, so that'll basically be your one meal for the day.
+Y It 's pricey but
+N pricey then again you 're gon eat so meal
+N of different foods and lots of
+N gon that 'll basically be your one meal for
+
+*** I guess it's worth it.
+Y guess it 's worth it
+
+*** As far as decor is concerned, it's quite tragic.
+N As far concerned tragic
+N far as decor is concerned
+Y far it 's quite tragic
+
+*** I think I've felt more warmth kickin' it at the Ritz Carlton men's restrooms than I did in this place.
+N more warmth kickin
+
+*** It's open seats, very ugly booths... just tragic decoration.Also, watch out for serious white trash contingency here.
+N It 's open watch
+Y very ugly booths
+Y just tragic decoration.Also
+N for serious white trash contingency
+N open seats watch out for here
+
+*** This couple took our table and switched receipts because they apparently weren't pleased with where they'd been placed by the hostess.
+N switched because they apparently were n't pleased with
+N with where they 'd been placed by
+
+*** Puzzled, I asked the guy who looked worse than a bulldog if he might have mistakenly sat at the wrong table.
+N looked if he might have mistakenly sat at
+N at the wrong table
+
+*** He sorta grunted and went back to sucking his food out of his plate.
+N He sorta grunted and went
+
+*** Then again, most of the other patrons looked normal enough.
+N Then again most looked normal
+N of the other patrons
+N looked normal enough
+
+*** I do adore the weekend champagne brunch, but not for the food - for the champagne, of course!
+
+*** The food...well, the food is "eh" at best, and inedible at worst.
+Y food well food is eh at and inedible
+
+*** The buffet is extensive and covers nearly any palette, but because it's done in such a mass quantity and left to sit out, is not particularly fresh or hot.
+Y The buffet extensive is not particularly fresh or
+N covers nearly any palette
+N in such a mass quantity
+
+*** The desserts mostly had a rubbery consistency, save for the tasty peach cobbler and pecan rolls.
+N desserts mostly had consistency save
+N had a rubbery consistency
+Y tasty peach cobbler
+
+*** The ice cream bar is also a very safe bet.Steer clear of the shrimp...they were room-temperature and slimy on the skin, so we had to pass after a bite, for fear we'd get sick.
+N bar is also a safe bet.Steer clear room-temperature
+Y very safe bet.Steer
+N bet.Steer they were room-temperature and on had
+N fear we 'd get sick
+
+*** Most everything was heat-lamped too long and was too dry to enjoy, but if my tip would be to sit at a table with view of the buffet chef - you can watch them put out new dishes and run over to get them fresh.
+N Most everything heat-lamped
+Y heat-lamped too long and dry
+N long was too dry enjoy
+N put new dishes
+N get them fresh
+
+*** They won't taste delicious, but at least they'll be consumed straight-from-the-oven.I have heard that the dinner buffet is better, but for the price of champagne brunch, I expected that the food quality would suffer, so I wasn't disappointed when this came to fruition.However, for the $30 or whatever it was, the ability to sit in a garden-of-eden-meets-Mad-Hatter-tea-party room with the sun streaming in, nibbling some food and drinking champagne was well worth the price tag.
+N taste at least they 'll be consumed straight-from-the-oven
+
+*** It's a great way to spend a Sunday morning at the Wynn.
+Y It 's a great way spend
+
+*** So grab a glass, settle in, and, if you really want good food, stick to the fresh-made stations like the omelets, or just go somewhere else.
+N So grab glass settle stick
+N settle if you really want food
+Y want good food
+N to the fresh-made stations like
+N stick just go else
+N go somewhere else
+
+*** WOW!  I mean WOW!  Entered the line at the end of the brunch/lunch menu so when we got to our seconds they were placing out dinner!  FOR THE LUNCH PRICE!!!!
+
+*** Excellent savings.Service is as amazing as everything else in the Wynn/Encore.
+Y Excellent savings.Service amazing
+Y savings.Service is as amazing as
+N as everything else in
+
+*** Beautiful floral and fauna everywhere inside.The food was amazing!
+Y Beautiful floral and fauna inside.The
+N floral everywhere inside.The amazing
+Y inside.The food was amazing
+
+*** So many choices.My favorites were: King Crab legs with clarified butter, Prime Rib, Fried Chicken, Freshly tossed Caesar Salad....who am I kidding, everything was so frickin delicious!We sat right by the dessert windows.
+N many choices.My favorites were
+Y with clarified butter Rib Chicken Freshly
+N was so delicious!We sat right by
+
+*** I tore that up!!  Gelato - coffee & mango =wow yummy!
+N I tore that up !!
+
+*** Candied apples - never been a fan, but these are really good.
+N Candied apples -
+Y these are really good
+
+*** Cheesecake was so creamy.
+Y Cheesecake was so creamy
+
+*** Creme brulee with the hard shell was amazing!
+Y Creme brulee with amazing
+N with the hard shell
+
+*** Can't wait to go back.
+N wait to go back
+
+*** So worth it!
+
+*** Fries and burgers... that's it and they do them fresh and they do them right.
+N do them fresh
+
+*** I used to LOVE Dave's (see previous P star reviews from earlier this year) but something changed.
+N see previous P star reviews
+N see earlier this year
+
+*** The last few times I've gone there the food is not as good as it used to be and the service is slipping as well.
+N The last few times gone
+Y gone there food is not as good used and slipping
+N slipping as well
+
+*** Turnover in help?
+
+*** Change in management?
+
+*** Your guess is as good as mine..First it was the meat, instead of being hot and fresh, tender and juicy, it was warm and dried out, as if it had been left under a heat lamp or reheated in a microwave.
+Y Your guess is as good as
+
+*** The baby back ribs used to be fat and meaty, lately they are lean and fatty/tough.
+N baby back ribs used fat lean
+N ribs used to be fat and
+N used lately they are lean and fatty/tough
+
+*** Then the service started to be less than friendly and careless, twice I received the wrong order and had to return to get it fixed.The last time I went there, figuring I'd give it another try as everyone has "off" days, was the final straw.
+Y Then service started friendly received
+Y the service started to be than friendly and
+N less than friendly
+N started twice I received order and had
+N received the wrong order
+N fixed.The last time
+N has off days
+N was the final straw
+
+*** The meat was dried out and stringy, the Wilbur's beans were soured (gone bad, gone over, whatever)..as if they had been not refrigerated and stored properly and reheated many times over.
+N dried stringy beans were soured gone
+N gone bad gone whatever
+
+*** The coleslaw was full of tough inedible cabbage stalk pieces (either someone just doesn't care or they are really cutting costs) and an overabundance of jalapeno peppers which overwhelmed the usually sweet/hot balance of the slaw.Having a bad day is one thing, bad food that makes people sick is entirely a different animal and is indicative of a more serious issue going on at the restaurant.
+N The coleslaw was full of care and
+Y of tough inedible cabbage stalk pieces
+N full someone just does n't care or cutting
+N care they are really cutting costs
+Y of jalapeno peppers which overwhelmed
+N usually sweet/hot balance
+N slaw.Having a bad day
+Y thing bad food that makes
+N makes people sick
+N full overabundance is entirely a different animal and indicative
+N more serious issue
+
+*** There is absolutely NO excuse for food improperly stored or cooked that is full of bacteria.Famous Dave...PLEASE WAKE UP AND FIX YOUR PROCESS before it's too late!!!
+Y There is absolutely excuse PROCESS
+Y food improperly stored or cooked
+N PROCESS before it 's late !!!
+N too late !!!
+
+*** This used to be my favorite place for burritos for YEARS.
+N This used to be my favorite place for
+
+*** I'm talking 4 stars as far as taco joints go.
+N as far go
+
+*** Then last week, I saw the cook use the spatula to finish up my carnitas, right after he had just used the same spatula to put raw meat on the griddle!!!
+N Then last I saw use
+N use right after he had just used spatula put
+N used the same spatula
+N put raw meat
+N on the griddle !!!
+
+*** I have friends who are chefs and they would be FIRED for doing exactly that in most restaurants.
+N doing exactly that
+N in most restaurants
+
+*** Cross contamination isn't taken lightly by me and I will NEVER give Roberto's food to my kids.**
+N contamination is n't taken lightly by and give
+
+*** I've contacted Roberto's and they wrote back saying they'll take care of it.
+
+*** Whatever that means.As for the food, they give you a lot of bang for the buck.
+
+*** Machaca burrito or torta has shredded beef with two fried eggs in it.
+Y has shredded beef with
+Y with two fried eggs in
+
+*** It's loaded with guacamole and it's only $3.50.
+N loaded it 's only $ 3.50
+
+*** Their condiment bar is loaded with pickled jalapeños & carrots, lime, green onions, radishes, cucumbers, salsa verde & roja.
+N Their condiment bar loaded
+N with pickled jalapeños & carrots
+N carrots green onions
+
+*** It's kept clean and fresh.One of Roberto's sons once told me that this Roberto's is their busiest, hence it's open 2P hrs and is very clean.
+N kept fresh.One once told me busiest open
+N told that this Roberto 's is their busiest
+N told hence it 's open hrs and clean
+N open is very clean
+
+*** That's why I was shocked to see what I saw in the kitchen.
+N 's why I was shocked see
+
+*** Their AYCE is pretty good here.
+Y Their AYCE is pretty good here
+
+*** Service is sometimes slow
+Y Service is sometimes slow
+
+*** I keep coming here so it's not that bad! They're a bit pricey
+N keep coming here bad
+N coming so it 's not that bad
+
+*** hey offer some pretty good options.
+N pretty good options
+
+*** I've liked most things that I've had here with the exception of calamari
+N liked most things
+
+*** I love their chicken udon, I get it everytime!!
+
+*** I'm not really a fan of Toby Keith but I can't help liking a place that plays nonstop country music (that said, I can totally understand why someone who doesn't LOVE country music would go a bit nuts here).
+N I 'm not really a fan of but help
+N plays nonstop country music said
+N said I can totally understand go
+N understand why someone would go nuts here
+
+*** I also like deep fried things.
+N I also like things
+N like deep fried things
+
+*** I came here with a bunch of girls from work who share the same love of all things country music (I grew up line dancing to Brooks and Dunn if that explains ANYTHING... and yes, I know I'm Asian and it's weird).
+N I came here with from
+N share the same love of
+N know I 'm Asian
+N it 's weird
+
+*** We were here for hours and hours.
+N We were here for
+
+*** The music was good, they played all the current country songs and some older stuff too.
+Y The music was good played
+N played all the current country songs and stuff
+N songs some older stuff
+N good they played songs too
+
+*** There was definitely a variety of people here and it is great people watching.
+N There was definitely variety here and people
+N was it is great people watching
+
+*** My deep fried twinkies were delicious.
+Y My deep fried twinkies delicious
+
+*** I think if it were at a bigger casino that I like to frequent more, I would come back more often.
+Y at a bigger casino
+N come back more often
+
+*** I've been here a few times and enjoy the food, usually a packed place during lunch.
+N I 've been here times and enjoy
+N food usually a packed place
+
+*** I went in there last night and got a quarter pounder with cheese, fries and a diet coke.
+N went last night
+
+*** First of all, this place is F___g filthy, I mean the worst I've ever seen at a McDonald's.
+N F ___ g
+N First is F g filthy mean
+N worst I 've ever seen at
+
+*** I'm not a clean freak by any means, and there's no way I'd let my kid play in that playground.
+N I 'm not a clean freak by and 's
+
+*** It looked filthy, can you imagine how much shit there is that you can't see?
+N It looked filthy imagine
+N how much shit
+
+*** And I mean that literally too.
+N mean literally too
+
+*** Garbage cans overflowing, drink station with trash all over the place, dirty tables, etc.     French fries were good and fresh though, at least there's that.
+Y place dirty tables
+
+*** I love this place it's the best!
+Y place it 's the best
+
+*** Great food and experince for friends and family.
+Y Great food and experince for
+
+*** If your hungry for some ny style pizza come here.
+N your hungry for pizza come
+N If pizza come here
+
+*** Love the food and staff
+
+*** only thing is the food can be a bit pricey at times for a pub.
+N only thing food
+
+*** I'm a regular here.
+N I 'm a regular here
+
+*** I usually eat in here with my family and the customer service is great.
+N I usually eat in with and great
+Y the customer service is great
+
+*** The sitting area is awesome.
+Y The sitting area awesome
+
+*** The seats and booths are very comfortable.
+Y The seats and are very comfortable
+
+*** Their thai iced tea is amazing, just wish they didn't put so much ice in it.
+Y Their thai iced tea amazing
+N amazing just wish put
+Y so much ice
+
+*** Don't order to spict because medium is already really really hot for me I couldn't eat it, unless you're obsessed with spicy food go for it!
+N spict because medium is already really really hot for eat
+Y with spicy food
+
+*** The tom kha soup is so good.
+Y The tom kha soup is so good
+
+*** I usually order their tom kha coconut milk soup with chicken fried rice and two orders of pad thai.
+N I usually order soup with
+N order their tom kha coconut milk soup
+Y with chicken fried rice and orders
+
+*** I do take out here a lot and every time I get there within the 20 minutes they said it would be ready I never had to wait for my food for a long time!
+N time I get there within
+N said it would be ready had
+N for a long time
+
+*** They understand and speak English very well.
+N understand very well
+
+*** The staff look very neat and cleanly.
+N look very neat and cleanly
+
+*** The restaurant itself is very clean with an A rating.
+Y The restaurant itself is very clean with
+
+*** It's at a great location, on Russel and Rainbow.
+N at a great location
+
+*** It is located in the plaza where the Starbucks is, and next to a Flower shop.
+N plaza where Starbucks is and next
+
+*** Went here for a late night sushi craving and ordered tuna,yellowtail and salmon sashimi,  red dragon, WTH, cherry blossom and the rattle snake rolls.
+N Went here for and ordered
+N for a late night sushi craving
+N sashimi red dragon
+N sashimi cherry blossom
+N sashimi the rattle snake rolls
+
+*** The sashimi was good
+Y The sashimi was good
+
+*** our yellowtail slices where small and thin compared the big thick cuts of salmon and tuna.
+Y slices where small and thin compared
+N compared the big thick cuts of
+
+*** All the rolls were very good
+Y All the rolls were very good
+
+*** slices could have been sliced a tad bit thinner,   all the cuts were about an inch thick.
+N sliced a tad bit thinner
+N sliced all the cuts were about thick
+
+*** Definitely not bit size pieces but it sure didn't fall apart.
+N Definitely not bit size
+N size it sure did n't fall apart
+
+*** The food overall I would have to give it a 5 star.
+N The food overall I have give
+
+*** The reason it got demoted to O stars is due to the fact that the bill came out with gratuity of $17 on a bill of $9P before tax.
+N The reason demoted is due to came
+
+*** Very unsatisfied with the FOOD.
+
+*** Service was great
+Y Service was great
+
+*** our steak and double cheeseburger were burnt
+Y our steak and were burnt
+N steak double cheeseburger
+
+*** I used to enjoy coming to their café for their graveyard specials, but now it seems the cook is different.
+N used now it seems different
+N seems the cook is different
+
+*** I don't really recommend coming for a quick bite to eat there.
+N I do n't really recommend coming
+N for a quick bite
+N coming to eat there
+
+*** We aren't huge fans of chain restaurants, but this is one of the couple chains we do frequent.
+N We are n't huge fans of but one
+N one we do frequent
+
+*** It was the beer that brought us in and probably what keeps us coming back.
+N keeps us coming back
+
+*** Happy Hour is a good time to come and it goes until 6:30 where a lot of places stop at 6!  get the garlic fries if you are a lover of garlic.
+Y Hour is a good time come and goes
+N goes where lot stop at
+
+*** Other good choices are the pulled pork sandwich or the crab cake sandwich!
+Y Other good choices sandwich
+N choices are the pulled pork sandwich or sandwich
+
+*** mmm Service is hit or miss at this location, but never so bad that we haven't wanted to return.
+N hit never so bad
+
+*** This place is awesome!
+Y This place is awesome
+
+*** The prices are reasonable
+Y The prices are reasonable
+
+*** the service is quick.
+Y the service is quick
+
+*** I often go to a cheesesteak place by my work which--despite being less busy--always take too long to get my food!
+N I often go to by
+N despite being less busy
+N work which despite always take long get
+N take too long
+
+*** They don't offer too much other than fries and cheesesteaks  so don't go there if you want something else.
+N offer too much other go
+N other than fries so do n't go there want
+
+*** Most importantly the food tasted amazing!
+N Most importantly tasted
+
+*** The fries were the best in my opinion so I highly recommend trying them!
+Y The fries were the best in recommend
+N best so I highly recommend trying
+
+*** We used to go here every other weekend, then about O weeks ago something changed.
+N We used to go here weekend
+N go every other weekend
+N used then ago something changed
+
+*** What happened to security?
+
+*** Fights inside and outside of the bar, someone's going to get hurt!
+
+*** It's no fun watching your back the whole time you're supposed to be drinking...we won't be back unless they return to the RESPONSIBLE management!
+N watching the whole time supposed
+N fun we wo n't be back return
+
+*** The food was good
+Y The food was good
+
+*** WAY overpriced.
+
+*** I really like the concept of no menu with a buffet for sides and waiters that come around offering you meat.
+N I really like concept with
+
+*** I felt bad for the guy who had chicken since I imagine many people decline chicken in favor of the lamb and various steak options.
+N many people decline
+N lamb various steak options
+
+*** However, it was $37/ person which is definitely overpriced for the quality of the food considering you can get a much higher quality entree for a similar price at L'Etoile or Harvest.
+Y However it was $ person which overpriced
+Y person which is definitely overpriced for considering
+N much higher entree
+N for a similar price
+
+*** I would only recommend going here if you are extremely hungry and you really want to be able to eat right away without having to wait to place an order.
+N I would only recommend going and want
+N recommend going here hungry
+N going if you are extremely hungry
+N you want to be able eat
+N recommend you really want able
+N eat right away
+
+*** I don't plan on returning despite the beautiful atmosphere and friendly wait staff.
+Y despite the beautiful atmosphere and staff
+Y atmosphere friendly wait staff
+
+*** Every once in a while Pete's can kind of hit the spot...
+N Every once in
+N while Pete can kind of hit spot
+
+*** I'm not quite as crazy about it as some locals seems to be.
+N I 'm not quite as crazy about seems
+
+*** The fish and chips are good and cheap
+Y The fish and are good and
+
+*** their special sauce is pretty damn tasty...
+Y their special sauce tasty
+Y sauce is pretty damn tasty
+
+*** I usually leave feeling a little fishy and greased out.
+N I usually leave feeling and greased
+N feeling a little fishy
+
+*** The fish is perfectly square, and I can't help but wonder why they do it that way... because it really gives off a 'store bought' vibe.
+Y fish is perfectly square and help
+N wonder why they do way
+N help because it really gives off
+
+*** Compare this to somewhere like Fulton Fish Fry in Vegas which has fresh pieces of fish that each kind of form their own twisted and unique shape... it just feels more authentic that way.
+N Compare this to somewhere like Fry
+N has fresh pieces of
+N form their own twisted shape feels
+N shape it just feels authentic
+N feels more authentic way
+
+*** This just feel like a fish patty that could have been taken out of a McDonalds Filet-O-Fish and thrown in the greaser.So what I gotta say about Pete's is this: only go if you're craving some no-frills fish and chips; and if you have such a craving you'll probably leave happy... if however you are looking for something to make your taste buds shiver with excitement, then look elsewhere.
+N This just feel this look
+N feel like patty is this only go
+N craving some no-frills fish and chips
+N craving you 'll probably leave happy
+N if however you are looking for make look
+N feel looking then look elsewhere
+
+*** Oh yeah... one last thing... their whole sense of entitlement really gets on my nerves sometimes.
+N yeah one last thing
+N their whole sense of gets
+N yeah sense really gets on sometimes
+
+*** Having kooky rules at a restaurant is fun, but it only works if that restaurant is serving up magnificent food.
+N Having kooky rules
+N fun it only works serving
+Y serving magnificent food
+
+*** Here you are getting average food and they try to make you feel like they are the Gods of Fish and you must bow down and obey their every command if you want to get served (like their whole "no ketchup-don't even ask" thing).
+N Here you are getting food and try want
+Y getting average food
+N t even ask thing
+
+*** You better be careful Pete's or you may find people are gonna find somewhere else with better food, that doesn't hassle you if you ask for ketchup.
+N You better be careful find
+N find somewhere else
+Y with better food that hassle
+
+*** Absolutely terrible.
+Y Absolutely terrible
+
+*** I would give this place 0 stars if I could.
+
+*** I was with a group of 6 other people
+N of 6 other people
+
+*** none of us enjoyed our meal.
+
+*** The chips and salsa (a staple at any Mexican food restaurant) was a far cry from pretty much any other restaurant in the valley (Mexican and otherwise).
+N at any Mexican food restaurant
+N chips was a far cry from
+N pretty much restaurant
+N from much any other restaurant in
+
+*** As for the cost, I would put these entrees (and lunch specials, even) on the "expensive" side of the scale.
+N on the expensive side of
+
+*** The service was acceptable
+Y The service was acceptable
+
+*** I can only suspect the wait staff expects large tips from their hugely inflated bills.
+N I can only suspect expects
+N expects large tips
+Y hugely inflated bills
+
+*** Sadly, they may not get any return customers with the quality of their food the way it is.
+N Sadly they may not get customers with
+
+*** I'm visiting Madison and went here for breakfast- it was terrific!
+N visiting went here for
+N visiting it was terrific
+
+*** I got the pumpkin and apple crepe (it's October, after all) and it was sooo tasty!
+N got it 's October after all
+Y it was sooo tasty
+
+*** Not too sweet
+N Not too sweet
+
+*** perfectly filling
+N perfectly filling
+
+*** reasonably priced.
+Y reasonably priced
+
+*** The staff was friendly and the space was really cute.
+Y The staff was friendly and
+Y the space was really cute
+
+*** I'd make this a regular morning stop if I lived here!
+N a regular morning stop
+N stop if I lived here
+
+*** I have been wanting to go to their Silverado Ranch location, but because Katrina M. has a groupon for this location we stopped by for brunch before she had to work.When we entered, the restaurant was steady but not busy.
+Y has the restaurant was steady but not busy
+
+*** We sat down at the booth the waitress just cleaned off and were greeted with menus.
+Y booth waitress just cleaned off and greeted
+
+*** Katrina M. was in the mood for waffles and turned it into a combo with eggs and sausage for a dollar more.
+
+*** The waffle was ok, a little soft for my taste.
+Y The waffle was ok soft for
+
+*** I have been craving a patty melt with grilled mushrooms, so I jumped on that.
+Y with grilled mushrooms
+
+*** I also chose a bowl of chicken tortilla soup for my side.
+N I also chose bowl
+
+*** The soup was light.
+Y The soup was light
+
+*** The patty melt was cooked to a perfect medium rare and juicy.
+Y The patty melt cooked
+N to a perfect medium rare
+
+*** Maybe it was a little too juicy because my rye bread was soggy.
+Y Maybe it was little too juicy soggy
+Y juicy because my rye bread was soggy
+
+*** I love that they do not fry the sandwich in a ton of oil to make it crispy, but the second half of my sandwich had sopped up all the meat juices before I could get to it.
+N fry to make it crispy
+N the second half of sopped
+
+*** The experience was not bad, just not something I would drive across town for.
+N The experience was not bad just something
+
+*** Is it better than your average fast food place?
+Y Is it better than
+N than your average fast food place
+
+*** Yes.
+
+*** Is it the best BBQ ever?
+Y Is it the best BBQ ever
+
+*** No way!
+
+*** But Dickeys food is decent.
+Y But Dickeys food is decent
+
+*** Food is cheap Ribs and pulled pork are good, rolls and okra- darn good.
+Y Food is cheap Ribs and pulled good
+Y pulled pork are good and
+
+*** So, craving some red meat I went to Dickeys for take out because it was close and I figured their food wouldn't be as processed as McD's- seriously that movie gave me nightmares.
+N So craving I went to for and figured seriously
+N craving some red meat
+N take because it was close
+N figured their food would n't be as processed as
+
+*** The staff was super friendly
+Y The staff was super friendly
+
+*** the football game was on TV.,
+
+*** the food was done quickly- giving me enough time to make myself a root beer float and watch AZ lose in OT- :( For O of us I ordered the ribs, the turkey, coleslaw, mac and cheese, fried okra, potato casserole, and N rolls.
+Y food was done quickly giving ordered
+N giving enough time make
+N done :-LRB- For I ordered ribs
+Y ribs fried okra
+
+*** When I got home I was disappointed to see that the turkey looked like processed poo on a plate.
+N When I got home disappointed
+N got I was disappointed see
+N like processed poo on
+
+*** Really guys- picture slimy poo on a plate-it was that gross!
+N Really guys gross
+N picture slimy poo on gross
+
+*** I refused to taste it, and everyone else was brave enough to at least try it, only to decide they couldn't eat more than N bite- but the dog thought it was delicious.
+N everyone else was brave enough try
+N everyone brave to at least try it decide
+N try only to decide eat
+Y thought it was delicious
+
+*** The mac and cheese was gross!
+N The mac and was gross
+
+*** I'm not a salt person, but it definitely needed salt and pepper to give it flavor and the macaroni was over cooked to that gross slimy noodle consistency.
+N person it definitely needed salt give and cooked
+Y needed macaroni was over cooked to
+Y to that gross slimy noodle consistency
+
+*** So, the O of us shared P ribs, okra, and an individual size coleslaw with N rolls- one person was hungry enough to go ahead and eat the mac and cheese even though he didn't like it.
+N So O shared ribs with hungry
+N ribs an individual size coleslaw
+N shared one person was hungry enough go
+N person hungry to go ahead and eat
+N eat even though he did n't like it
+
+*** Dickeys would have gotten N star but the ribs and okra were pretty darn good and I made one hell of a root beer float while I was there.
+Y the ribs and were pretty darn good
+N float while I was there
+
+*** I may be seen in Dickeys again because I have a fondness for fried okra and I have tried their pulled pork Sandwiches before and liked it.
+N seen again because I have fondness
+N for fried okra
+Y tried their pulled pork Sandwiches
+N seen I have tried Sandwiches before and liked
+
+*** But I will definitely check my takeout before I leave to make sure it is all there and I will never order the mac and cheese or processed turkey poo again.
+N But I will definitely check takeout leave
+N sure it is all there and order
+N mac processed turkey poo
+N I leave to make sure again
+
+*** Amazing place!
+Y Amazing place
+
+*** Stumbled by it one day and made reservations to go there the week after.
+
+*** The decor is also very homey and makes you feel instantly very comfortable.
+Y The decor is also very homey and
+N feel instantly very comfortable
+
+*** It helps that the waiters don't seem to be in a rush at all since they're all volunteers.
+Y waiters seem to be in at all volunteers
+
+*** And of course the food was actually amazing.
+Y And of the food was actually amazing
+
+*** They change their menu from time to time so the same options are not always available but if you get a chance to try their lentil dahl, do it.
+N the same options available
+N change so options are not always available but get
+N try their lentil dahl
+
+*** It was hands down the most flavourful and spiced-infused dahl I've ever tasted.
+Y most flavourful and spiced-infused dahl
+Y dahl I 've ever tasted
+
+*** Mmm my mouth is watering just thinking about it.
+Y Mmm mouth is watering just thinking
+
+*** After that, I ordered the lamb which was pretty good.
+Y lamb which was pretty good
+
+*** The presentation was very nice.Another compliment to the bread!
+N very nice.Another compliment
+
+*** So crunchy on the outside but soft on the inside - the way bread is supposed to be.
+N crunchy on but soft bread supposed be
+
+*** I went with some Bretons (who apparently are bread and butter experts, or so they claim) and they confirmed that it was, indeed, bread of excellent quality.
+N went who apparently are bread experts or claim
+N confirmed that it was indeed bread of
+N of excellent quality
+
+*** We asked them to refill the bread about O times and at the end
+
+*** our waiter was so sweet and gave us a doggy-bag for the remainder in our basket.Robin des Bois made both my stomach and heart happy.
+Y our waiter was so sweet and made
+N made both my stomach and happy
+
+*** Found this place through Yelp and was not disappointed.
+
+*** Had the beef platter and everything was excellent.
+Y Had platter was excellent
+
+*** In my short trip in Montreal I tried N other fast food Lebanese places and this one was definitely the best.
+N In my short trip in
+Y tried N other fast food best
+N Lebanese places and one best
+Y food places was definitely the best
+
+*** Walked in to grab the free admission pass during lunch time, called in the afternoon to be put on the guestlist without any promoter's name, and showed up at night and got in less than O minute wait thru guestlist line.There is N particular free adimssion Pass that also gives you a free drink ticket.
+N grab the free admission pass
+N thru guestlist line.There
+N Walked grab particular free adimssion Pass that gives
+N Pass that also gives you ticket
+N gives a free drink ticket
+
+*** You have to look for it though..because there's like P different version of free admission passes and there's only ONE that gives u a free drink.
+N You have to look for though
+
+*** Lavo was very generous with their comp drink rule - there was none!
+N Lavo was very generous with was
+
+*** You could have anything they had on hand.
+
+*** Most other places have that stupid rule that only well drinks apply to comp drinks =P So take advantage of it with your pass...The club itself was a lot smaller than I thought, but I still liked the feel.
+N Most other places have
+N have that stupid rule that drinks
+N only well drinks
+N comp =P So take advantage with club
+N club itself was lot smaller thought
+N have I still liked feel
+
+*** Pretty chill, nice bar, the nicest bartenders - (yes...much friendlier than the ones at Blush in the Wynn who were snobs and even nicer than XS bartenders) who won't hesitate to help you out with drink options.
+Y chill nice bar bartenders
+Y bar the nicest bartenders
+Y yes much friendlier
+Y yes who were snobs and than
+N snobs even nicer
+
+*** This is one of those few Indian restaraunts that never seams to fail in all aspects.
+N of those few Indian restaraunts
+
+*** Their food is flawlessly perfect, the price is great, their service is prompt and everything looks clean and fresh.
+Y Their food is flawlessly perfect great and
+Y perfect the price is great
+Y their service is prompt
+
+*** I HIGHLY recomend going for their Sunday Brunch.
+N I HIGHLY recomend going
+
+*** Very disappointed in this place.
+N Very disappointed in
+
+*** Got a take out order and when got it home.
+N Got a take
+N order when got it home
+
+*** It was disgusting.
+Y It was disgusting
+
+*** Only got the Hibachi chicken and carrots with side of Zucchini.
+N Only got chicken and
+
+*** When ordering my husband told them zucchini only no onion.
+N When ordering told zucchini
+N zucchini only no onion
+
+*** Well basically thats all it was and i am highly allergic to onions.
+N Well basically thats all
+N was i am highly allergic to
+
+*** There were maybe P to 6 very very small pieces of chicken that had been very overcooked.
+N There were maybe P
+Y very very small pieces
+P that had been very overcooked
+
+*** Couldn't even chew it.
+N Could n't even chew it
+
+*** Needless to say i was very upset called and talked to manager his only comment.
+N say i was very upset
+N called his only comment
+
+*** When you come back in next time i will give you some chicken.
+N When you come back in give
+N in next time
+
+*** Hands down best breakfast place in Vegas!!
+N Hands down best breakfast place
+
+*** The food was absolutely delicious and everything I wanted.
+Y The food was absolutely delicious and
+
+*** My favorite were the pancakes and sausage.
+
+*** The customer service was outstanding!!
+Y The customer service was outstanding !!
+
+*** The employees were so welcoming and friendly.
+Y The employees were so welcoming and
+
+*** Will be returning again tomorrow and everytime I come visit Vegas.
+N Will be returning again tomorrow and everytime
+
+*** Make reservations, the wait here can get pretty long.
+N reservations the wait here can get pretty long
+
+*** The sandwiches are delicious!
+Y The sandwiches are delicious
+
+*** I ordered the corned beef on rye and it was soooooo huge and sooooo worth.
+N ordered the corned beef
+Y soooooo huge and sooooo worth
+
+*** Try the pineapple sangrias!
+
+*** Get a pitcher!
+
+*** To yourself!
+
+*** lol but seriously, their sangria are very light, very sweet.
+Y lol but seriously light
+Y lol their sangria are very light sweet
+Y light very sweet
+
+*** and ofcourse, the frozen hot chocolate is a must try.
+N the frozen hot chocolate a try
+
+*** This place was great.
+Y This place was great
+
+*** The prices are amazing, the service is friendly, and the food is delicious.
+Y The prices are amazing friendly and
+Y amazing the service is friendly
+Y the food is delicious
+
+*** This is not Taco bell or Margaritaville.
+
+*** Mexican food and New Mexican food are two different flavors.
+N Mexican food and food flavors
+N food New Mexican food
+N food are two different flavors
+
+*** It's not suppose to have tons of spices and salts like Mexican food does.
+N It 's not suppose have
+N Mexican food does
+
+*** It's the tastiness of the fresh ingredients and the hot chili that makes this food amazing.
+N of the fresh ingredients and chili
+N ingredients the hot chili
+Y makes this food amazing
+
+*** The reviews that said the food was bland, are just use to dousing their food in salt.My fiance is from New Mexico so it was a relief to find a place where you can take home frozen green chilies and tortillas.
+Y said the food was bland
+N reviews are just use to
+N in salt.My fiance
+N find where you can take home
+N frozen green chilies and tortillas
+
+*** We also ordered our P dozen tamales for Christmas.Everyone needs to give this place a shot.
+N We also ordered needs
+
+*** We will be going here at least twice a week from now on.
+N We will be going here twice from on
+
+*** Very food falafal and the pitas were fresh.
+Y Very food falafal and pitas fresh
+
+*** The Baba Ghannouj was particularly delicious!
+Y The Baba Ghannouj was particularly delicious
+
+*** The roasted eggplant flavor really carried through.
+Y roasted eggplant flavor
+N flavor really carried through
+
+*** Went here for a birthday celebration, and I have to say I was impressed!
+N Went here for and have
+
+*** The party was on the patio upstairs
+
+*** hile the weather was unusually chilly and windy for a spring evening, the heat lamps and the rocking fireplace kept me warm.
+N hile the weather chilly
+N weather was unusually chilly and windy kept
+N evening the rocking fireplace
+N kept me warm
+
+*** We started off the evening right with an array of appetizers, including shrimp ceviche, chicken fingers w/ a side of fries, calamari, pizza and chicken & steak nachos.
+N started evening right with array
+
+*** Shrimp Ceviche- Large pieces of shrimp tossed with fresh jalapenos, cilantro, tomatoes and red onions marinated in fresh squeezed lime juice.
+N Ceviche Large pieces of
+N with fresh jalapenos cilantro tomatoes and onions
+N jalapenos red onions marinated
+N in fresh squeezed lime juice
+
+*** Served with homemade salsa, cocktail sauce and warm tortilla chips.
+N with homemade salsa cocktail sauce and chips
+N sauce warm tortilla chips
+
+*** A little difficult to eat, but refreshing & light nonetheless.
+N eat refreshing light nonetheless
+
+*** Chicken fingers- Large pieces of juicy white chicken meat breaded & fried to ultra crispy perfection.
+N fingers Large pieces of
+Y of juicy white chicken meat breaded & fried to
