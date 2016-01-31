@@ -20,10 +20,10 @@ public class WeightingModel {
     public static void main(String[] args) {
         WeightingModel weightingModel = new WeightingModel();
         weightingModel.testWM();
-        //testWM1 2e2e7WgqU1BnpxmQL5jbfw 2.7021932082523903 3.075951856439008
-        //testWM2 zt1TpTuJ6y9n551sw9TaEg 2.5163013983414766 2.6067257311433227
+        //testWM1 2e2e7WgqU1BnpxmQL5jbfw 2.1626510949788793 3.075951856439008
+        //testWM2 zt1TpTuJ6y9n551sw9TaEg 1.9558975258151812 2.6067257311433227
 
-//        Restaurant 3.0497235530137847 179 2.183277736452741
+//        Restaurant 3.0497235530137847 179 2.1626510949788793
 //        Service 3.1064089709104508 94 2.9345653108076557
 //        Staff 2.8798108737752 10 2.504896258067787
 //        Staff Behavior 2.099416522936422 4 3.5312220305818958
@@ -46,7 +46,7 @@ public class WeightingModel {
 
     public void testWM() {
         try {
-            readFile("WeightingModel/R2.txt","testWM1");
+            readFile("WeightingModel/R1.txt","testWM1");
         } catch (IOException e) {
             e.printStackTrace();
         }

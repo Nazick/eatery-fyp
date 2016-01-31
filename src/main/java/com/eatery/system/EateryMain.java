@@ -46,7 +46,7 @@ public class EateryMain {
         //eateryMain.preProcessData();
         //eateryMain.process();
 
-        eateryMain.getCompositeRatings();
+        eateryMain.getCompositeRatingOfAspects("zt1TpTuJ6y9n551sw9TaEg");
 //        EateryMain eateryMain = new EateryMain();
 //        eateryMain.implicitTesting();
     }
@@ -482,19 +482,91 @@ public class EateryMain {
         return restaurantScore;
     }
 
+    public HashMap<String, Double> getCompositeRatingOfAspects(String restaurantName) {
+//        HibernateMain hibernateMain = new HibernateMain();
+        List ratings = hibernateMain.getRatings(restaurantName);
+        HashMap<String, Double> comScors = new HashMap<>();
+//        print(ratings);
+
+//        double foodItemScore = getSubRatings("F_FoodItem", ratings);
+//        double staffScore = getSubRatings("S_Staff", ratings);
+//        double deliveryScore = getSubRatings("S_Delivery", ratings);
+//        double entertainmentScore = getSubRatings("A_Entertainment", ratings);
+//        double furnitureScore = getSubRatings("A_Furniture", ratings);
+//        double placesScore = getSubRatings("A_Places", ratings);
+//        double locatedAreaScore = getSubRatings("A_LocatedArea", ratings);
+//        double paymentScore = getSubRatings("O_Payment", ratings);
+//        double reservationScore = getSubRatings("O_Reservation", ratings);
+//        double experienceScore = getSubRatings("O_Experience", ratings);
+//        double environmentScore = getSubRatings("A_Environment", ratings);
+//
+//        comScors.put("F_FoodItem",foodItemScore);
+//        comScors.put("S_Staff",staffScore);
+//        comScors.put("S_Delivery",deliveryScore);
+//        comScors.put("A_Entertainment",entertainmentScore);
+//        comScors.put("A_Furniture",furnitureScore);
+//        comScors.put("A_Places",placesScore);
+//        comScors.put("A_LocatedArea",locatedAreaScore);
+//        comScors.put("O_Payment",paymentScore);
+//        comScors.put("O_Reservation",reservationScore);
+//        comScors.put("O_Experience",experienceScore);
+//        comScors.put("A_Environment",environmentScore);
+//
+//        updateSubRatings(ratings, "F_FoodItem", foodItemScore);
+//        updateSubRatings(ratings, "S_Staff", staffScore);
+//        updateSubRatings(ratings, "S_Delivery", deliveryScore);
+//        updateSubRatings(ratings, "A_Entertainment", entertainmentScore);
+//        updateSubRatings(ratings, "A_Furniture", furnitureScore);
+//        updateSubRatings(ratings, "A_Places", placesScore);
+//        updateSubRatings(ratings, "A_LocatedArea", locatedAreaScore);
+//        updateSubRatings(ratings, "O_Payment", paymentScore);
+//        updateSubRatings(ratings, "O_Reservation", reservationScore);
+//        updateSubRatings(ratings, "O_Experience", experienceScore);
+//        updateSubRatings(ratings, "A_Environment", environmentScore);
+//
+////        print(ratings);
+//
+//        double serviceScore = getSubRatings("Service", ratings);
+//        double worthinessScore = getSubRatings("Worthiness", ratings);
+//        double ambienceScore = getSubRatings("Ambience", ratings);
+//        double foodScore = getSubRatings("Food", ratings);
+//        double offersScore = getSubRatings("Offers", ratings);
+//        double othersScore = getSubRatings("Others", ratings);
+//
+//        comScors.put("Service",serviceScore);
+//        comScors.put("Worthiness",worthinessScore);
+//        comScors.put("Ambience",ambienceScore);
+//        comScors.put("Food",foodScore);
+//        comScors.put("Offers",offersScore);
+//        comScors.put("Others",othersScore);
+//
+//
+//        updateSubRatings(ratings, "Service", serviceScore);
+//        updateSubRatings(ratings, "Worthiness", worthinessScore);
+//        updateSubRatings(ratings, "Ambience", ambienceScore);
+//        updateSubRatings(ratings, "Food", foodScore);
+//        updateSubRatings(ratings, "Offers", offersScore);
+//        updateSubRatings(ratings, "Others", othersScore);
+
+        double restaurantScore = getSubRatings("Restaurant", ratings);
+        comScors.put("Restaurant",restaurantScore);
+
+        return comScors;
+    }
+
     private void updateSubRatings(List ratings, String aspect, double score) {
-        boolean isAvailable=false;
+        boolean isAvailable = false;
         for (int i = 0; i < ratings.size(); i++) {
             RatingsEntity ratingsEntity = (RatingsEntity) ratings.get(i);
             if (ratingsEntity.getAspectTag().matches(aspect)) {
                 ratingsEntity.setScore(score);
                 ratings.remove(i);
                 ratings.add(ratingsEntity);
-                isAvailable=true;
+                isAvailable = true;
             }
         }
         if (!isAvailable) {
-            ratings.add(new RatingsEntity(aspect,"",score,1));
+            ratings.add(new RatingsEntity(aspect, "", score, 1));
         }
     }
 

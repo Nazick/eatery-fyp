@@ -12,11 +12,11 @@ import java.util.regex.Pattern;
  */
 public class Convertion {
 
-    final static String filePathToBeConverted = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
+    final static String filePathToBeConverted = "/home/bruntha/Documents/Softwares/refinedReviews-v1.3_Crunchy_Frog/data/Eatery/" +
             "u_14.txt";  //the file path that need to be annotated
-    final static String filePathAnnotation = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
+    final static String filePathAnnotation = "/home/bruntha/Documents/Softwares/refinedReviews-v1.3_Crunchy_Frog/data/Eatery/" +
             "u_14.ann";  //annotation of the file that need to be annotated
-    final static String filePathConverted = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
+    final static String filePathConverted = "/home/bruntha/Documents/Softwares/refinedReviews-v1.3_Crunchy_Frog/data/Eatery/" +
             "u_14_NLP.txt";
 
 

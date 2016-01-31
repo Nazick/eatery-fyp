@@ -154,4 +154,13 @@ public class Utility {
 
         }
     }
+
+    public static void print(Hashtable<String, Integer> aspectHashtable) {
+        Set set = aspectHashtable.entrySet();
+        Iterator it = set.iterator();
+        while (it.hasNext()) {
+            Map.Entry entry = (Map.Entry) it.next();
+            System.out.println(entry.getKey()+" "+entry.getValue());
+        }
+    }
 }

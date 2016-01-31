@@ -10,7 +10,8 @@ public class EigenValues {
     public static void main(String args[]) {
         double[][] vals = {{1, -2}, {-2, 0}};
         Matrix m = new Matrix(vals);
-        getMaxEigenValue(m);
+//        getMaxEigenValue(m);
+        getMaxEigenVector(m);
     }
 
     public void test() {
@@ -74,17 +75,60 @@ public class EigenValues {
     }
 
     public static double getMaxEigenValue(Matrix matrix) {
-       double max=0;
+        double max = 0;
         EigenvalueDecomposition eigen = matrix.eig();
 
         double[] realPart = eigen.getRealEigenvalues();
         double[] imagPart = eigen.getImagEigenvalues();
 
         for (int i = 0; i < realPart.length; i++) {
-            if(max<realPart[i])
-                max=realPart[i];
+            if (max < realPart[i])
+                max = realPart[i];
         }
-        System.out.println("Max EigenValue = "+max);
+        System.out.println("Max Eigen Value = " + max);
         return max;
+    }
+
+    private static int getMaxEigenIndex(Matrix matrix) {
+        int result = 0;
+        double max = 0;
+
+        EigenvalueDecomposition eigen = matrix.eig();
+
+        double[] realPart = eigen.getRealEigenvalues();
+        double[] imagPart = eigen.getImagEigenvalues();
+
+        for (int i = 0; i < realPart.length; i++) {
+            if (max < realPart[i])
+                max = realPart[i];
+        }
+
+        for (int i = 0; i < realPart.length; i++) {
+            if (max == realPart[i])
+                result = i;
+        }
+        System.out.println("Max Eigen Value = " + max);
+        return result;
+    }
+
+    public static Matrix getMaxEigenVector(Matrix matrix) {
+        EigenvalueDecomposition E = new EigenvalueDecomposition(matrix);
+        double[] lambdaRe = E.getRealEigenvalues();                                      //  Real eigens
+        double[] lambdaIm = E.getImagEigenvalues();                                      //  Imag eigens
+        System.out.println("Eigenvalues: \t lambda.Re[] = " + lambdaRe[0] + ", " + lambdaRe[1]);
+        Matrix V = E.getV();                                      //  Get matrix of eigenvectors
+        System.out.print("\n Matrix with column eigenvectors ");
+        V.print(10, 5);
+
+        int index=getMaxEigenIndex(matrix);
+        Matrix Vec = new Matrix(matrix.getColumnDimension(), 1);                                      //  Extract single eigenvector
+        for (int i = 0; i < matrix.getRowDimension(); i++) {
+            Vec.set(i,0,V.get(i,index));
+        }
+
+        System.out.print("Eigen Vector with max Eigen value");
+        Vec.print(10, 5);
+
+        return Vec;
     }
 }

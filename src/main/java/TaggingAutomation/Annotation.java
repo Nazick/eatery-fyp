@@ -15,19 +15,19 @@ public class Annotation {
 //    final String filePathDictionary = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
 //            "dictionary.txt";
 
-    final String filePathReview = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/Test/" +
-            "u_14.txt";  //the file path that need to be annotated
+    final String filePathReview = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
+            "u_12.txt";  //the file path that need to be annotated
 
-    final String filePathAnnDestination = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/Test/" +
-            "u_14.ann";  //annotation of the file that need to be annotated
+    final String filePathAnnDestination = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
+            "u_12_A.ann";  //annotation of the file that need to be annotated
 
     final String filePathAnnSource = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
             "A.ann";  //manually tagged ann file
 
-    final String filePathDictionaryAuto = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/Test/" +
+    final String filePathDictionaryAuto = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
             "dictionaryAuto.txt";   //the file having related aspect and word
 
-    final String filePathNonDictionaryAuto = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/Test/" +
+    final String filePathNonDictionaryAuto = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
             "nonDictionaryAuto.txt";    //the file having non-related aspect and word
 
     final String filePathExternalFile = "/home/bruntha/Documents/Softwares/brat-v1.3_Crunchy_Frog/data/Eatery/" +
