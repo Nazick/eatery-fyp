@@ -8,7 +8,7 @@ import com.eatery.system.EateryMain;
 public class CompositeScore {
     public static void main(String[] args) {
         EateryMain eateryMain = new EateryMain();
-        System.out.println(eateryMain.getCompositeRating("testWM2"));
+//        System.out.println(eateryMain.getCompositeRating("testWM2"));
     }
 
 }

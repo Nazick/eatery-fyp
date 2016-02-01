@@ -2,6 +2,7 @@ package hibernate;
 
 import WeightingModel.AHPM;
 import model.BusinessEntity;
+import model.CompositeScoreEntity;
 import model.RatingsEntity;
 import org.hibernate.NonUniqueObjectException;
 import org.hibernate.Query;
@@ -40,6 +41,18 @@ public class HibernateMain {
         }
     }
 
+    public void insertCompositeScore(CompositeScoreEntity compositeScoreEntity) {
+        try {
+            Session session = sessionFactory.openSession();
+            session.beginTransaction();
+            session.saveOrUpdate(compositeScoreEntity);
+            session.getTransaction().commit();
+            session.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
     public void insertRestaurant(BusinessEntity restaurent) {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
@@ -64,6 +77,16 @@ public class HibernateMain {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         Query query = session.createQuery("from BusinessEntity ");
+        List<?> list = query.list();
+        session.getTransaction().commit();
+        session.close();
+        return list;
+    }
+
+    public List getAspects() {
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        Query query = session.createQuery("from AspectEntity ");
         List<?> list = query.list();
         session.getTransaction().commit();
         session.close();

@@ -29,5 +29,6 @@
 		<mapping class="model.RatingsEntity"/>
 		<mapping class="model.AspectEntity"/>
 		<mapping class="model.WeightsEntity"/>
+		<mapping class="model.CompositeScoreEntity"/>
 	</session-factory>
 </hibernate-configuration>
