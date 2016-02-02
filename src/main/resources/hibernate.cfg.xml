@@ -30,5 +30,6 @@
 		<mapping class="model.AspectEntity"/>
 		<mapping class="model.WeightsEntity"/>
 		<mapping class="model.CompositeScoreEntity"/>
+		<mapping class="model.FoodEntity"/>
 	</session-factory>
 </hibernate-configuration>

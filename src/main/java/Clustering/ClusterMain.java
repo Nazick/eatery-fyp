@@ -1,6 +1,8 @@
 package Clustering;
 
 import domain.Cluster;
+import hibernate.HibernateMain;
+import model.FoodEntity;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -14,18 +16,44 @@ import java.util.HashMap;
  */
 public class ClusterMain {
     HashMap<String, Cluster> clusterHashMap = new HashMap<>();
-    ArrayList<String> foodList=new ArrayList<>();
+    HashMap<String, String> clusterHashMap2 = new HashMap<>();   //key-> food item    value-> cluster head
+
+    ArrayList<String> foodList = new ArrayList<>();
+    HibernateMain hibernateMain = new HibernateMain();
 
     public static void main(String[] args) {
         ClusterMain clusterMain = new ClusterMain();
-        clusterMain.buildCluster();
+        clusterMain.storeScore();
+    }
+
+    public void storeScore() {
+        buildCluster();
+        try {
+            ClassLoader classLoader = getClass().getClassLoader();
+            File file = new File(classLoader.getResource("FoodRatingAggregated.txt").getFile());
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            String line;
+
+            while ((line = br.readLine()) != null) {
+                String[] tmp = line.split("[ \t]");
+                System.out.println(tmp[0] + " " + tmp[1] + " " + clusterHashMap2.get(tmp[1]) + " " + Double.parseDouble(tmp[2]));
+                if (clusterHashMap2.get(tmp[1]) != null) {
+                    hibernateMain.insertFoodScores(new FoodEntity(tmp[0], tmp[1], clusterHashMap2.get(tmp[1]), Double.parseDouble(tmp[2])));
+
+                }
+
+            }
+            br.close();
+            fr.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void buildCluster() {
         try {
-            readFile("Clustersample.txt");
-            addNewFoodToCluster("lassi pairing");
-
+            readFile("Clusters.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -36,10 +64,10 @@ public class ClusterMain {
             String[] foodNames = foodName.split(" ");
 
             for (int i = 0; i < foodNames.length; i++) {
-                if(clusterHashMap.containsKey(foodNames[i])){
-                    Cluster cluster=clusterHashMap.get(foodNames[i]);
+                if (clusterHashMap.containsKey(foodNames[i])) {
+                    Cluster cluster = clusterHashMap.get(foodNames[i]);
                     cluster.addNewElement(foodName);
-                    clusterHashMap.put(foodNames[i],cluster);
+                    clusterHashMap.put(foodNames[i], cluster);
                 }
             }
         }
@@ -61,8 +89,8 @@ public class ClusterMain {
         while ((line = br.readLine()) != null) {
             String foodListString = br.readLine();
             String clusterHeadString = br.readLine();
-            br.readLine();
-            br.readLine();
+//            br.readLine();
+//            br.readLine();
 
             String foodListString1 = foodListString.replace("[", "");
             String foodListString2 = foodListString1.replace("[", "");
@@ -77,6 +105,8 @@ public class ClusterMain {
                 String foodName = foodNames[i].replace("'", "");
                 foodListArrayList.add(foodName);
                 foodList.add(foodName);
+                clusterHashMap2.put(foodName, clusterHeadName);
+
             }
 
             if (clusterHashMap.containsKey(clusterHeadName))

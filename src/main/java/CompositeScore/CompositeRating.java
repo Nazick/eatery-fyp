@@ -1,4 +1,4 @@
-package com.eatery.system;
+package CompositeScore;
 
 import hibernate.HibernateMain;
 import model.*;
@@ -111,7 +111,6 @@ public class CompositeRating {
     }
 
     public HashMap<String, Double> getCompositeRatingOfAspects(String restaurantName) {
-//        HibernateMain hibernateMain = new HibernateMain();
         List ratings = hibernateMain.getRatings(restaurantName);
         HashMap<String, Double> comScors = new HashMap<>();
 //        print(ratings);

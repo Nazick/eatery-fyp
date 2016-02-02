@@ -3,6 +3,7 @@ package hibernate;
 import WeightingModel.AHPM;
 import model.BusinessEntity;
 import model.CompositeScoreEntity;
+import model.FoodEntity;
 import model.RatingsEntity;
 import org.hibernate.NonUniqueObjectException;
 import org.hibernate.Query;
@@ -34,6 +35,18 @@ public class HibernateMain {
             Session session = sessionFactory.openSession();
             session.beginTransaction();
             session.saveOrUpdate(ratingsEntity);
+            session.getTransaction().commit();
+            session.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public void insertFoodScores(FoodEntity foodEntity) {
+        try {
+            Session session = sessionFactory.openSession();
+            session.beginTransaction();
+            session.saveOrUpdate(foodEntity);
             session.getTransaction().commit();
             session.close();
         }catch (Exception e){

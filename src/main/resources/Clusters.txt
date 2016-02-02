@@ -1,0 +1,603 @@
+0
+['sandwiches', 'esandwiches', 'esandwiches', 'sandwich', 'sandwichtuna', 'sandwiches', 'sandwiched', 'esandwiches', 'sandwiched']
+('esandwiches', 3)
+1
+['frittes', 'frite', 'frites', 'frites', 'fries']
+('frites', 2)
+2
+['fatburger', 'burgers', 'burger', 'steak burger', 'hamburgers', 'cheeseburger', 'hamburger', 'burgers', 'hamburgers', 'hamburgers']
+('hamburgers', 3)
+3
+['steaks', 'cheesesteak', 'steak burger', 'steak', 'steaks', 'steak-and-eggs']
+('steaks', 2)
+4
+['fruity', 'fruits', 'fruits', 'fruity', 'grapfruit', 'jackfruit', 'fruit', 'grapefruit', 'fruitcups']
+('fruits', 2)
+5
+['pickle', 'pickles', 'pickled', 'pickled', 'pickles']
+('pickled', 2)
+6
+['tomatos', 'tomatos', 'tomato', 'tomatoes', 'salad tomato', 'tomatoey']
+('tomatos', 2)
+7
+['chickensalmon', 'chickennam', 'chicken', 'meats:-beef-pork-chicken-quail-ducketc.desserts', 'chick', 'chickensalmon', 'chickennam', 'chicken', 'meats:-beef-pork-chicken-quail-ducketc.desserts', 'chickennam']
+('chickennam', 3)
+8
+['breaded', 'breadcrumbs', 'breaded', 'flatbread', 'bread', 'flatbreads', 'cornbread', 'breads', 'flatbreads', 'breads']
+('flatbreads', 2)
+9
+['cheesesteak', 'cheese', 'cheesey', 'cheeseburger', 'cheeses', 'cheesey', 'cheesesteak', 'cheeses']
+('cheesey', 2)
+10
+['salads', 'salad tomato', 'salad', 'salads']
+('salad', 2)
+11
+['raviolis', 'raviolis', 'ravioli']
+('raviolis', 2)
+12
+['empanadas', 'empanada', 'empanadas']
+('empanadas', 2)
+13
+['crepe', 'crepes', 'crepes']
+('crepes', 2)
+14
+['waffle', 'waffles', 'waffles']
+('waffles', 2)
+15
+['yolks', 'yolk', 'yolks']
+('yolks', 2)
+16
+['wings', 'wing', 'wings']
+('wings', 2)
+17
+['apples', 'pineapples', 'crabapples', 'pineapplecoconut', 'apples', 'pineapples', 'apple', 'pineapple', 'crabapples']
+('pineapples', 2)
+18
+['tacos', 'taco', 'tacos']
+('tacos', 2)
+19
+['bun', 'buns', 'buns']
+('buns', 2)
+20
+['cucumbers', 'cucumbers', 'cucumber']
+('cucumbers', 2)
+21
+['pastas', 'pasta', 'pastas']
+('pastas', 2)
+22
+['enchiladas', 'enchilada', 'enchiladas']
+('enchiladas', 2)
+23
+['pancake', 'pancakes', 'pancakes']
+('pancakes', 2)
+24
+['cocktails', 'cocktails', 'cocktail']
+('cocktails', 2)
+25
+['dates', 'dates', 'date']
+('dates', 2)
+26
+['tomatoey', 'tomatoes']
+('tomatoey', 1)
+27
+['eggrolls', 'rolls', 'roll', 'eggrolls', 'rolls']
+('eggrolls', 2)
+28
+['panacakes', 'cakes', 'cupcakes', 'pancakes', 'panacakes', 'cakes', 'cake', 'pancake', 'cupcakes', 'pancakes']
+('cakes', 2)
+29
+['pizzazz', 'pizza', 'pizzas', ',pizza', 'pizzaria', 'pizzas']
+('pizza', 2)
+30
+['croissants', 'croissants', 'croissant']
+('croissants', 2)
+31
+['nachos', 'nachos', 'nacho']
+('nachos', 2)
+32
+['omelets', 'omelet', 'omelettes', 'omelets', 'omelette']
+('omelets', 2)
+33
+['gelatos', 'gelato', 'gelatos']
+('gelatos', 2)
+34
+['pistachios', 'pistachios', 'pistachio']
+('pistachios', 2)
+35
+['olives', 'olive', 'olives']
+('olives', 2)
+36
+['mushrooms', 'mushroom', 'mushrooms']
+('mushrooms', 2)
+37
+['pineapples', 'pineapplecoconut', 'pineapples', 'pineapple']
+('pineapples', 2)
+38
+['artichoke', 'artichokes', 'artichokes']
+('artichokes', 2)
+39
+['omelettes', 'omelettes', 'omelette']
+('omelettes', 2)
+40
+['tenderloin', 'tenderloi', 'tenderloin']
+('tenderloin', 2)
+41
+['grapfruit', 'grapefruit']
+('grapfruit', 1)
+42
+['noodles', 'noodle', 'noodles']
+('noodles', 2)
+43
+['beef', 'prawnsbeef', 'polentabeef', 'beefy', 'meats:-beef-pork-chicken-quail-ducketc.desserts', 'beefy']
+('beefy', 2)
+44
+['garlic', 'garlicy', 'garlicy']
+('garlicy', 2)
+45
+[',shrimp,crab', 'shrimps', '-sushi-crab-shrimp', 'shrimp', 'shrimps']
+('shrimps', 2)
+46
+['wraps', 'wraps', 'wrap']
+('wraps', 2)
+47
+['bagel', 'bagels', 'bagels']
+('bagels', 2)
+48
+['ribs', 'ribs', 'rib']
+('ribs', 2)
+49
+['flatbread', 'flatbreads', 'flatbreads']
+('flatbreads', 2)
+50
+['crabs', ',shrimp,crab', '-sushi-crab-shrimp', 'crabs', 'crab', 'crabapples']
+('crabs', 2)
+51
+['peppercorns', 'peppercorns', 'peppercorn']
+('peppercorns', 2)
+52
+['pepperoni', 'peppercorns', 'pepper', 'peppercorn', 'peppers', 'peppers']
+('peppers', 2)
+53
+['oysters', 'oyster', 'oysters']
+('oysters', 2)
+54
+['hotdogs', 'hotdog', 'hotdogs']
+('hotdogs', 2)
+55
+['beans', 'bean', 'beans']
+('beans', 2)
+56
+['vegetables', 'vegetables', 'vegetable']
+('vegetables', 2)
+57
+['muffins', 'muffin', 'muffins']
+('muffins', 2)
+58
+['zucchinis', 'zucchini', 'zucchinis']
+('zucchinis', 2)
+59
+['dog', 'hotdogs', 'dogs', 'hotdog', 'hotdogs', 'dogs']
+('dogs', 2)
+60
+['avocados', 'avocado', 'avocados']
+('avocados', 2)
+61
+['scallops', 'scallops', 'scallop']
+('scallops', 2)
+62
+['oranges', 'oranges', 'orange']
+('oranges', 2)
+63
+['onions', 'onions', 'onion']
+('onions', 2)
+64
+['sundaes', 'sundaes', 'sundae']
+('sundaes', 2)
+65
+['crawfishes', 'crawfishes', 'crawfish']
+('crawfishes', 2)
+66
+['meatballs', 'meatball', 'meatballs']
+('meatballs', 2)
+67
+['veggies', 'eggs', 'egg', 'eggplant', 'steak-and-eggs', 'eggrolls', 'eggs', 'steak-and-eggs']
+('eggs', 2)
+68
+['flank', 'flank', 'flan']
+('flank', 2)
+69
+['omlettes', 'omlette', 'omlettes']
+('omlettes', 2)
+70
+['meatballs', 'meatloaf', 'meatball', 'meat', 'meats', 'meats:-beef-pork-chicken-quail-ducketc.desserts', 'meats', 'meats:-beef-pork-chicken-quail-ducketc.desserts']
+('meats:-beef-pork-chicken-quail-ducketc.desserts', 2)
+71
+['calamari']
+('calamari', 1)
+72
+['pistaccio']
+('pistaccio', 1)
+73
+['fajitas']
+('fajitas', 1)
+74
+['ceviche']
+('ceviche', 1)
+75
+['blueberries']
+('blueberries', 1)
+76
+['chickensalmon', 'salmon']
+('chickensalmon', 1)
+77
+['miso']
+('miso', 1)
+78
+['them']
+('them', 1)
+79
+['curry']
+('curry', 1)
+80
+['sausage']
+('sausage', 1)
+81
+['sashimi']
+('sashimi', 1)
+82
+['baguettes']
+('baguettes', 1)
+83
+['pineapplecoconut']
+('pineapplecoconut', 1)
+84
+['pastry']
+('pastry', 1)
+85
+['pastries']
+('pastries', 1)
+86
+['cheeeeese']
+('cheeeeese', 1)
+87
+['main']
+('main', 1)
+88
+['fruitcups']
+('fruitcups', 1)
+89
+['crawfishes', 'fishes']
+('crawfishes', 1)
+90
+['mixed']
+('mixed', 1)
+91
+['prawnsbeef']
+('prawnsbeef', 1)
+92
+['eggrolls']
+('eggrolls', 1)
+93
+['strawberry']
+('strawberry', 1)
+94
+['pepperoni']
+('pepperoni', 1)
+95
+['cheeseburger']
+('cheeseburger', 1)
+96
+['pork', 'meats:-beef-pork-chicken-quail-ducketc.desserts']
+('pork', 1)
+97
+['pizzazz']
+('pizzazz', 1)
+98
+['parmesan']
+('parmesan', 1)
+99
+['cornbread']
+('cornbread', 1)
+100
+['pizzaria']
+('pizzaria', 1)
+101
+['sushiseafood', 'seafood']
+('sushiseafood', 1)
+102
+['meats:-beef-pork-chicken-quail-ducketc.desserts']
+('meats:-beef-pork-chicken-quail-ducketc.desserts', 1)
+103
+['sushiseafood', 'bombsushi', '-sushi-crab-shrimp', 'sushi']
+('bombsushi', 1)
+104
+['hashbrowns']
+('hashbrowns', 1)
+105
+['salami']
+('salami', 1)
+106
+['tortillas']
+('tortillas', 1)
+107
+['cheesesteak']
+('cheesesteak', 1)
+108
+['spinach']
+('spinach', 1)
+109
+['risotto']
+('risotto', 1)
+110
+['halibut']
+('halibut', 1)
+111
+['crust']
+('crust', 1)
+112
+['cilantro']
+('cilantro', 1)
+113
+['prawns', 'prawnsbeef']
+('prawnsbeef', 1)
+114
+['bombsushi']
+('bombsushi', 1)
+115
+['foie']
+('foie', 1)
+116
+['crap']
+('crap', 1)
+117
+['patty']
+('patty', 1)
+118
+['burrito']
+('burrito', 1)
+119
+['berries', 'blueberries', 'strawberries', 'raspberries']
+('blueberries', 1)
+120
+['breadcrumbs']
+('breadcrumbs', 1)
+121
+['catfish', 'fish', 'crawfishes', 'crawfish', 'fishes']
+('crawfishes', 1)
+122
+['horseradish']
+('horseradish', 1)
+123
+['kimchi']
+('kimchi', 1)
+124
+['turf']
+('turf', 1)
+125
+['macaroni', 'mac']
+('mac', 1)
+126
+['macaroni']
+('macaroni', 1)
+127
+['guacamole']
+('guacamole', 1)
+128
+['eggplant']
+('eggplant', 1)
+129
+[',pizza']
+('pizza', 1)
+130
+['cupcakes']
+('cupcakes', 1)
+131
+['teriyaki']
+('teriyaki', 1)
+132
+['quail', 'meats:-beef-pork-chicken-quail-ducketc.desserts']
+('meats:-beef-pork-chicken-quail-ducketc.desserts', 1)
+133
+['pita']
+('pita', 1)
+134
+['brisket']
+('brisket', 1)
+135
+['bacon']
+('bacon', 1)
+136
+['pineapplecoconut', 'coconut']
+('pineapplecoconut', 1)
+137
+['jackfruit']
+('jackfruit', 1)
+138
+['crabapples']
+('crabapples', 1)
+139
+['that']
+('that', 1)
+140
+['sandwichtuna']
+('sandwichtuna', 1)
+141
+['chorizo']
+('chorizo', 1)
+142
+['sandwichtuna', 'tuna']
+('tuna', 1)
+143
+['cream']
+('cream', 1)
+144
+['prosciutto']
+('prosciutto', 1)
+145
+['stuffing']
+('stuffing', 1)
+146
+['tiramisu']
+('tiramisu', 1)
+147
+['polenta', 'polentabeef']
+('polenta', 1)
+148
+['lobster']
+('lobster', 1)
+149
+['spaghetti']
+('spaghetti', 1)
+150
+['strawberries']
+('strawberries', 1)
+151
+['polentabeef']
+('polentabeef', 1)
+152
+['asparagus']
+('asparagus', 1)
+153
+['panacakes']
+('panacakes', 1)
+154
+['bisque']
+('bisque', 1)
+155
+['tofu']
+('tofu', 1)
+156
+['sub']
+('sub', 1)
+157
+['basil']
+('basil', 1)
+158
+['sushiseafood']
+('sushiseafood', 1)
+159
+['rice']
+('rice', 1)
+160
+['pecans']
+('pecans', 1)
+161
+['chimichurri']
+('chimichurri', 1)
+162
+['fettuccine']
+('fettuccine', 1)
+163
+['chickensalmon']
+('chickensalmon', 1)
+164
+['sandwhich']
+('sandwhich', 1)
+165
+['blueberry']
+('blueberry', 1)
+166
+['hamburgers', 'hamburger']
+('hamburger', 1)
+167
+['chips']
+('chips', 1)
+168
+['everything']
+('everything', 1)
+169
+['salsa']
+('salsa', 1)
+170
+['aioli']
+('aioli', 1)
+171
+['raspberries']
+('raspberries', 1)
+172
+['catfish']
+('catfish', 1)
+173
+['turkey']
+('turkey', 1)
+174
+['creme']
+('creme', 1)
+175
+['gravy']
+('gravy', 1)
+176
+['hummus']
+('hummus', 1)
+177
+['buffets']
+('buffets', 1)
+178
+['buttermilk']
+('buttermilk', 1)
+179
+['slaw']
+('slaw', 1)
+180
+['omlette', 'omlet', 'omlettes']
+('omlet', 1)
+181
+['grits']
+('grits', 1)
+182
+['gyoza']
+('gyoza', 1)
+183
+['patties']
+('patties', 1)
+184
+['tempura']
+('tempura', 1)
+185
+[',shrimp,crab']
+('shrimp,crab', 1)
+186
+['lox']
+('lox', 1)
+187
+['lasagna']
+('lasagna', 1)
+188
+['squash']
+('squash', 1)
+189
+['cabbage']
+('cabbage', 1)
+190
+['veggies']
+('veggies', 1)
+191
+['meatloaf']
+('meatloaf', 1)
+192
+['fatburger']
+('fatburger', 1)
+193
+['dorritos']
+('dorritos', 1)
+194
+['gnocchi']
+('gnocchi', 1)
+195
+['thickener']
+('thickener', 1)
+196
+['broth']
+('broth', 1)
+197
+['-sushi-crab-shrimp']
+('-sushi-crab-shrimp', 1)
+198
+['broccoli']
+('broccoli', 1)
+199
+['curries']
+('curries', 1)
+200
+['steak-and-eggs']
+('steak-and-eggs', 1)
